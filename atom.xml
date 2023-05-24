@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Bevis23的博客</title>
+  
+  <subtitle>seek_for_everything</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://bevis23.github.io/"/>
+  <updated>2023-05-24T16:33:32.283Z</updated>
+  <id>https://bevis23.github.io/</id>
+  
+  <author>
+    <name>Bevis23</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="https://bevis23.github.io/2023/05/24/hello-world/"/>
+    <id>https://bevis23.github.io/2023/05/24/hello-world/</id>
+    <published>2023-05-24T12:52:27.942Z</published>
+    <updated>2023-05-24T16:33:32.283Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;欢迎来到我的博客&quot;&gt;&lt;a href=&quot;#欢迎来到我的博客&quot; class=&quot;headerlink&quot; title=&quot;欢迎来到我的博客&quot;&gt;&lt;/a&gt;欢迎来到我的博客&lt;/h1&gt;&lt;p&gt;欢迎大家来到我的博客！我很高兴你们能在这个虚拟空间中找到我。&lt;/p&gt;
+&lt;h2
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
