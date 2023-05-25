@@ -335,10 +335,27 @@
         </div>
     </div>
 </div>
+
+
+
+<style>
+    .bg-cover {
+        transition: background-image 1s ease-in-out;
+    }
+</style>
+
 <script>
-// 每天切换 banner 图.  Switch banner image every day.
-$('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)');
+    var imageIndex = 0;
+    function changeBackgroundImage() {
+        $('.bg-cover').css('background-image', 'url(/medias/banner/' + imageIndex + '.jpg)');
+        imageIndex = (imageIndex + 1) % 7;  // 假设你有7张图片，编号从0到6
+    }
+    changeBackgroundImage();  // 首次加载时更换背景图片
+    setInterval(changeBackgroundImage, 5000);  // 每隔5000毫秒（即5秒）更换背景图片
 </script>
+
+
+
     </div>
 </div>
 
@@ -554,8 +571,8 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
     $(document).ready(function () {
 
         var int = setInterval(fixCount, 50);
-        var pvcountOffset = 80000;
-        var uvcountOffset = 20000;
+        var pvcountOffset = 0;
+        var uvcountOffset = 0;
 
         function fixCount() {
             if (document.getElementById("busuanzi_container_site_pv").style.display != "none") {
@@ -593,7 +610,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
         minutes - 0-59之间的整数，做为date对象的分钟数
         seconds - 0-59之间的整数，做为date对象的秒数
         microseconds - 0-999之间的整数，做为date对象的毫秒数 */
-        var t1 = Date.UTC(2017, 09, 11, 00, 00, 00); //北京时间2018-2-13 00:00:00
+        var t1 = Date.UTC(2023, 05, 24, 00, 00, 00); //北京时间2023-5-24 00:00:00
         var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
         var diff = t2 - t1;
         var diffYears = Math.floor(diff / years);
@@ -639,7 +656,7 @@ $(function () {
     <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
     <script src="/js/matery.js"></script>
 
-    <script type="text/javascript"> var OriginTitile = document.title, st; document.addEventListener("visibilitychange", function () { document.hidden ? (document.title = "Σ(っ °Д °;)っ喔哟，崩溃啦！", clearTimeout(st)) : (document.title = "φ(゜▽゜*)♪咦，又好了！", st = setTimeout(function () { document.title = OriginTitile }, 3e3)) })
+    <script type="text/javascript"> var OriginTitile = document.title, st; document.addEventListener("visibilitychange", function () { document.hidden ? (document.title = "你别走呀 (。•́︿•̀。)", clearTimeout(st)) : (document.title = "你来啦!（＾ω＾）", st = setTimeout(function () { document.title = OriginTitile }, 3e3)) })  
     </script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->

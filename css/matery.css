@@ -28,9 +28,9 @@
 }
 
 body {
-    background-color: #eaeaea;
+    background-color: #000000c2;
     margin: 0;
-    color: #34495e;
+    color: #000000;
 }
 
 h1 {
@@ -274,7 +274,7 @@ mark {
 }
 
 .bg-color {
-    background-image: linear-gradient(to right, #bf30ac 0%, #0f9d58 100%);
+    background-image: linear-gradient(to right, #bf3030 0%, #000 100%);
     opacity: 0.7;
 }
 
