@@ -2,58 +2,72 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://bevis23.github.io/tags/index.html</loc>
+    <loc>https://bevis23.github.io/2023/05/27/dream/</loc>
     
-    <lastmod>2023-05-25T04:19:29.218Z</lastmod>
+    <lastmod>2023-05-26T17:41:55.922Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://bevis23.github.io/about/index.html</loc>
     
-    <lastmod>2023-05-25T03:42:55.438Z</lastmod>
+    <lastmod>2023-05-26T17:33:07.974Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://bevis23.github.io/2023/05/24/hello-world/</loc>
+    <loc>https://bevis23.github.io/2023/05/25/hello-world/</loc>
     
-    <lastmod>2023-05-24T16:33:32.283Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://bevis23.github.io/404.html</loc>
-    
-    <lastmod>2023-05-24T15:44:11.449Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://bevis23.github.io/contact/index.html</loc>
-    
-    <lastmod>2023-05-24T14:53:48.995Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://bevis23.github.io/categories/index.html</loc>
-    
-    <lastmod>2023-05-24T14:53:44.741Z</lastmod>
+    <lastmod>2023-05-26T17:20:02.105Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://bevis23.github.io/archives/index.html</loc>
     
-    <lastmod>2023-05-24T14:53:40.962Z</lastmod>
+    <lastmod>2023-05-26T16:47:54.296Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://bevis23.github.io/Medias/index.html</loc>
+    
+    <lastmod>2023-05-25T14:35:03.601Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://bevis23.github.io/404.html</loc>
+    
+    <lastmod>2023-05-25T14:16:42.517Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://bevis23.github.io/friends/index.html</loc>
     
-    <lastmod>2023-05-24T14:46:56.059Z</lastmod>
+    <lastmod>2023-05-25T14:15:14.298Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://bevis23.github.io/contact/index.html</loc>
+    
+    <lastmod>2023-05-25T14:13:51.041Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://bevis23.github.io/categories/index.html</loc>
+    
+    <lastmod>2023-05-25T14:12:25.640Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://bevis23.github.io/tags/index.html</loc>
+    
+    <lastmod>2023-05-25T04:19:29.218Z</lastmod>
     
   </url>
   
