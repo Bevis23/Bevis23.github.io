@@ -373,7 +373,7 @@ github账号 ，用于获取项目
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -561,7 +561,7 @@ github账号 ，用于获取项目
 <li>github账号 ，用于获取项目</li>
 <li>还有就是一颗愿意折腾，好奇的心，打造属于自己私人小助手和小群体的群聊助手伙伴</li>
 </ul>
-<h1 id="效果图"><a href="#效果图" class="headerlink" title="效果图"></a>效果图</h1><img src="/.io//1686405923579.png" alt="效果图" style="zoom:20%;">
+<h1 id="效果图"><a href="#效果图" class="headerlink" title="效果图"></a>效果图</h1><img src="/.io//source/_posts/chatgpt接入微信/1686405923579.png" alt="效果图" style="zoom:20%;">
 
 <h2 id="服务器选择"><a href="#服务器选择" class="headerlink" title="服务器选择"></a>服务器选择</h2><p>由于api接口后期也被墙了，使用境外服务器的话就不需要配置代理，相对方便；</p>
 <p>我个人是弄了一台腾讯云，轻量级， CentOS7.6的操作系统 ；新人首次112一年，够用；</p>
@@ -571,90 +571,37 @@ github账号 ，用于获取项目
 <p>项目克隆步骤:</p>
 <p>1配置ssh key</p>
 <p>到服务器输入命令： </p>
-<pre class="line-numbers language-linux"><code class="language-linux">ssh-keygen -t rsa -C "xxxx@test.com"  #然后一直回车即可<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;xxxx@test.com&quot;  #然后一直回车即可</span><br></pre></td></tr></table></figure>
+
 <p> 2 输入以下命令，查看，复制生成的key ：</p>
-<pre><code>cat ~/.ssh/id_rsa.pub</code></pre><p>3将复制的内容放置于github上ssh keys上，保存即可</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
+
+<p>3将复制的内容放置于github上ssh keys上，保存即可</p>
 <h1 id="部署操作步骤"><a href="#部署操作步骤" class="headerlink" title="部署操作步骤"></a>部署操作步骤</h1><h2 id="安装相关工具和环境部署"><a href="#安装相关工具和环境部署" class="headerlink" title="安装相关工具和环境部署"></a>安装相关工具和环境部署</h2><p>环境要求为python3.9+版本</p>
 <p> 查看一下服务器是否有下载python和git：</p>
-<pre><code>[root@miyi_server ~]# python3 -V
-Python 3.9.2
-[root@miyi_server ~]# git --version
-git version 1.8.3.1</code></pre><p>我已经安装，假设你的服务器还没安装的话，则做如下操作，代码和注释已经很清晰，照着来就可以</p>
-<pre><code>yum update #更新下yum源
-yum install -y git #安装git
-cd /home #切换到/home目录下
-git clone git@github.com:zhayujie/chatgpt-on-wechat.git #去github仓库克隆项目
-yum install -y wget #安装wget，用于从Web服务器上下载python3文件
-wget https://www.python.org/ftp/python/3.9.2/Python-3.9.2.tgz #下载文件
-tar -xzvf Python-3.9.2.tgz #对文件进行解压
-yum install -y gcc # 从这里开始安装相关依赖
-yum install -y zlib-devel
-yum install openssl-devel
-yum install libffi-devel</code></pre><h2 id="配置python环境"><a href="#配置python环境" class="headerlink" title="配置python环境"></a>配置python环境</h2><p>对python进行相关操作</p>
-<pre><code>cd /home/Python-3.9.2 #进入目录
-##编译python
-./configure
-make altinstall
-ln -s /usr/local/bin/python3.9 /usr/bin/python3 #加入软链接，指向该目录
-yum install -y python3-pip  #安装pip3
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[root@miyi_server ~]# python3 -V</span><br><span class="line">Python 3.9.2</span><br><span class="line">[root@miyi_server ~]# git --version</span><br><span class="line">git version 1.8.3.1</span><br></pre></td></tr></table></figure>
 
-##安装相关依赖包
-pip3 install itchat-uos==1.5.0.dev0 #安装微信机器人的包
-pip3 install --upgrade openai  #对openai 的包进行更新
+<p>我已经安装，假设你的服务器还没安装的话，则做如下操作，代码和注释已经很清晰，照着来就可以</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">yum update #更新下yum源</span><br><span class="line">yum install -y git #安装git</span><br><span class="line">cd /home #切换到/home目录下</span><br><span class="line">git clone git@github.com:zhayujie/chatgpt-on-wechat.git #去github仓库克隆项目</span><br><span class="line">yum install -y wget #安装wget，用于从Web服务器上下载python3文件</span><br><span class="line">wget https://www.python.org/ftp/python/3.9.2/Python-3.9.2.tgz #下载文件</span><br><span class="line">tar -xzvf Python-3.9.2.tgz #对文件进行解压</span><br><span class="line">yum install -y gcc # 从这里开始安装相关依赖</span><br><span class="line">yum install -y zlib-devel</span><br><span class="line">yum install openssl-devel</span><br><span class="line">yum install libffi-devel</span><br></pre></td></tr></table></figure>
 
-##假如更新过后python的版本发生了改变，则需要重新设置一下
-rm /usr/bin/python3 #删除python3软连接 
-ln -s /usr/local/bin/python3.9 /usr/bin/python3 #重新加入软连接
-pip3 install --upgrade openai #对openai 的包进行更新</code></pre><h2 id="项目配置文件操作"><a href="#项目配置文件操作" class="headerlink" title="项目配置文件操作"></a>项目配置文件操作</h2><p>python相关配置完成之后，对项目目录进行设置，配置相关参数</p>
-<pre><code>cd ../chatgpt-on-wechat/ #进入项目目录
-cp config-template.json config.json #负制一份配置文件
+<h2 id="配置python环境"><a href="#配置python环境" class="headerlink" title="配置python环境"></a>配置python环境</h2><p>对python进行相关操作</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">cd /home/Python-3.9.2 #进入目录</span><br><span class="line">##编译python</span><br><span class="line">./configure</span><br><span class="line">make altinstall</span><br><span class="line">ln -s /usr/local/bin/python3.9 /usr/bin/python3 #加入软链接，指向该目录</span><br><span class="line">yum install -y python3-pip  #安装pip3</span><br><span class="line"></span><br><span class="line">##安装相关依赖包</span><br><span class="line">pip3 install itchat-uos==1.5.0.dev0 #安装微信机器人的包</span><br><span class="line">pip3 install --upgrade openai  #对openai 的包进行更新</span><br><span class="line"></span><br><span class="line">##假如更新过后python的版本发生了改变，则需要重新设置一下</span><br><span class="line">rm /usr/bin/python3 #删除python3软连接 </span><br><span class="line">ln -s /usr/local/bin/python3.9 /usr/bin/python3 #重新加入软连接</span><br><span class="line">pip3 install --upgrade openai #对openai 的包进行更新</span><br></pre></td></tr></table></figure>
 
-## 使用vim工具进行编辑，假设你服务器没有，只需要
-yum install -y vim
-vim config.json #打开配置文件</code></pre><p>以下配置文件的内容参数解析，根据我的注释做个人设置即可</p>
-<pre><code>{
-  &quot;open_ai_api_key&quot;: &quot;此处输入你自己的apikey&quot;,
-  &quot;model&quot;: &quot;gpt-3.5-turbo&quot;,
-  &quot;proxy&quot;: &quot;http://127.0.0.1:7890&quot;, #这便是需要配置代理的情况，假设你是境外服务器，则没有这个
-  &quot;single_chat_prefix&quot;: [
-    &quot;dan&quot; #此处为私人聊天的触发词选项，我设置为dan，私人聊天便会按照这个触发词来决定是否由bot回答
-  ],
-  &quot;single_chat_reply_prefix&quot;: &quot;&quot;,
-  &quot;group_chat_prefix&quot;: [
-    &quot;@dan&quot;  #群聊触发 为@dan
-  ],
-  &quot;group_name_white_list&quot;: [
-    &quot;ALL_GROUP&quot;  #设置所有群都开启bot功能
-  ],
-  &quot;group_chat_in_one_session&quot;: [
-    &quot;ChatGPT测试群&quot; 
-  ],
-  &quot;image_create_prefix&quot;: [
-    &quot;画&quot;,
-    &quot;看&quot;,
-    &quot;找&quot; #此为图片触发词
-  ],
-  &quot;speech_recognition&quot;: true,  #是否打开语音识别，针对私聊
-  &quot;group_speech_recognition&quot;: false,  #是否打开语音识别，针对群聊
-  &quot;voice_reply_voice&quot;: false, #是否开启语音回复
-  &quot;conversation_max_tokens&quot;: 10000, #回复token的限制长度
-  &quot;expires_in_seconds&quot;: 3600, #响应时间
-  &quot;character_desc&quot;: &quot;你是ChatGPT, 一个由OpenAI训练的大型语言模型, 你旨在回答并解决人们的任何问题，并且可以使用多种语言与人交流。&quot;,
-  &quot;subscribe_msg&quot;: &quot;感谢您的关注！\n这里是ChatGPT，可以自由对话。\n支持语音对话。\n支持图片输入。\n支持图片输出，画字开头的消息将按要求创作图片。\n支持tool、角色扮演和文字冒险等丰富的插件。\n输入{trigger_prefix}#help 查看详细指令。&quot;
-}
-</code></pre><p>配置完成 按ESC 输入  :wq 便可以保存退出</p>
+<h2 id="项目配置文件操作"><a href="#项目配置文件操作" class="headerlink" title="项目配置文件操作"></a>项目配置文件操作</h2><p>python相关配置完成之后，对项目目录进行设置，配置相关参数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">cd ../chatgpt-on-wechat/ #进入项目目录</span><br><span class="line">cp config-template.json config.json #负制一份配置文件</span><br><span class="line"></span><br><span class="line">## 使用vim工具进行编辑，假设你服务器没有，只需要</span><br><span class="line">yum install -y vim</span><br><span class="line">vim config.json #打开配置文件</span><br></pre></td></tr></table></figure>
+
+<p>以下配置文件的内容参数解析，根据我的注释做个人设置即可</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;open_ai_api_key&quot;: &quot;此处输入你自己的apikey&quot;,</span><br><span class="line">  &quot;model&quot;: &quot;gpt-3.5-turbo&quot;,</span><br><span class="line">  &quot;proxy&quot;: &quot;http://127.0.0.1:7890&quot;, #这便是需要配置代理的情况，假设你是境外服务器，则没有这个</span><br><span class="line">  &quot;single_chat_prefix&quot;: [</span><br><span class="line">    &quot;dan&quot; #此处为私人聊天的触发词选项，我设置为dan，私人聊天便会按照这个触发词来决定是否由bot回答</span><br><span class="line">  ],</span><br><span class="line">  &quot;single_chat_reply_prefix&quot;: &quot;&quot;,</span><br><span class="line">  &quot;group_chat_prefix&quot;: [</span><br><span class="line">    &quot;@dan&quot;  #群聊触发 为@dan</span><br><span class="line">  ],</span><br><span class="line">  &quot;group_name_white_list&quot;: [</span><br><span class="line">    &quot;ALL_GROUP&quot;  #设置所有群都开启bot功能</span><br><span class="line">  ],</span><br><span class="line">  &quot;group_chat_in_one_session&quot;: [</span><br><span class="line">    &quot;ChatGPT测试群&quot; </span><br><span class="line">  ],</span><br><span class="line">  &quot;image_create_prefix&quot;: [</span><br><span class="line">    &quot;画&quot;,</span><br><span class="line">    &quot;看&quot;,</span><br><span class="line">    &quot;找&quot; #此为图片触发词</span><br><span class="line">  ],</span><br><span class="line">  &quot;speech_recognition&quot;: true,  #是否打开语音识别，针对私聊</span><br><span class="line">  &quot;group_speech_recognition&quot;: false,  #是否打开语音识别，针对群聊</span><br><span class="line">  &quot;voice_reply_voice&quot;: false, #是否开启语音回复</span><br><span class="line">  &quot;conversation_max_tokens&quot;: 10000, #回复token的限制长度</span><br><span class="line">  &quot;expires_in_seconds&quot;: 3600, #响应时间</span><br><span class="line">  &quot;character_desc&quot;: &quot;你是ChatGPT, 一个由OpenAI训练的大型语言模型, 你旨在回答并解决人们的任何问题，并且可以使用多种语言与人交流。&quot;,</span><br><span class="line">  &quot;subscribe_msg&quot;: &quot;感谢您的关注！\n这里是ChatGPT，可以自由对话。\n支持语音对话。\n支持图片输入。\n支持图片输出，画字开头的消息将按要求创作图片。\n支持tool、角色扮演和文字冒险等丰富的插件。\n输入&#123;trigger_prefix&#125;#help 查看详细指令。&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>配置完成 按ESC 输入  :wq 便可以保存退出</p>
 <p>安装运行相关的python3库</p>
-<pre><code>pip3 install chatgpt_tool_hub
-pip3 install qrcode
-pip3 install pyqrcode
-python3 app.py #运行app.py，便会出现二维码，扫码登录即可使用机器人</code></pre><h2 id="让bot永不间断地回复"><a href="#让bot永不间断地回复" class="headerlink" title="让bot永不间断地回复"></a>让bot永不间断地回复</h2><p>服务是用终端进行连接的，终端进程会随着终端的关闭同时关闭，这时候即使服务器24小时开着，bot也会随着终端的关闭而停止，这时候需要想个法子让它在后台一直运行</p>
-<p>面对这个问题，采用linux下的 nohup工具便可解决</p>
-<pre><code>touch nohup.out #先创建一个nohup.out
-nohup python3 app.py &amp; tail -f nohup.out #让应用程序以后台方式运行，并将输出日志重定向到nohup.out文件中，同时使用tail -f命令来实时监控nohup.out文件的内容变化;
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">pip3 install chatgpt_tool_hub</span><br><span class="line">pip3 install qrcode</span><br><span class="line">pip3 install pyqrcode</span><br><span class="line">python3 app.py #运行app.py，便会出现二维码，扫码登录即可使用机器人</span><br></pre></td></tr></table></figure>
 
-# 当需要关闭后台时候
-ps -ef | grep app.py #查看进程
-kill -9 进程号</code></pre><p>到此，整个操作就完成了，可以实现微信机器人的功能了</p>
+<h2 id="让bot永不间断地回复"><a href="#让bot永不间断地回复" class="headerlink" title="让bot永不间断地回复"></a>让bot永不间断地回复</h2><p>服务是用终端进行连接的，终端进程会随着终端的关闭同时关闭，这时候即使服务器24小时开着，bot也会随着终端的关闭而停止，这时候需要想个法子让它在后台一直运行</p>
+<p>面对这个问题，采用linux下的 nohup工具便可解决</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">touch nohup.out #先创建一个nohup.out</span><br><span class="line">nohup python3 app.py &amp; tail -f nohup.out #让应用程序以后台方式运行，并将输出日志重定向到nohup.out文件中，同时使用tail -f命令来实时监控nohup.out文件的内容变化;</span><br><span class="line"></span><br><span class="line"># 当需要关闭后台时候</span><br><span class="line">ps -ef | grep app.py #查看进程</span><br><span class="line">kill -9 进程号</span><br></pre></td></tr></table></figure>
+
+<p>到此，整个操作就完成了，可以实现微信机器人的功能了</p>
 <h1 id="服务器代理设置"><a href="#服务器代理设置" class="headerlink" title="服务器代理设置"></a>服务器代理设置</h1><p>上面提到，用国内服务器的，需要配置相关的代理服务，在这篇里不做阐述； 大体的实现是在服务器上配置代理，方式有很多种，个人使用的是clash for linux，同样需要配置后台运行，这时候使用的则是配置systemd服务了，相对方便；配置代理文件等</p>
 <p>综上，直接使用不需要配置代理的服务器会方便很多，只需按我上面提到的操作即可。</p>
 
@@ -1149,7 +1096,7 @@ kill -9 进程号</code></pre><p>到此，整个操作就完成了，可以实�
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/24.jpg" class="responsive-img" alt="每日60s读懂世界">
+                        <img src="/medias/featureimages/26.jpg" class="responsive-img" alt="每日60s读懂世界">
                         
                         <span class="card-title">每日60s读懂世界</span>
                     </div>
@@ -1198,7 +1145,7 @@ kill -9 进程号</code></pre><p>到此，整个操作就完成了，可以实�
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="共享无价：资源分享合集">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="共享无价：资源分享合集">
                         
                         <span class="card-title">共享无价：资源分享合集</span>
                     </div>
@@ -1405,7 +1352,7 @@ kill -9 进程号</code></pre><p>到此，整个操作就完成了，可以实�
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">2.7k</span>
+            <span class="white-color">3.8k</span>
             
 
             <br>
