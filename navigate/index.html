@@ -348,7 +348,8 @@
 
 </header>
 
-    <div class="bg-cover pd-header about-cover">
+    /* 通过friends的ejs更改而来 */
+<div class="bg-cover pd-header about-cover">
     <div class="container">
     <div class="row">
     <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
@@ -394,318 +395,399 @@
 
     </div>
 </div>
+<style>
+    .friends-container {
+        margin-top: -100px;
+        margin-bottom: 30px;
+    }
+    .frind-ship img {
+        border-radius: 50%;
+    }
+    /* 以下是按钮样式 */
+    .frind-ship {
+        padding: 10px 20px;
+    }
+    .frind-ship .title {
+        display: flex;
+        align-items: center;
+    }
+    .frind-ship .title div {
+        color: #fff;
+        padding-left: 10px;
+    }
+    .frind-ship .title img {
+        width: 100px;
+        height: 100px;
+        flex-shrink: 0;
+    }
+    .frind-ship .title h1 {
+        /* line-height: auto; */
+        line-height: 0.8rem;
+        padding-bottom: 16px;
+        border-bottom: 2px solid #fff;
+    }
+    .friend-button {
+        display: flex;
+        justify-content: center;
+        margin-bottom: -27px;
+    }
+    .friend-button a {
+        border-radius: 40px;
+    }
+    .friend-all .tag-post {
+        margin-bottom: 30px;
+    }
+    .button-caution {
+        background-color: #FF4351;
+        border-color: #FF4351;
+        color: #FFF;
+    }
+    .button {
+        font-weight: 300;
+        font-size: 16px;
+        font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        text-decoration: none;
+        text-align: center;
+        line-height: 40px;
+        height: 40px;
+        padding: 0 40px;
+        margin: 0;
+        display: inline-block;
+        appearance: none;
+        cursor: pointer;
+        border: none;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-transition-property: all;
+        transition-property: all;
+        -webkit-transition-duration: .3s;
+        transition-duration: .3s;
+    }
+    .title {
+        margin-bottom: 0rem !important;
+    }
+    .card {
+        margin: 3rem 0 1rem 0 !important;
+    }
+    .button-glow.button-caution {
+        -webkit-animation-name: glowing-caution;
+        animation-name: glowing-caution;
+    }
+    @-webkit-keyframes glowing-caution {
+        from {
+            -webkit-box-shadow: 0 0 0 rgba(255, 67, 81, 0.3);
+            box-shadow: 0 0 0 rgba(255, 67, 81, 0.3);
+        }
+        50% {
+            -webkit-box-shadow: 0 0 20px rgba(255, 67, 81, 0.8);
+            box-shadow: 0 0 20px rgba(255, 67, 81, 0.8);
+        }
+        to {
+            -webkit-box-shadow: 0 0 0 rgba(255, 67, 81, 0.3);
+            box-shadow: 0 0 0 rgba(255, 67, 81, 0.3);
+        }
+    }
+    @keyframes glowing-caution {
+        from {
+            -webkit-box-shadow: 0 0 0 rgba(255, 67, 81, 0.3);
+            box-shadow: 0 0 0 rgba(255, 67, 81, 0.3);
+        }
+        50% {
+            -webkit-box-shadow: 0 0 20px rgba(255, 67, 81, 0.8);
+            box-shadow: 0 0 20px rgba(255, 67, 81, 0.8);
+        }
+        to {
+            -webkit-box-shadow: 0 0 0 rgba(255, 67, 81, 0.3);
+            box-shadow: 0 0 0 rgba(255, 67, 81, 0.3);
+        }
+    }
+    .button-caution:hover {
+        background-color: #ff7680;
+        border-color: #ff7680;
+        color: #FFF;
+        text-decoration: none;
+    }
+    .frind-card1 {
+        background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    }
+    .frind-card2 {
+        background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+    .frind-card3 {
+        background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+    }
+    .frind-card4 {
+        background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    }
+    .frind-card5 {
+        background-image: linear-gradient(to top, #c471f5 0%, #fa71cd 100%);
+    }
+    .frind-card6 {
+        background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+    }
+    .frind-card7 {
+        background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+    }
+    .frind-card8 {
+        background-image: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
+    }
+    .frind-card9 {
+        background-image: linear-gradient(to right, #ff758c 0%, #ff7eb3 100%);
+    }
+    .frind-card10 {
+        background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+    }
+
+    .friend-introduction {
+        min-height: 3rem;
+    }
+
+    article .card {
+    overflow: visible !important;
+}
+</style>
 
 <main class="content">
-    <div id="aboutme" class="container contact-container">
+    <div class="container friends-container">
         <div class="card">
             <div class="card-content">
                 <div class="card-content article-card-content">
                     <div id="articleContent" data-aos="fade-up">
-                        <p>资源汇总：<a href="https://flowus.cn/bevis23/share/416a6010-b2d6-4201-8937-b7a83099a65d" target="_blank" rel="noopener">Bevis_share</a></p>
+                        <h5 style="text-align: center;">寻找你所需要的吧^_^</h5>
 
                     </div>
                 </div>
             </div>
         </div>
-        <div class="card">
-
+        <article id="friends-link">
             
-            <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
-<link rel="stylesheet" href="/css/my-gitalk.css">
-
-<div class="card gitalk-card" data-aos="fade-up">
-    <div id="gitalk-container" class="card-content"></div>
-</div>
-
-<script src="/libs/gitalk/gitalk.min.js"></script>
-<script>
-    let gitalk = new Gitalk({
-        clientID: 'test',
-        clientSecret: 'test',
-        repo: 'Bevis23.github.io',
-        owner: 'Bevis23',
-        admin: "Bevis23",
-        id: 'navigate/index.html',
-        distractionFreeMode: false  // Facebook-like distraction free mode
-    });
-
-    gitalk.render('gitalk-container');
-</script>
             
-
+            <div class="row tags-posts friend-all">
+                
+                
+                <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
+                    <div class="card frind-card1">
+                        <div class="frind-ship">
+                            <div class="title">
+                                <img src="https://fastly.picsum.photos/id/689/200/200.jpg?hmac=2KHWG2UlfLNAWC1jiBz-LQ7b-TMOB4bcW-FVvdQ_7a4" alt="img">
+                                <div>
+                                    <h1 class="friend-name">网站资源</h1>
+                                    <p class="friend-introduction">这里有所有你想要的网站O(∩_∩)O哈哈~</p>
+                                </div>
+                            </div>
+                            <div class="friend-button">
+                                <a href="https://flowus.cn/fbdaaca4-1231-4830-ad82-b0cf3d627591" target="_blank"
+                                    class="button button-glow button-rounded button-caution">
+                                    点击跳转
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
+                    <div class="card frind-card2">
+                        <div class="frind-ship">
+                            <div class="title">
+                                <img src="https://fastly.picsum.photos/id/565/200/200.jpg?hmac=QvKo8qgzFFNcZoXCpT0CNMDTwWd3ynwqLXxrzK2o8fw" alt="img">
+                                <div>
+                                    <h1 class="friend-name">AI合集</h1>
+                                    <p class="friend-introduction">记录收集AI网站，知识运用</p>
+                                </div>
+                            </div>
+                            <div class="friend-button">
+                                <a href="https://flowus.cn/7160e336-4aa9-40d6-8b0b-ce085db5ee52" target="_blank"
+                                    class="button button-glow button-rounded button-caution">
+                                    点击跳转
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
+                    <div class="card frind-card3">
+                        <div class="frind-ship">
+                            <div class="title">
+                                <img src="https://fastly.picsum.photos/id/307/200/200.jpg?hmac=PIhz2cRjst1rfdo1qMYKQGOQWvPLoFZh0WcJj8cH828" alt="img">
+                                <div>
+                                    <h1 class="friend-name">软件与app</h1>
+                                    <p class="friend-introduction">各类软件与实用app</p>
+                                </div>
+                            </div>
+                            <div class="friend-button">
+                                <a href="https://flowus.cn/239ffc37-6660-4bb9-9e1a-8259a3b2da52" target="_blank"
+                                    class="button button-glow button-rounded button-caution">
+                                    点击跳转
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
+                    <div class="card frind-card4">
+                        <div class="frind-ship">
+                            <div class="title">
+                                <img src="https://fastly.picsum.photos/id/845/200/200.jpg?hmac=KMGSD70gM0xozvpzPM3kHIwwA2TRlVQ6d2dLW_b1vDQ" alt="img">
+                                <div>
+                                    <h1 class="friend-name">浏览器-插件</h1>
+                                    <p class="friend-introduction">让浏览器插上翅膀，提升它的功能</p>
+                                </div>
+                            </div>
+                            <div class="friend-button">
+                                <a href="https://flowus.cn/c7ed5c56-89da-417a-9895-42c25d44eb87" target="_blank"
+                                    class="button button-glow button-rounded button-caution">
+                                    点击跳转
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
+                    <div class="card frind-card5">
+                        <div class="frind-ship">
+                            <div class="title">
+                                <img src="https://fastly.picsum.photos/id/391/200/200.jpg?hmac=eWWXf2lLHPoO-zrpo97Q3ViRD7KFeO4CborOD3CC4AU" alt="img">
+                                <div>
+                                    <h1 class="friend-name">实用工具</h1>
+                                    <p class="friend-introduction">实用工具，助力提升效率</p>
+                                </div>
+                            </div>
+                            <div class="friend-button">
+                                <a href="https://flowus.cn/3f30a496-6f10-4cce-b23f-925423f232a1" target="_blank"
+                                    class="button button-glow button-rounded button-caution">
+                                    点击跳转
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
+                    <div class="card frind-card6">
+                        <div class="frind-ship">
+                            <div class="title">
+                                <img src="https://fastly.picsum.photos/id/957/200/200.jpg?hmac=EEtYnA2sFaZhrEO8XM9AI5QNDaACfYTyRwgdMNrQeDQ" alt="img">
+                                <div>
+                                    <h1 class="friend-name">github汇总</h1>
+                                    <p class="friend-introduction">收集github上精华资源</p>
+                                </div>
+                            </div>
+                            <div class="friend-button">
+                                <a href="https://flowus.cn/28e457f0-2f76-4a47-a658-b8e0aa620a07" target="_blank"
+                                    class="button button-glow button-rounded button-caution">
+                                    点击跳转
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
+                    <div class="card frind-card7">
+                        <div class="frind-ship">
+                            <div class="title">
+                                <img src="https://fastly.picsum.photos/id/881/200/200.jpg?hmac=34beeNIxYSbYK-_PTy_YXvWyn11npGQSygCM7hjOUFo" alt="img">
+                                <div>
+                                    <h1 class="friend-name">阅读</h1>
+                                    <p class="friend-introduction">阅读记录</p>
+                                </div>
+                            </div>
+                            <div class="friend-button">
+                                <a href="https://flowus.cn/c086a66a-ac53-40ed-9e93-428fcd914408" target="_blank"
+                                    class="button button-glow button-rounded button-caution">
+                                    点击跳转
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
+                    <div class="card frind-card8">
+                        <div class="frind-ship">
+                            <div class="title">
+                                <img src="https://fastly.picsum.photos/id/625/200/200.jpg?hmac=oIwf4IzbglfXYZo-9VXZTHju2-ox3D-Vooeuioav_nw" alt="img">
+                                <div>
+                                    <h1 class="friend-name">问题收集</h1>
+                                    <p class="friend-introduction">遇到的各类问题收集</p>
+                                </div>
+                            </div>
+                            <div class="friend-button">
+                                <a href="https://flowus.cn/7453e562-3bb7-4b8e-b522-699e4b389909" target="_blank"
+                                    class="button button-glow button-rounded button-caution">
+                                    点击跳转
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
+                    <div class="card frind-card9">
+                        <div class="frind-ship">
+                            <div class="title">
+                                <img src="https://fastly.picsum.photos/id/668/200/200.jpg?hmac=mVqr1fc4nHFre2QMZp5cuqUKLIRSafUtWt2vwlA9jG0" alt="img">
+                                <div>
+                                    <h1 class="friend-name">数据分析</h1>
+                                    <p class="friend-introduction">数据分析合集</p>
+                                </div>
+                            </div>
+                            <div class="friend-button">
+                                <a href="https://flowus.cn/bevis23/share/aad0122f-2c26-41e8-8552-1404e6f9e89b" target="_blank"
+                                    class="button button-glow button-rounded button-caution">
+                                    点击跳转
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
+                    <div class="card frind-card10">
+                        <div class="frind-ship">
+                            <div class="title">
+                                <img src="https://fastly.picsum.photos/id/992/200/200.jpg?hmac=PEyYl5Ux8jQFkEiXZfFSBThSPRQU1BsrdSMruB1lD4k" alt="img">
+                                <div>
+                                    <h1 class="friend-name">安全见闻</h1>
+                                    <p class="friend-introduction">安全见闻</p>
+                                </div>
+                            </div>
+                            <div class="friend-button">
+                                <a href="https://flowus.cn/bevis23/share/14c729e8-6686-4ae3-8679-9db781af00cb" target="_blank"
+                                    class="button button-glow button-rounded button-caution">
+                                    点击跳转
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
             
-
-            
-
-            
-
-            
-            <style>
-    .valine-card {
-        margin: 1.5rem auto;
-    }
-
-    .valine-card .card-content {
-        padding: 20px 20px 5px 20px;
-    }
-
-    #vcomments input[type=text],
-    #vcomments input[type=email],
-    #vcomments input[type=url],
-    #vcomments textarea {
-        box-sizing: border-box;
-    }
-
-    #vcomments p {
-        margin: 2px 2px 10px;
-        font-size: 1.05rem;
-        line-height: 1.78rem;
-    }
-
-    #vcomments blockquote p {
-        text-indent: 0.2rem;
-    }
-
-    #vcomments a {
-        padding: 0 2px;
-        color: #42b983;
-        font-weight: 500;
-        text-decoration: underline;
-    }
-
-    #vcomments img {
-        max-width: 100%;
-        height: auto;
-        cursor: pointer;
-    }
-
-    #vcomments ol li {
-        list-style-type: decimal;
-    }
-
-    #vcomments ol,
-    ul {
-        display: block;
-        padding-left: 2em;
-        word-spacing: 0.05rem;
-    }
-
-    #vcomments ul li,
-    ol li {
-        display: list-item;
-        line-height: 1.8rem;
-        font-size: 1rem;
-    }
-
-    #vcomments ul li {
-        list-style-type: disc;
-    }
-
-    #vcomments ul ul li {
-        list-style-type: circle;
-    }
-
-    #vcomments table, th, td {
-        padding: 12px 13px;
-        border: 1px solid #dfe2e5;
-    }
-
-    #vcomments table, th, td {
-        border: 0;
-    }
-
-    table tr:nth-child(2n), thead {
-        background-color: #fafafa;
-    }
-
-    #vcomments table th {
-        background-color: #f2f2f2;
-        min-width: 80px;
-    }
-
-    #vcomments table td {
-        min-width: 80px;
-    }
-
-    #vcomments h1 {
-        font-size: 1.85rem;
-        font-weight: bold;
-        line-height: 2.2rem;
-    }
-
-    #vcomments h2 {
-        font-size: 1.65rem;
-        font-weight: bold;
-        line-height: 1.9rem;
-    }
-
-    #vcomments h3 {
-        font-size: 1.45rem;
-        font-weight: bold;
-        line-height: 1.7rem;
-    }
-
-    #vcomments h4 {
-        font-size: 1.25rem;
-        font-weight: bold;
-        line-height: 1.5rem;
-    }
-
-    #vcomments h5 {
-        font-size: 1.1rem;
-        font-weight: bold;
-        line-height: 1.4rem;
-    }
-
-    #vcomments h6 {
-        font-size: 1rem;
-        line-height: 1.3rem;
-    }
-
-    #vcomments p {
-        font-size: 1rem;
-        line-height: 1.5rem;
-    }
-
-    #vcomments hr {
-        margin: 12px 0;
-        border: 0;
-        border-top: 1px solid #ccc;
-    }
-
-    #vcomments blockquote {
-        margin: 15px 0;
-        border-left: 5px solid #42b983;
-        padding: 1rem 0.8rem 0.3rem 0.8rem;
-        color: #666;
-        background-color: rgba(66, 185, 131, .1);
-    }
-
-    #vcomments pre {
-        font-family: monospace, monospace;
-        padding: 1.2em;
-        margin: .5em 0;
-        background: #272822;
-        overflow: auto;
-        border-radius: 0.3em;
-        tab-size: 4;
-    }
-
-    #vcomments code {
-        font-family: monospace, monospace;
-        padding: 1px 3px;
-        font-size: 0.92rem;
-        color: #e96900;
-        background-color: #f8f8f8;
-        border-radius: 2px;
-    }
-
-    #vcomments pre code {
-        font-family: monospace, monospace;
-        padding: 0;
-        color: #e8eaf6;
-        background-color: #272822;
-    }
-
-    #vcomments pre[class*="language-"] {
-        padding: 1.2em;
-        margin: .5em 0;
-    }
-
-    #vcomments code[class*="language-"],
-    pre[class*="language-"] {
-        color: #e8eaf6;
-    }
-
-    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
-        position: inherit;
-        margin-left: -1.3rem;
-        margin-right: 0.4rem;
-        margin-top: -1px;
-        vertical-align: middle;
-        left: unset;
-        visibility: visible;
-    }
-
-    #vcomments b,
-    strong {
-        font-weight: bold;
-    }
-
-    #vcomments dfn {
-        font-style: italic;
-    }
-
-    #vcomments small {
-        font-size: 85%;
-    }
-
-    #vcomments cite {
-        font-style: normal;
-    }
-
-    #vcomments mark {
-        background-color: #fcf8e3;
-        padding: .2em;
-    }
-
-    #vcomments table, th, td {
-        padding: 12px 13px;
-        border: 1px solid #dfe2e5;
-    }
-
-    table tr:nth-child(2n), thead {
-        background-color: #fafafa;
-    }
-
-    #vcomments table th {
-        background-color: #f2f2f2;
-        min-width: 80px;
-    }
-
-    #vcomments table td {
-        min-width: 80px;
-    }
-
-    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
-        position: inherit;
-        margin-left: -1.3rem;
-        margin-right: 0.4rem;
-        margin-top: -1px;
-        vertical-align: middle;
-        left: unset;
-        visibility: visible;
-    }
-</style>
-
-<div class="card valine-card" data-aos="fade-up">
-    <div id="vcomments" class="card-content"></div>
-</div>
-
-<script src="/libs/valine/av-min.js"></script>
-<script src="/libs/valine/Valine.min.js"></script>
-<!-- <script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script> -->
-
-<script>
-    new Valine({
-        el: '#vcomments',
-        appId: '查教程获取',
-        appKey: '查教程获取',
-        notify: 'false' === 'true',
-        verify: 'false' === 'true',
-        visitor: 'false' === 'true',
-        avatar: 'wavatar',
-        pageSize: '10',
-        lang: 'zh-cn',
-        placeholder: '如果你没有GitHub账号，还可以在这里评论啦！'
-    });
-</script>
-
-            
-
-        </div>
+        </article>
     </div>
 </main>
+
+<script>
+    $(function () {
+        $('#friends-link').masonry({
+            itemSelector: '.friend-div'
+        });
+    });
+</script>
     <!-- 不蒜子与看板娘冲突问题在于其中span -->
 <footer class="page-footer bg-color">
     <div class="container row center-align">
