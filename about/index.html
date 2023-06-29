@@ -388,13 +388,20 @@
 
 <script>
     var imageIndex = 0;
+    var cdnBaseUrl = 'https://cdn.jsdelivr.net/gh/Bevis23/blog-pic/'; // 替换为你的CDN基准URL
+
     function changeBackgroundImage() {
-        $('.bg-cover').css('background-image', 'url(/medias/banner/' + imageIndex + '.jpg)');
+        $('.bg-cover').css('background-image', 'url(' + cdnBaseUrl + imageIndex + '.jpg)');
         imageIndex = (imageIndex + 1) % 7;  // 假设你有7张图片，编号从0到6
     }
+
     changeBackgroundImage();  // 首次加载时更换背景图片
     setInterval(changeBackgroundImage, 3500);  // 每隔3500毫秒（即3.5秒）更换背景图片
 </script>
+
+
+
+
 
 
 
@@ -410,7 +417,7 @@
                     <div class="post-statis col l4 hide-on-med-and-down" data-aos="zoom-in-right">
                         
 <div class="statis">
-    <span class="count"><a href="/" target="_blank">7</a></span>
+    <span class="count"><a href="/" target="_blank">8</a></span>
     <span class="name">文章</span>
 </div>
 
@@ -424,7 +431,7 @@
 
 
 <div class="statis">
-    <span class="count"><a href="/tags" target="_blank">9</a></span>
+    <span class="count"><a href="/tags" target="_blank">10</a></span>
     <span class="name">标签</span>
 </div>
 
@@ -439,7 +446,7 @@
                                 <div class="post-statis hide-on-large-only" data-aos="zoom-in-right">
                                     
 <div class="statis">
-    <span class="count"><a href="/" target="_blank">7</a></span>
+    <span class="count"><a href="/" target="_blank">8</a></span>
     <span class="name">文章</span>
 </div>
 
@@ -453,7 +460,7 @@
 
 
 <div class="statis">
-    <span class="count"><a href="/tags" target="_blank">9</a></span>
+    <span class="count"><a href="/tags" target="_blank">10</a></span>
     <span class="name">标签</span>
 </div>
 
@@ -590,7 +597,7 @@
                 name: '文章篇数',
                 type: 'line',
                 color: ['#6772e5'],
-                data: [0,0,0,0,0,0,0,0,0,0,0,2,5],
+                data: [0,0,0,0,0,0,0,0,0,0,0,2,6],
                 markPoint: {
                     symbolSize: 45,
                     color: ['#fa755a','#3ecf8e','#82d3f4'],
@@ -632,7 +639,7 @@
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"阅读分享","value":1},{"name":"网络安全","value":2},{"name":"资源分享","value":1},{"name":"分享","value":1},{"name":"生活","value":1},{"name":"AI","value":1}],
+                data: [{"name":"网络安全","value":2},{"name":"阅读分享","value":1},{"name":"AI","value":2},{"name":"资源分享","value":1},{"name":"生活","value":1},{"name":"分享","value":1}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -656,7 +663,7 @@
         xAxis: [
             {
                 type: 'category',
-                data: ["生活","阅读","网络安全","技术科普","资源分享","分享","社工","AI","linux"]
+                data: ["生活","AI","网络安全","技术科普","阅读","linux","chatgpt","资源分享","分享","社工"]
             }
         ],
         yAxis: [
@@ -669,7 +676,7 @@
                 type: 'bar',
                 color: ['#82d3f4'],
                 barWidth : 18,
-                data: [2,1,1,1,1,1,1,1,1],
+                data: [2,2,1,1,1,1,1,1,1,1],
                 markPoint: {
                     symbolSize: 45,
                     data: [{
@@ -782,6 +789,18 @@
         <div class="tag-chips center-align">
             
             
+            <a href="/tags/网络安全/" target="_blank">
+                <span class="chip center-align waves-effect waves-light chip-default">网络安全</span>
+            </a>
+            
+            
+            
+            <a href="/tags/技术科普/" target="_blank">
+                <span class="chip center-align waves-effect waves-light chip-default">技术科普</span>
+            </a>
+            
+            
+            
             <a href="/tags/生活/" target="_blank">
                 <span class="chip center-align waves-effect waves-light chip-default">生活</span>
             </a>
@@ -794,14 +813,20 @@
             
             
             
-            <a href="/tags/网络安全/" target="_blank">
-                <span class="chip center-align waves-effect waves-light chip-default">网络安全</span>
+            <a href="/tags/AI/" target="_blank">
+                <span class="chip center-align waves-effect waves-light chip-default">AI</span>
             </a>
             
             
             
-            <a href="/tags/技术科普/" target="_blank">
-                <span class="chip center-align waves-effect waves-light chip-default">技术科普</span>
+            <a href="/tags/linux/" target="_blank">
+                <span class="chip center-align waves-effect waves-light chip-default">linux</span>
+            </a>
+            
+            
+            
+            <a href="/tags/chatgpt/" target="_blank">
+                <span class="chip center-align waves-effect waves-light chip-default">chatgpt</span>
             </a>
             
             
@@ -820,18 +845,6 @@
             
             <a href="/tags/社工/" target="_blank">
                 <span class="chip center-align waves-effect waves-light chip-default">社工</span>
-            </a>
-            
-            
-            
-            <a href="/tags/AI/" target="_blank">
-                <span class="chip center-align waves-effect waves-light chip-default">AI</span>
-            </a>
-            
-            
-            
-            <a href="/tags/linux/" target="_blank">
-                <span class="chip center-align waves-effect waves-light chip-default">linux</span>
             </a>
             
             
@@ -919,7 +932,7 @@
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">5.4k</span>
+            <span class="white-color">13.6k</span>
             
 
             <br>

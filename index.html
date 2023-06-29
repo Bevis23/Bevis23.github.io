@@ -435,13 +435,20 @@
 
 <script>
     var imageIndex = 0;
+    var cdnBaseUrl = 'https://cdn.jsdelivr.net/gh/Bevis23/blog-pic/'; // 替换为你的CDN基准URL
+
     function changeBackgroundImage() {
-        $('.bg-cover').css('background-image', 'url(/medias/banner/' + imageIndex + '.jpg)');
+        $('.bg-cover').css('background-image', 'url(' + cdnBaseUrl + imageIndex + '.jpg)');
         imageIndex = (imageIndex + 1) % 7;  // 假设你有7张图片，编号从0到6
     }
+
     changeBackgroundImage();  // 首次加载时更换背景图片
     setInterval(changeBackgroundImage, 3500);  // 每隔3500毫秒（即3.5秒）更换背景图片
 </script>
+
+
+
+
 
 
 
@@ -495,7 +502,7 @@
     
     
     <div class="carousel-item amber white-text carousel-post bg-cover"
-            style="background-image: url('/medias/featureimages/1.jpg');">
+            style="background-image: url('/medias/featureimages/4.jpg');">
         <div class="container">
             <div class="row">
                 <div class="col s10 offset-s1">
@@ -517,7 +524,59 @@
     
     
     <div class="carousel-item amber white-text carousel-post bg-cover"
-            style="background-image: url('/medias/featureimages/5.jpg');">
+            style="background-image: url('/medias/featureimages/7.jpg');">
+        <div class="container">
+            <div class="row">
+                <div class="col s10 offset-s1">
+                    <div class="title center-align">chatgpt接入微信</div>
+                    <div class="description center-align">
+                    
+                        做好前期准备
+一台云服务器
+一个chatgpt账号，带有apikey，用于使用api接口
+github账号 ，用于获取项目
+还有就是一颗愿意折腾，好奇的心，打造属于自己私人小助手和小群体的群聊助手伙伴
+
+效果图
+
+服务器选择由于api接口后
+                    
+                    </div>
+                    <div class="cover-btns">
+                        <a href="/2023/06/11/chatgpt-jie-ru-wei-xin/" class="waves-effect waves-light btn" target="_blank">
+                            <i class="icon fa fa-eye fa-fw"></i>阅读更多
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="carousel-item amber white-text carousel-post bg-cover"
+            style="background-image: url('/medias/featureimages/23.jpg');">
+        <div class="container">
+            <div class="row">
+                <div class="col s10 offset-s1">
+                    <div class="title center-align">chatgpt-prompt工程</div>
+                    <div class="description center-align">
+                    
+                        引言​        在人工智能技术的不断发展中，chatgpt 这一强大的聊天机器人应运而生 ；强大的AI模型，在聊天对话中，展示的能力有目共睹；在大家都享用AI带来的某些便利的时候，心细的人已经发现了一个问题——AI对于不同的提问，给出
+                    
+                    </div>
+                    <div class="cover-btns">
+                        <a href="/2023/06/29/chatgpt-prompt-gong-cheng/" class="waves-effect waves-light btn" target="_blank">
+                            <i class="icon fa fa-eye fa-fw"></i>阅读更多
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="carousel-item amber white-text carousel-post bg-cover"
+            style="background-image: url('/medias/featureimages/8.jpg');">
         <div class="container">
             <div class="row">
                 <div class="col s10 offset-s1">
@@ -540,29 +599,7 @@
     
     
     <div class="carousel-item amber white-text carousel-post bg-cover"
-            style="background-image: url('/medias/featureimages/25.jpg');">
-        <div class="container">
-            <div class="row">
-                <div class="col s10 offset-s1">
-                    <div class="title center-align">每日60s读懂世界</div>
-                    <div class="description center-align">
-                    
-                        
-                    
-                    </div>
-                    <div class="cover-btns">
-                        <a href="/2023/06/11/mei-ri-60s/" class="waves-effect waves-light btn" target="_blank">
-                            <i class="icon fa fa-eye fa-fw"></i>阅读更多
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    
-    <div class="carousel-item amber white-text carousel-post bg-cover"
-            style="background-image: url('/medias/featureimages/24.jpg');">
+            style="background-image: url('/medias/featureimages/27.jpg');">
         <div class="container">
             <div class="row">
                 <div class="col s10 offset-s1">
@@ -586,26 +623,18 @@
     
     
     <div class="carousel-item amber white-text carousel-post bg-cover"
-            style="background-image: url('/medias/featureimages/4.jpg');">
+            style="background-image: url('/medias/featureimages/28.jpg');">
         <div class="container">
             <div class="row">
                 <div class="col s10 offset-s1">
-                    <div class="title center-align">chatgpt接入微信</div>
+                    <div class="title center-align">每日60s读懂世界</div>
                     <div class="description center-align">
                     
-                        做好前期准备
-一台云服务器
-一个chatgpt账号，带有apikey，用于使用api接口
-github账号 ，用于获取项目
-还有就是一颗愿意折腾，好奇的心，打造属于自己私人小助手和小群体的群聊助手伙伴
-
-效果图
-
-服务器选择由于api接口后
+                        
                     
                     </div>
                     <div class="cover-btns">
-                        <a href="/2023/06/11/chatgpt-jie-ru-wei-xin/" class="waves-effect waves-light btn" target="_blank">
+                        <a href="/2023/06/11/mei-ri-60s/" class="waves-effect waves-light btn" target="_blank">
                             <i class="icon fa fa-eye fa-fw"></i>阅读更多
                         </a>
                     </div>
@@ -740,8 +769,8 @@ $(function () {
 
     
     
-    <div class="col s12" >
-        <div class="post-card" style="background-image: url('/medias/featureimages/1.jpg')">
+    <div class="col s12 m6" >
+        <div class="post-card" style="background-image: url('/medias/featureimages/4.jpg')">
             <div class="post-body">
                 <div class="post-categories">
                     
@@ -751,7 +780,11 @@ $(function () {
                 <a href="/2023/05/27/dream/" target="_blank">
                     <h3 class="post-title">dream</h3>
                 </a>
-                <p class="post-description">不是每个人都应该像我这样去建造一座水晶大教堂，但是每个人都应该拥有自己的梦想，设计自己的梦想，追求自己的梦想，实现自己的梦想。梦想是生命的灵魂，是心灵的灯塔，是引导人走向</p>
+                <p class="post-description">
+                    
+                        不是每个人都应该像我这样去建造一座水晶大教堂，但是每个人都应该拥有自己的梦想，设计自己的梦想，追求自己的梦想，实现自己的梦想。梦想是生命的灵
+                    
+                </p>
                 <a href="/2023/05/27/dream/" target="_blank"
                         class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #FF5E3A 0%, #FF2A68 100%)">
                     <i class="icon fa fa-eye fa-fw"></i>阅读更多
@@ -761,73 +794,8 @@ $(function () {
     </div>
     
     
-    <div class="col s12 m6" data-aos="zoom-in-up">
-        <div class="post-card" style="background-image: url('/medias/featureimages/5.jpg')">
-            <div class="post-body">
-                <div class="post-categories">
-                    
-                    <a href="/categories/资源分享/" class="category" target="_blank">资源分享</a>
-                    
-                </div>
-                <a href="/2023/06/09/gong-xiang-wu-jie-zi-yuan-fen-xiang-he-ji/" target="_blank">
-                    <h3 class="post-title">共享无价：资源分享合集</h3>
-                </a>
-                <p class="post-description">共享无价：资源分享合集引言遇到某些问题，需要啥资源了，就来看此帖，主张一个   “你刚好需要，而我，刚好出现O(∩_∩)O”
-当我们需要某些</p>
-                <a href="/2023/06/09/gong-xiang-wu-jie-zi-yuan-fen-xiang-he-ji/" target="_blank"
-                        class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #EF4DB6 0%, #C643FC 100%)">
-                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
-                </a>
-            </div>
-        </div>
-    </div>
-    
-    
-    <div class="col s12 m6" data-aos="zoom-in-up">
-        <div class="post-card" style="background-image: url('/medias/featureimages/25.jpg')">
-            <div class="post-body">
-                <div class="post-categories">
-                    
-                    <a href="/categories/分享/" class="category" target="_blank">分享</a>
-                    
-                </div>
-                <a href="/2023/06/11/mei-ri-60s/" target="_blank">
-                    <h3 class="post-title">每日60s读懂世界</h3>
-                </a>
-                <p class="post-description"></p>
-                <a href="/2023/06/11/mei-ri-60s/" target="_blank"
-                        class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #1AD6FD 0%, #1D62F0 100%)">
-                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
-                </a>
-            </div>
-        </div>
-    </div>
-    
-    
-    <div class="col s12" data-aos="zoom-in-up">
-        <div class="post-card" style="background-image: url('/medias/featureimages/24.jpg')">
-            <div class="post-body">
-                <div class="post-categories">
-                    
-                    <a href="/categories/生活/" class="category" target="_blank">生活</a>
-                    
-                </div>
-                <a href="/2023/05/25/bo-ke-de-xin-kai-shi/" target="_blank">
-                    <h3 class="post-title">博客的新开始</h3>
-                </a>
-                <p class="post-description">欢迎来到我的博客欢迎大家来到我的博客！我很高兴你们能在这个虚拟空间中找到我。
-博客的目标这个博客的主要目标是分享和记录。我将在这里分享我的一些知识与资源、经验和想法，同时</p>
-                <a href="/2023/05/25/bo-ke-de-xin-kai-shi/" target="_blank"
-                        class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #FFCC00 0%, #FF9500 100%)">
-                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
-                </a>
-            </div>
-        </div>
-    </div>
-    
-    
-    <div class="col s12 m6" data-aos="zoom-in-up">
-        <div class="post-card" style="background-image: url('/medias/featureimages/4.jpg')">
+    <div class="col s12 m6" >
+        <div class="post-card" style="background-image: url('/medias/featureimages/7.jpg')">
             <div class="post-body">
                 <div class="post-categories">
                     
@@ -837,13 +805,119 @@ $(function () {
                 <a href="/2023/06/11/chatgpt-jie-ru-wei-xin/" target="_blank">
                     <h3 class="post-title">chatgpt接入微信</h3>
                 </a>
-                <p class="post-description">做好前期准备
+                <p class="post-description">
+                    
+                        做好前期准备
 一台云服务器
 一个chatgpt账号，带有apikey，用于使用api接口
 github账号 ，用于获取项目
-还有就是一颗愿意</p>
+还有就是一颗愿意
+                    
+                </p>
                 <a href="/2023/06/11/chatgpt-jie-ru-wei-xin/" target="_blank"
+                        class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #EF4DB6 0%, #C643FC 100%)">
+                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="col s12 m6" data-aos="zoom-in-up">
+        <div class="post-card" style="background-image: url('/medias/featureimages/23.jpg')">
+            <div class="post-body">
+                <div class="post-categories">
+                    
+                    <a href="/categories/AI/" class="category" target="_blank">AI</a>
+                    
+                </div>
+                <a href="/2023/06/29/chatgpt-prompt-gong-cheng/" target="_blank">
+                    <h3 class="post-title">chatgpt-prompt工程</h3>
+                </a>
+                <p class="post-description">
+                    
+                        引言​        在人工智能技术的不断发展中，chatgpt 这一强大的聊天机器人应运而生 ；强大的AI模型，在聊天对话中，展示的能力有
+                    
+                </p>
+                <a href="/2023/06/29/chatgpt-prompt-gong-cheng/" target="_blank"
+                        class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #1AD6FD 0%, #1D62F0 100%)">
+                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="col s12 m6" data-aos="zoom-in-up">
+        <div class="post-card" style="background-image: url('/medias/featureimages/8.jpg')">
+            <div class="post-body">
+                <div class="post-categories">
+                    
+                    <a href="/categories/资源分享/" class="category" target="_blank">资源分享</a>
+                    
+                </div>
+                <a href="/2023/06/09/gong-xiang-wu-jie-zi-yuan-fen-xiang-he-ji/" target="_blank">
+                    <h3 class="post-title">共享无价：资源分享合集</h3>
+                </a>
+                <p class="post-description">
+                    
+                        共享无价：资源分享合集引言遇到某些问题，需要啥资源了，就来看此帖，主张一个   “你刚好需要，而我，刚好出现O(∩_∩)O”
+当我们需要某些
+                    
+                </p>
+                <a href="/2023/06/09/gong-xiang-wu-jie-zi-yuan-fen-xiang-he-ji/" target="_blank"
+                        class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #FFCC00 0%, #FF9500 100%)">
+                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="col s12 m6" data-aos="zoom-in-up">
+        <div class="post-card" style="background-image: url('/medias/featureimages/27.jpg')">
+            <div class="post-body">
+                <div class="post-categories">
+                    
+                    <a href="/categories/生活/" class="category" target="_blank">生活</a>
+                    
+                </div>
+                <a href="/2023/05/25/bo-ke-de-xin-kai-shi/" target="_blank">
+                    <h3 class="post-title">博客的新开始</h3>
+                </a>
+                <p class="post-description">
+                    
+                        欢迎来到我的博客欢迎大家来到我的博客！我很高兴你们能在这个虚拟空间中找到我。
+博客的目标这个博客的主要目标是分享和记录。我将在这里分享我的一
+                    
+                </p>
+                <a href="/2023/05/25/bo-ke-de-xin-kai-shi/" target="_blank"
                         class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%)">
+                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="col s12 m6" data-aos="zoom-in-up">
+        <div class="post-card" style="background-image: url('/medias/featureimages/28.jpg')">
+            <div class="post-body">
+                <div class="post-categories">
+                    
+                    <a href="/categories/分享/" class="category" target="_blank">分享</a>
+                    
+                </div>
+                <a href="/2023/06/11/mei-ri-60s/" target="_blank">
+                    <h3 class="post-title">每日60s读懂世界</h3>
+                </a>
+                <p class="post-description">
+                    
+                        
+                    
+                </p>
+                <a href="/2023/06/11/mei-ri-60s/" target="_blank"
+                        class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #C644FC 0%, #5856D6 100%)">
                     <i class="icon fa fa-eye fa-fw"></i>阅读更多
                 </a>
             </div>
@@ -869,11 +943,62 @@ github账号 ，用于获取项目
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
+                    <a href="/2023/06/29/chatgpt-prompt-gong-cheng/" target="_blank">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="chatgpt-prompt工程">
+                            
+                            <span class="card-title">chatgpt-prompt工程</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                            引言​        在人工智能技术的不断发展中，chatgpt 这一强大的聊天机器人应运而生 ；强大的AI模型，在聊天对话中，展示的能力有目共睹；在大家都享用AI带来的某些便利的时候，心细的人已经发现了一个问题——AI对于不同的提问，给出
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2023-06-29
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/AI/" class="post-category" target="_blank">
+                                    AI
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/AI/" target="_blank">
+                            <span class="chip bg-color">AI</span>
+                        </a>
+                        
+                        <a href="/tags/chatgpt/" target="_blank">
+                            <span class="chip bg-color">chatgpt</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
                     <a href="/2023/06/26/she-hui-gong-cheng-xue/" target="_blank">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="社会工程学">
+                            <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="社会工程学">
                             
                             <span class="card-title">社会工程学</span>
                         </div>
@@ -921,7 +1046,7 @@ github账号 ，用于获取项目
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="google_hacking">
+                            <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="google_hacking">
                             
                             <span class="card-title">google_hacking</span>
                         </div>
@@ -972,7 +1097,7 @@ github账号 ，用于获取项目
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="每日60s读懂世界">
+                            <img src="/medias/featureimages/28.jpg" class="responsive-img" alt="每日60s读懂世界">
                             
                             <span class="card-title">每日60s读懂世界</span>
                         </div>
@@ -1019,7 +1144,7 @@ github账号 ，用于获取项目
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="chatgpt接入微信">
+                            <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="chatgpt接入微信">
                             
                             <span class="card-title">chatgpt接入微信</span>
                         </div>
@@ -1078,7 +1203,7 @@ github账号 ，用于获取项目
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="共享无价：资源分享合集">
+                            <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="共享无价：资源分享合集">
                             
                             <span class="card-title">共享无价：资源分享合集</span>
                         </div>
@@ -1126,7 +1251,7 @@ github账号 ，用于获取项目
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="dream">
+                            <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="dream">
                             
                             <span class="card-title">dream</span>
                         </div>
@@ -1177,7 +1302,7 @@ github账号 ，用于获取项目
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/24.jpg" class="responsive-img" alt="博客的新开始">
+                            <img src="/medias/featureimages/27.jpg" class="responsive-img" alt="博客的新开始">
                             
                             <span class="card-title">博客的新开始</span>
                         </div>
@@ -1234,7 +1359,7 @@ github账号 ，用于获取项目
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">5.4k</span>
+            <span class="white-color">13.6k</span>
             
 
             <br>

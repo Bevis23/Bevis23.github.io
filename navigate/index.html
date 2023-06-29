@@ -382,13 +382,20 @@
 
 <script>
     var imageIndex = 0;
+    var cdnBaseUrl = 'https://cdn.jsdelivr.net/gh/Bevis23/blog-pic/'; // 替换为你的CDN基准URL
+
     function changeBackgroundImage() {
-        $('.bg-cover').css('background-image', 'url(/medias/banner/' + imageIndex + '.jpg)');
+        $('.bg-cover').css('background-image', 'url(' + cdnBaseUrl + imageIndex + '.jpg)');
         imageIndex = (imageIndex + 1) % 7;  // 假设你有7张图片，编号从0到6
     }
+
     changeBackgroundImage();  // 首次加载时更换背景图片
     setInterval(changeBackgroundImage, 3500);  // 每隔3500毫秒（即3.5秒）更换背景图片
 </script>
+
+
+
+
 
 
 
@@ -795,7 +802,7 @@
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">5.4k</span>
+            <span class="white-color">13.6k</span>
             
 
             <br>

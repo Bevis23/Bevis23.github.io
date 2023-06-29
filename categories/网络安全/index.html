@@ -381,13 +381,20 @@
 
 <script>
     var imageIndex = 0;
+    var cdnBaseUrl = 'https://cdn.jsdelivr.net/gh/Bevis23/blog-pic/'; // 替换为你的CDN基准URL
+
     function changeBackgroundImage() {
-        $('.bg-cover').css('background-image', 'url(/medias/banner/' + imageIndex + '.jpg)');
+        $('.bg-cover').css('background-image', 'url(' + cdnBaseUrl + imageIndex + '.jpg)');
         imageIndex = (imageIndex + 1) % 7;  // 假设你有7张图片，编号从0到6
     }
+
     changeBackgroundImage();  // 首次加载时更换背景图片
     setInterval(changeBackgroundImage, 3500);  // 每隔3500毫秒（即3.5秒）更换背景图片
 </script>
+
+
+
+
 
 
 
@@ -408,19 +415,28 @@
                 
                 
                 
+                <a href="/categories/网络安全/" title="网络安全: 2">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-active "
+                            style="background-color: #F9EBEA;">网络安全
+                        <span class="tag-length">2</span>
+                    </span>
+                </a>
+                
+                
                 <a href="/categories/阅读分享/" title="阅读分享: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            style="background-color: #F9EBEA;">阅读分享
+                            style="background-color: #F5EEF8;">阅读分享
                         <span class="tag-length">1</span>
                     </span>
                 </a>
                 
                 
-                <a href="/categories/网络安全/" title="网络安全: 2">
+                <a href="/categories/AI/" title="AI: 2">
                     <span class="chip center-align waves-effect waves-light
-                             chip-active "
-                            style="background-color: #F5EEF8;">网络安全
+                             chip-default "
+                            style="background-color: #D5F5E3;">AI
                         <span class="tag-length">2</span>
                     </span>
                 </a>
@@ -429,16 +445,7 @@
                 <a href="/categories/资源分享/" title="资源分享: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            style="background-color: #D5F5E3;">资源分享
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/categories/分享/" title="分享: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            style="background-color: #E8F8F5;">分享
+                            style="background-color: #E8F8F5;">资源分享
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -453,10 +460,10 @@
                 </a>
                 
                 
-                <a href="/categories/AI/" title="AI: 1">
+                <a href="/categories/分享/" title="分享: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            style="background-color: #F8F9F9;">AI
+                            style="background-color: #F8F9F9;">分享
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -478,7 +485,7 @@
                         <div class="card-image tag-image">
                             
                             
-                            <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="社会工程学">
+                            <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="社会工程学">
                             
                             <span class="card-title">社会工程学</span>
                         </div>
@@ -525,7 +532,7 @@
                         <div class="card-image tag-image">
                             
                             
-                            <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="google_hacking">
+                            <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="google_hacking">
                             
                             <span class="card-title">google_hacking</span>
                         </div>
@@ -582,7 +589,7 @@
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">5.4k</span>
+            <span class="white-color">13.6k</span>
             
 
             <br>
