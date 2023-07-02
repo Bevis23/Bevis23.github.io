@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>宝塔面板-简化服务器管理与部署的利器</title>
+      <link href="/2023/07/02/bao-ta/"/>
+      <url>/2023/07/02/bao-ta/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h1><p> 在当今数字化时代，拥有一个稳定高效的服务器以及能够轻松管理和部署应用程序的能力对于个人用户和小型企业来说至关重要。然而，服务器管理和应用程序部署常常需要专业知识和复杂的操作步骤，给非技术背景的用户带来了挑战。正是为了解决这一问题，宝塔面板应运而生。宝塔面板以其简单易用、功能强大的特点，成为了许多人理想的选择。 </p><h1 id="宝塔简介"><a href="#宝塔简介" class="headerlink" title="宝塔简介"></a>宝塔简介</h1><p> 宝塔面板是一款服务器管理软件，可以帮助用户建立网站，一键配置服务器环境，使得用户通过web界面就可以轻松的管理安装所用的服务器软件。  </p><!--主要特点和功能：--> <ol><li>简单易用：宝塔提供直观的Web界面，使服务器管理变得简单易用，即使对于没有专业技术知识的用户也能轻松上手。</li><li>多服务器管理：通过宝塔，您可以同时管理多个服务器，包括虚拟私有服务器（VPS）、独立服务器等，无需登录到每个服务器进行管理。</li><li>网站管理：宝塔支持快速创建、删除、备份和恢复网站，还可以管理域名、SSL证书、FTP账号等。</li><li>数据库管理：宝塔提供MySQL、Redis、MongoDB等常用数据库的管理功能，可以方便地创建数据库、导入导出数据、管理用户等。</li><li>文件管理：通过宝塔的文件管理器，您可以在Web界面中直接管理服务器上的文件和目录，进行上传、下载、编辑等操作。</li><li>应用程序部署：宝塔支持一键安装各种流行的Web应用程序，如WordPress、Joomla、Discuz等，让您能够快速搭建网站。</li><li>监控和统计：宝塔提供实时的服务器资源监控和统计数据，包括CPU、内存、磁盘使用情况等，方便您了解服务器的运行状态。</li><li>安全性：宝塔内置了防火墙、安全加固等功能，可以提高服务器的安全性，减少潜在的风险。</li></ol><h1 id="宝塔的安装"><a href="#宝塔的安装" class="headerlink" title="宝塔的安装"></a>宝塔的安装</h1><p> <strong>宝塔官网地址：<a href="https://www.bt.cn/new/index.html" target="_blank" rel="noopener">https://www.bt.cn/new/index.html</a></strong> </p><p>操作步骤：</p><ol><li><p>访问官网，点击“立即免费安装”</p></li><li><p>点击“安装脚本”</p></li><li><p>根据自己服务器系统，选择对应的脚本，我的服务器部署的是Centos系统，所以我这里选择的是Centos安装脚本</p></li><li><p>复制命令执行命令进行安装</p><pre class=" language-linux"><code class="language-linux">yum install -y wget && wget -O install.sh http://download.bt.cn/install/install_6.0.sh && sh install.sh</code></pre></li><li><p>安裝成功效果图，将端口信息和账号密码等保存记录起来</p><img src="https://cdn.jsdelivr.net/gh/Bevis23/blog-pic/%E9%9D%A2%E6%9D%BF%E5%AE%89%E8%A3%85%E6%88%90%E5%8A%9F.png" style="zoom:50%;"></li><li><p>服务器安全组添加36085端口规则</p><img src="https://cdn.jsdelivr.net/gh/Bevis23/blog-pic/%E5%AE%9D%E5%A1%94%E7%AB%AF%E5%8F%A3%E6%B7%BB%E5%8A%A0.png" style="zoom:50%;"></li></ol><h1 id="宝塔面板的使用"><a href="#宝塔面板的使用" class="headerlink" title="宝塔面板的使用"></a>宝塔面板的使用</h1><ol><li><h2 id="登录宝塔面板"><a href="#登录宝塔面板" class="headerlink" title="登录宝塔面板"></a>登录宝塔面板</h2><ol><li>在浏览器地址栏中输入所记录的外网面板地址，例如：<a href="http://ip：端口号/面板值" target="_blank" rel="noopener">http://ip：端口号/面板值</a></li><li>出现登录界面：输入刚才记录的账号和密码，点击“登录”</li><li>勾选“我已阅读并同意‘用户协议’”</li><li>绑定宝塔账号： 第一次登录需要绑定宝塔账号，要是有宝塔账号的直接登录就可以，没有的话就先去注册一个再进行登录 </li></ol></li><li><h2 id="安装环境套件"><a href="#安装环境套件" class="headerlink" title="安装环境套件"></a>安装环境套件</h2><ol><li>首次使用宝塔面板推荐安装一组套件，对于刚接触Linux环境部署的博友们，推荐使用<em>LNMP</em>，采用极速安装、一键安装的方式 <!-- LNMP和LAMP环境主要的区别在于web服务器上面，LNMP使用的是Nginx服务器，而LAMP使用的是Apache服务器。Nginx 性能稳定、功能丰富、运维简单、处理静态文件速度快且消耗系统资源极少。 --></li></ol></li><li><h2 id="宝塔面板首页介绍"><a href="#宝塔面板首页介绍" class="headerlink" title="宝塔面板首页介绍"></a>宝塔面板首页介绍</h2><p><img src="https://cdn.jsdelivr.net/gh/Bevis23/blog-pic/%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF%E4%BB%8B%E7%BB%8D.png" alt></p><ol><li>系统操作<br>显示当前服务器系统类型、服务器运行时间、面板版本、面板升级更新入口、并提供宝塔账号绑定、微信小程序绑定、服务器重启、面板重启、修复面板等快捷功能。</li><li>服务器状态<br>显示当前服务器CPU、内存、硬盘的使用率、内存清理，所有状态均取自服务器真实数据。<br>内存的清理：点击内存图标中的小火箭图标，即可实现清理功能。</li><li>站点信息<br>显示当前面板管理的站点、FTP、数据库数量，仅提供数量显示，如需添加站点，请在网站选项中添加站点。</li><li>软件管理<br>首页软件快速方式，可以实现拖动图片，更换顺序、管理软件等功能。</li><li>网络流量<br>实时显示当前服务器网络流量的上传和下载速度，总上传流量，总下载流量。<br>注：当前网络流量数据，直接取自网卡数据，包含内外网流量。</li></ol></li></ol><p>   到此为止宝塔面板便安装成功，使用的话针对各自需求来做， 宝塔面板作为一款简化服务器管理和应用程序部署的利器，具有诸多优势。它提供了直观的Web界面，使得服务器管理变得简单~ </p><h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p>   总之，宝塔作为一款强大而全面的服务器管理面板软件，为用户提供了简化服务器管理和网站运维的便利。无论是初学者还是有经验的开发人员，都可以通过宝塔轻松地搭建、配置和管理自己的服务器和网站。它提供了丰富的功能，包括网站管理、数据库管理、文件管理、应用管理、服务器监控、安全设置和DNS管理等。通过宝塔，您可以更加高效地管理和维护您的服务器和网站，节省时间和精力，使您能够专注于更重要的任务和项目。无论是个人网站、企业网站还是开发团队，宝塔都是一个值得推荐和使用的优秀工具。 让它成为你提高效率的工具吧<del>~</del></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 工具 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> linux </tag>
+            
+            <tag> 工具 </tag>
+            
+            <tag> 可视化 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>chatgpt-prompt工程</title>
       <link href="/2023/06/29/chatgpt-prompt-gong-cheng/"/>
       <url>/2023/06/29/chatgpt-prompt-gong-cheng/</url>
@@ -130,9 +159,9 @@
             
             <tag> AI </tag>
             
-            <tag> linux </tag>
-            
             <tag> chatgpt </tag>
+            
+            <tag> linux </tag>
             
         </tags>
       
