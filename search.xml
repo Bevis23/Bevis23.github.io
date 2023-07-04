@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>samba服务器搭建配置与连接公网</title>
+      <link href="/2023/07/05/samba/"/>
+      <url>/2023/07/05/samba/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h1><p>本文将呈现 ： 1.samba服务的相关背景与原理  2.samba服务的搭建与配置（针对内网）  3.配置win10连接公网ip连接samba服务（针对公网）</p><p>之前服务器于搭建chatgpt的微信机器人后，闲暇之余想做个文件服务器，选择了samba做文件共享，轻松搞定于局域网共享，但由于要给远方的朋友也使用，便有了让远方朋友连接公网ip的samba服务器，由于考虑到端口问题，比如445端口（注释），所以得突破这个点，后面有了一个思路，便是通过 netsh来设置端口映射</p><blockquote><p>注释！</p><p>samba是默认使用445端口进行通信，且服务针对windows， windows 默认连的是 445 端口 </p><p>2017年5月，出现了永恒之蓝病毒（比特币勒索病毒）， 永恒之蓝（EternalBlue）是一种利用Windows操作系统中的漏洞进行攻击的网络蠕虫病毒。它最初由美国国家安全局（NSA）开发，在泄露后被黑客组织使用，给全球范围内的计算机系统带来了严重的影响。  由此导致运营商（内地三大运营服务商）把 445 端口封了，因此现在无法通过 445 端口连接你的 linux 服务器了</p></blockquote><h1 id="1-samba服务简介"><a href="#1-samba服务简介" class="headerlink" title="1.samba服务简介"></a>1.samba服务简介</h1><h2 id="1-1什么是samba服务"><a href="#1-1什么是samba服务" class="headerlink" title="1.1什么是samba服务"></a>1.1什么是samba服务</h2><p> Samba是一个能让Linux系统应用Microsoft网络通讯协议的软件，而SMB是<strong>Server Message Block</strong>的缩写，即为服务器消息块 ，SMB主要是作为Microsoft的网络通讯协议，后来Samba将SMB通信协议应用到了Linux系统上，就形成了现在的Samba软件；Samba提供了一种在不同操作系统之间共享文件、打印机和其他资源的方法。它的本质是一个实现了SMB/CIFS协议的服务器软件，允许不同操作系统的计算机之间进行文件共享和通信。</p><h2 id="1-2samba服务的应用"><a href="#1-2samba服务的应用" class="headerlink" title="1.2samba服务的应用"></a>1.2samba服务的应用</h2><p><strong>Samba能做什么？</strong></p><ul><li><p>分享档案与打印机服务</p></li><li><p>可以提供用户登入Samba主机时的身份认证，以提供不同身份者的个别数据。</p></li><li><p>可以进行windows网络上的主机名解析</p></li><li><p>可以进行装置的分享</p><p><strong>Samba服务器的应用实例：</strong></p></li><li><p>利用软件直接编修WWW主机上面的网页数据</p><ul><li>用FTP修改，后上传；不方便，很有可能传上去旧版本的。</li><li>在线修改比较能迅速看到结果。</li></ul></li><li><p>做成可直接联机的文件服务器</p><ul><li>因为每个人登陆的账户名不同，这样对目录的权限也不同，实现权限控制。</li></ul></li></ul><h1 id="2-samba服务器的搭建（内网）"><a href="#2-samba服务器的搭建（内网）" class="headerlink" title="2.samba服务器的搭建（内网）"></a>2.samba服务器的搭建（内网）</h1><h2 id="第一步：安装samba服务"><a href="#第一步：安装samba服务" class="headerlink" title="第一步：安装samba服务"></a>第一步：安装samba服务</h2><pre class=" language-linux"><code class="language-linux">yum -y install samba*    ## 安装samba服务systemctl start smb      ## 启动服务systemctl enable smb    ##让系统在引导时自动启动 Samba 服务firewall-cmd --permanent --add-service=samba## 防火墙添加 Samba 服务的规则，允许传入和传出与 Samba 相关的网络流量，--permanent 参数表示将规则永久保存，以便在系统重启后仍然有效firewall-cmd --reload   ## 有permanent参数的时候需要马上重载生效getenforce ## 获取 SELinux 当前的执行模式，此时为permissive模式便可，否则使用命令：setenforce 0          ## Enforcing：表示 SELinux 正在强制执行安全策略，并且会拒绝违反策略的操作。          ## Permissive：表示 SELinux 已被启用，但仅会记录违反策略的操作而不阻止它们。          ## Disabled：表示 SELinux 已被禁用，不会对系统进行强制访问控制。</code></pre><h2 id="第二步：Samba服务的配置"><a href="#第二步：Samba服务的配置" class="headerlink" title="第二步：Samba服务的配置"></a>第二步：Samba服务的配置</h2><p> Samba服务的主要配置文件为：/etc/sambs/smb.conf , 主配置文件由两部分构成：Global 部分和 Share 部分</p><h3 id="1-global部分："><a href="#1-global部分：" class="headerlink" title="1.global部分："></a>1.global部分：</h3><p>该设置都是与Samba服务整体运行环境有关的选项，它的设置项目是针对所有共享资源的</p><pre><code>cat /etc/samba/smb.conf  # 查看配置文件内容# 文件内容如下,更详细的smb.conf配置内容可以上网查找，这里做部分注释# See smb.conf.example for a more detailed config file or# read the smb.conf manpage.# Run &#39;testparm&#39; to verify the config is correct after# you modified it.[global] #全局参数：该设置都是与Samba服务整体运行环境有关的选项，它的设置项目是针对所有共享资源的        workgroup =MYGROUP           #设定Samba Server所要加入的工作组或域        security = user        #安装验证方式，总共有四种，目前不再支持share级别        passdb backend = tdbsam        #定义用户后台类型，总共有三种        printing = cups        printcap name = cups        load printers = yes        #设置在Samba服务启动时是否共享打印机设备        cups options = raw        #打印机的选项[homes]        comment = Home Directories #描述信息        valid users = %S, %D%w%S  #有效访问用户        path = ~         #文件路径        browseable = No   #指定共享信息是否在“网上邻居”中可见        read only = No    #是否只读        inherit acls = Yes [printers]        comment = All Printers        path = /var/tmp #共享文件的实际路径。        printable = Yes        create mask = 0600        browseable = No[print$]        comment = Printer Drivers        path = /var/lib/samba/drivers        write list = root        create mask = 0664        directory mask = 0775</code></pre><h3 id="2-share部分："><a href="#2-share部分：" class="headerlink" title="2.share部分："></a>2.share部分：</h3><p>该设置针对的是共享目录个别的设置，只对当前的共享资源起作用</p><pre><code>vim /etc/samba/smb.conf## 在文件最后添加以下，此为测试[share]    comment = Share Directories  ## 这个参数提供对共享资源的描述    path=/www/share  ## 指定了要共享的目录路径    public = yes    ## public用来指定该共享是否允许guest账户访问    browseable = yes ## 共享将在网络上可见    writable = yes    ## 设置共享的可写性</code></pre><p>：wq！保存退出</p><p>还有其他参数可自行 选择设置： <strong>valid users = 允许访问该共享的用户</strong> ； <strong>invalid users = 禁止访问该共享的用户</strong> ； <strong>write list = 允许写入该共享的用户</strong> </p><pre><code>systemctl restart smb.service    ## 重启smb服务## 添加Samba用户smbpasswd –a username    ## 设置Samba用户的密码pdbedit –a username        ## 向Samba数据库中添加用户pdbedit -L    ## 查看已注册的Samba用户列表在Windows运行中键入\\Server_IP验证注意：：：第二次连接更换用户需要运行：net  use  *  /d  /y</code></pre><p>到此，服务器配置便完成</p><h1 id="3-samba服务配置连接（公网）"><a href="#3-samba服务配置连接（公网）" class="headerlink" title="3.samba服务配置连接（公网）"></a>3.samba服务配置连接（公网）</h1><p>在引言已经提到，由于永恒之蓝病毒的影响，445端口已封，目前无法通过 445 端口连接你的 linux 服务器了，下面的操作便是利用 netsh 来绕过这个端口，接下来介绍该工具与实现方法</p><h2 id="netsh简介"><a href="#netsh简介" class="headerlink" title="netsh简介"></a>netsh简介</h2><p> <strong>功能：</strong>Netsh是Windows操作系统中的命令行脚本实用工具，用于管理和配置网络功能 </p><p><strong>命令语法：</strong> 命令语法：Netsh命令的基本语法为 netsh <context> <subcontext> command </subcontext></context></p><blockquote><p>想要更多关于特定”netsh”命令及其用法的信息，可以在命令提示符中输入<code>netsh /?</code>或<code>netsh command /?</code>来查看内置帮助系统 </p></blockquote><h2 id="netsh实现本机端口映射"><a href="#netsh实现本机端口映射" class="headerlink" title="netsh实现本机端口映射"></a>netsh实现本机端口映射</h2><blockquote><p>更换原本的445端口 设置本机端口映射到你那台 samba 的 linux 服务器的 1314 端口。最后，你就可以通过<code>\\127.0.0.1</code>访问你的文件共享服务了 </p></blockquote><ol><li><h3 id="配置smb-conf，更改端口，-修改-Samba-主配置文件：-etc-samba-smb-conf-通过参数smb-ports-将-Samba-的端口更改为：1314，然后重启服务"><a href="#配置smb-conf，更改端口，-修改-Samba-主配置文件：-etc-samba-smb-conf-通过参数smb-ports-将-Samba-的端口更改为：1314，然后重启服务" class="headerlink" title="配置smb.conf，更改端口， 修改 Samba 主配置文件：/etc/samba/smb.conf ;通过参数smb ports 将 Samba 的端口更改为：1314，然后重启服务"></a>配置smb.conf，更改端口， 修改 Samba 主配置文件：/etc/samba/smb.conf ;通过参数smb ports 将 Samba 的端口更改为：1314，然后重启服务</h3><pre><code>vim /etc/samba/smb.conf# See smb.conf.example for a more detailed config file or# read the smb.conf manpage.# Run &#39;testparm&#39; to verify the config is correct after# you modified it.[global]        workgroup = SAMBA        security = user        passdb backend = tdbsam        printing = cups        printcap name = cups        load printers = yes        cups options = raw        smb ports = 1314 ## 添加此行systemctl restart smb.service    ## 重启服务## 查看端口[root@miyi_server ~]# netstat -nplt | grep smbtcp        0      0 0.0.0.0:1314            0.0.0.0:*               LISTEN      7528/smbdtcp6       0      0 :::1314                 :::*                    LISTEN      7528/smbdsamba服务配置到此完成</code></pre></li><li><h3 id="配置win10"><a href="#配置win10" class="headerlink" title="配置win10"></a>配置win10</h3><ol><li><p><strong>关闭 windows 的 445 端口</strong> ：</p><pre><code>## 使用cmd命令行关闭，也可通过任务管理器的服务里找到， 445 端口应该是一直被 LanmanServer 占用的，Windows共享服务的显示名称为Server，实际服务名为LanmanServer，为文件共享服务；sc config LanmanServer start= disablednet stop LanmanServer</code></pre></li><li><p><strong>启动 windows 的 ip helper 服务</strong> ：</p><pre><code>## sc config iphlpsvc start= auto用于配置Windows中“IP Helper”服务的启动类型。通过将其设置为“自动”，您将指示Windows在系统启动期间自动启动IP Helper服务，此ip helper用来搞端口转发sc config iphlpsvc start= auto</code></pre></li><li><p><strong>设置 windows 端口转发</strong> ：</p><pre><code>## connectaddress后为公网ip地址，运行后无显示，后用netsh interface portproxy add v4tov4 listenport=445 connectaddress=xxx.xx.xxx.xx connectport=1314## 注意：必须重启电脑，且服务器对应开启1314端口## 查看转发的端口:netsh interface portproxy show v4tov4</code></pre><p><img src="https://cdn.jsdelivr.net/gh/Bevis23/blog-pic/%E7%AB%AF%E5%8F%A3%E6%98%A0%E5%B0%84.png" alt="端口映射"></p></li><li><p><strong>输入<code>\\127.0.0.1</code>访问服务器文件</strong>：</p><p>同内网一样的用户操作，权限操作，区别就是内网访问是同个同个网段的ip访问，而这个是通过访问 本地回环地址 ， 通过监听的本地端口号 ， 进行端口转发，将传入的连接从本地计算机的445端口转发到指定的目标 IP 地址和端口号 </p></li></ol></li></ol><h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p>samba服务的内外网连接到此为止，对于内网上的samba是相当方便的，对于公网上的连接，有这样的一个思路和方法，同样也算不错的； </p><p>结束之余，也想到了用内网穿透的方法，这里没去实现，顺带提一下</p><h2 id="内网穿透"><a href="#内网穿透" class="headerlink" title="内网穿透"></a>内网穿透</h2><p>内网穿透一般的步骤和方法：</p><ol><li>配置Samba服务器：首先，您需要在本地网络中配置并启动Samba服务器。确保Samba服务器已正确设置并具有共享文件夹。</li><li>选择内网穿透工具：选择一个适合您需求的内网穿透工具。常用的内网穿透工具包括ngrok、frp、inlets等。这些工具允许您创建一个隧道，将公网请求转发到本地网络。</li><li>下载和配置内网穿透工具：根据您选择的工具，下载并安装相应的软件。按照工具提供的说明进行配置，将本地Samba服务器的端口映射到公网IP上。</li><li>启动内网穿透服务：运行内网穿透工具并启动隧道服务。该服务会为您生成一个公网可访问的地址，将流量转发到本地Samba服务器。</li><li>访问Samba服务器：使用生成的公网地址，您就可以从任何具有互联网连接的设备上访问Samba服务器了。只需将生成的地址输入到Samba客户端中，即可连接到Samba服务器并访问共享文件夹。</li></ol><p>使用内网穿透技术会涉及到网络安全方面的问题。确保已经采取了必要的安全措施，如设置强密码、使用加密连接等，以保护的Samba服务器和数据的安全性。</p><p>   记录<del>~</del>收工</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术科普 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> linux </tag>
+            
+            <tag> 技术科普 </tag>
+            
+            <tag> 服务器 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>宝塔面板-简化服务器管理与部署的利器</title>
       <link href="/2023/07/02/bao-ta/"/>
       <url>/2023/07/02/bao-ta/</url>
@@ -21,6 +50,8 @@
         <tags>
             
             <tag> linux </tag>
+            
+            <tag> 服务器 </tag>
             
             <tag> 工具 </tag>
             
@@ -159,9 +190,9 @@
             
             <tag> AI </tag>
             
-            <tag> linux </tag>
-            
             <tag> chatgpt </tag>
+            
+            <tag> linux </tag>
             
         </tags>
       
