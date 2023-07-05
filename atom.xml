@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://bevis23.github.io/"/>
-  <updated>2023-07-04T14:09:42.254Z</updated>
+  <updated>2023-07-05T15:19:29.670Z</updated>
   <id>https://bevis23.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>samba服务器搭建配置与连接公网</title>
-    <link href="https://bevis23.github.io/2023/07/05/samba/"/>
-    <id>https://bevis23.github.io/2023/07/05/samba/</id>
-    <published>2023-07-04T21:59:19.000Z</published>
-    <updated>2023-07-04T14:09:42.254Z</updated>
+    <title>博客历程与优化记录</title>
+    <link href="https://bevis23.github.io/2023/07/05/bo-ke-li-cheng-yu-you-hua-ji-lu/"/>
+    <id>https://bevis23.github.io/2023/07/05/bo-ke-li-cheng-yu-you-hua-ji-lu/</id>
+    <published>2023-07-05T09:15:46.000Z</published>
+    <updated>2023-07-05T15:19:29.670Z</updated>
     
     <summary type="html">
     
@@ -35,12 +35,40 @@
     
     </summary>
     
-      <category term="技术科普" scheme="https://bevis23.github.io/categories/%E6%8A%80%E6%9C%AF%E7%A7%91%E6%99%AE/"/>
+      <category term="生活记录" scheme="https://bevis23.github.io/categories/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
     
+    
+      <category term="生活记录" scheme="https://bevis23.github.io/tags/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
+    
+      <category term="分享" scheme="https://bevis23.github.io/tags/%E5%88%86%E4%BA%AB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>samba服务器搭建配置与连接公网</title>
+    <link href="https://bevis23.github.io/2023/07/05/samba/"/>
+    <id>https://bevis23.github.io/2023/07/05/samba/</id>
+    <published>2023-07-04T21:59:19.000Z</published>
+    <updated>2023-07-05T01:15:03.548Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="技术分享" scheme="https://bevis23.github.io/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
+    
+    
+      <category term="技术分享" scheme="https://bevis23.github.io/tags/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
     
       <category term="linux" scheme="https://bevis23.github.io/tags/linux/"/>
-    
-      <category term="技术科普" scheme="https://bevis23.github.io/tags/%E6%8A%80%E6%9C%AF%E7%A7%91%E6%99%AE/"/>
     
       <category term="服务器" scheme="https://bevis23.github.io/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
@@ -141,7 +169,7 @@
     <link href="https://bevis23.github.io/2023/06/13/google-hacking/"/>
     <id>https://bevis23.github.io/2023/06/13/google-hacking/</id>
     <published>2023-06-13T12:54:45.000Z</published>
-    <updated>2023-06-30T22:46:07.607Z</updated>
+    <updated>2023-07-05T01:14:53.765Z</updated>
     
     <summary type="html">
     
@@ -160,7 +188,7 @@
     
       <category term="网络安全" scheme="https://bevis23.github.io/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
     
-      <category term="技术科普" scheme="https://bevis23.github.io/tags/%E6%8A%80%E6%9C%AF%E7%A7%91%E6%99%AE/"/>
+      <category term="技术分享" scheme="https://bevis23.github.io/tags/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
     
   </entry>
   
@@ -212,11 +240,11 @@
       <category term="AI" scheme="https://bevis23.github.io/categories/AI/"/>
     
     
+      <category term="linux" scheme="https://bevis23.github.io/tags/linux/"/>
+    
       <category term="AI" scheme="https://bevis23.github.io/tags/AI/"/>
     
       <category term="chatgpt" scheme="https://bevis23.github.io/tags/chatgpt/"/>
-    
-      <category term="linux" scheme="https://bevis23.github.io/tags/linux/"/>
     
   </entry>
   
