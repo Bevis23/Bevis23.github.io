@@ -8,8 +8,7 @@
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
-    <meta name="description" content="[TOC]
-引言在现代科技发展的背景下，越来越多的人需要远程访问他们家庭或办公室网络中的设备。然而，由于网络安全限制，我们常常无法直接从外部访问局域网中的设备。这就是为什么内网穿透技术变得如此重要的原因。本文将向您介绍一种强大的内网穿透工具">
+    <meta name="description" content="引言在现代科技发展的背景下，越来越多的人需要远程访问他们家庭或办公室网络中的设备。然而，由于网络安全限制，我们常常无法直接从外部访问局域网中的设备。这就是为什么内网穿透技术变得如此重要的原因。本文将向您介绍一种强大的内网穿透工具——frp，">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -365,7 +364,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -579,8 +578,7 @@ overflow-y: scroll;
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>[TOC]</p>
-<h1 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h1><p>在现代科技发展的背景下，越来越多的人需要远程访问他们家庭或办公室网络中的设备。然而，由于网络安全限制，我们常常无法直接从外部访问局域网中的设备。这就是为什么内网穿透技术变得如此重要的原因。本文将向您介绍一种强大的<strong>内网穿透工具——frp</strong>，并向您展示如何使用它轻松实现远程访问。 </p>
+                <h1 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h1><p>在现代科技发展的背景下，越来越多的人需要远程访问他们家庭或办公室网络中的设备。然而，由于网络安全限制，我们常常无法直接从外部访问局域网中的设备。这就是为什么内网穿透技术变得如此重要的原因。本文将向您介绍一种强大的<strong>内网穿透工具——frp</strong>，并向您展示如何使用它轻松实现远程访问。 </p>
 <h1 id="内网穿透"><a href="#内网穿透" class="headerlink" title="内网穿透"></a>内网穿透</h1><h2 id="什么是内网穿透"><a href="#什么是内网穿透" class="headerlink" title="什么是内网穿透"></a>什么是内网穿透</h2><p><strong>内网穿透（NAT穿透）是一种网络技术，用于让外部网络可以访问位于私有内部网络中的设备或服务。</strong>在常见的网络环境中，私有内部网络（如家庭网络或公司局域网）通常使用了网络地址转换（Network Address Translation, NAT）来实现与公共互联网的连接，并将内部网络中的多个设备共享同一个公共IP地址 。</p>
 <h2 id="为什么需要内网穿透"><a href="#为什么需要内网穿透" class="headerlink" title="为什么需要内网穿透"></a>为什么需要内网穿透</h2><p>由于NAT的存在，外部网络无法直接访问内部网络中的设备，因为它们位于不同的网络地址空间中。内网穿透技术通过一些特殊的手段，克服了这个限制，使得外部网络能够穿透NAT，直接与内部网络中的设备进行通信；</p>
 <p><strong>应用场景：</strong></p>
@@ -596,7 +594,9 @@ overflow-y: scroll;
 <p>本文将展示的为 frp内网穿透工具，服务器为centos系统</p>
 </blockquote>
 <h1 id="frp内网穿透"><a href="#frp内网穿透" class="headerlink" title="frp内网穿透"></a>frp内网穿透</h1><h2 id="frp简介"><a href="#frp简介" class="headerlink" title="frp简介"></a>frp简介</h2><p>frp 是一个开源、简洁易用、高性能的内网穿透和反向代理软件，支持 tcp, udp, http, https等协议。</p>
-<p>frp 项目官网是 <a href="https://github.com/fatedier/frp，中文官方文档地址：https://github.com/fatedier/frp/blob/master/README_zh.md。除了安装过程，中文文档对使用过程已经介绍的非常详细，如遇到问题，建议先查看官方文档。" target="_blank" rel="noopener">https://github.com/fatedier/frp，中文官方文档地址：https://github.com/fatedier/frp/blob/master/README_zh.md。除了安装过程，中文文档对使用过程已经介绍的非常详细，如遇到问题，建议先查看官方文档。</a></p>
+<p>frp 项目官网是：<a href="https://github.com/fatedier/frp" target="_blank" rel="noopener">https://github.com/fatedier/frp</a></p>
+<p>中文文档：<a href="https://github.com/fatedier/frp/blob/master/README_zh.md" target="_blank" rel="noopener">https://github.com/fatedier/frp/blob/master/README_zh.md</a></p>
+<p>除了安装过程，中文文档对使用过程已经介绍的非常详细，如遇到问题，建议先查看官方文档。</p>
 <h2 id="frp原理"><a href="#frp原理" class="headerlink" title="frp原理"></a>frp原理</h2><ol>
 <li>服务端配置：在公网上搭建一个 FRP 服务器作为中转节点。这个服务器需要有公网 IP 地址或域名，并安装配置好 FRP 服务器软件。</li>
 <li>客户端配置：在内网中需要访问的设备上安装配置 FRP 客户端软件。客户端需要与服务端建立连接，因此需要知道服务器的 IP 地址或域名以及相应的端口号。</li>
@@ -610,7 +610,7 @@ overflow-y: scroll;
 <li><p>打开 <a href="https://github.com/fatedier/frp/releases" target="_blank" rel="noopener">frp下载页面</a>，下载最新版的 <code>frp_0.51.0_linux_amd64.tar.gz</code>，然后上传到服务器连接Linux服务器，也可以ssh连接到服务器后用wget下载：</p>
 <pre><code>wget https://github.com/fatedier/frp/releases/download/v0.51.0/frp_0.51.0_linux_amd64.tar.gz</code></pre></li>
 <li><p>服务器上解压安装包： </p>
-<pre><code>tar -zxvf frp_0.51.0 linux amd64.tar.gz</code></pre></li>
+<pre><code>tar -zxvf frp_0.51.0_linux_amd64.tar.gz</code></pre></li>
 <li><p>进入解压目录，找到 frps.ini ，填入以下内容：</p>
 <p>vim vim frps.ini </p>
 <pre><code>[common]
@@ -1202,57 +1202,54 @@ firewall-cmd --reload</code></pre></li>
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
-            </div>
+                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2023/07/06/frp-nei-wang-chuan-tou/">
+                <a href="/2023/07/15/liang-wan-zi-jiao-cheng-mysql-bi-zhi-bi-hui/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="frp内网穿透：打开局域网的远程大门">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="[两万字教程]MYSQL必知必会一站式完全教程">
                         
-                        <span class="card-title">frp内网穿透：打开局域网的远程大门</span>
+                        <span class="card-title">[两万字教程]MYSQL必知必会一站式完全教程</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            [TOC]
-引言在现代科技发展的背景下，越来越多的人需要远程访问他们家庭或办公室网络中的设备。然而，由于网络安全限制，我们常常无法直接从外部访问局域网中的设备。这就是为什么内网穿透技术变得如此重要的原因。本文将向您介绍一种强大的内网穿透工具
+                            引言此文是针对《MYSQL必知必会》一书学习的笔记与总结，注意要点的提示，文末会放上总的思维导图，该文除了对整书的脉络与知识点整理外，还有一些个人的总结见解，比如基本概念-mysql语句的法则与执行顺序，是通过阅读借鉴与实践再经过个人总结，
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2023-07-06
-                            </span>
+                        <span class="publish-date">
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2023-07-14
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/技术分享/" class="post-category" target="_blank">
-                                    技术分享
+                            <a href="/categories/数据分析/" class="post-category" target="_blank">
+                                    数据分析
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
-                    
-                    <a href="/tags/网络安全/" target="_blank">
-                        <span class="chip bg-color">网络安全</span>
-                    </a>
                     
                     <a href="/tags/技术分享/" target="_blank">
                         <span class="chip bg-color">技术分享</span>
                     </a>
                     
-                    <a href="/tags/工具/" target="_blank">
-                        <span class="chip bg-color">工具</span>
+                    <a href="/tags/数据分析/" target="_blank">
+                        <span class="chip bg-color">数据分析</span>
+                    </a>
+                    
+                    <a href="/tags/mysql/" target="_blank">
+                        <span class="chip bg-color">mysql</span>
                     </a>
                     
                 </div>
@@ -1270,7 +1267,7 @@ firewall-cmd --reload</code></pre></li>
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="博客历程与优化记录">
+                        <img src="/medias/featureimages/26.jpg" class="responsive-img" alt="博客历程与优化记录">
                         
                         <span class="card-title">博客历程与优化记录</span>
                     </div>
@@ -1488,7 +1485,7 @@ firewall-cmd --reload</code></pre></li>
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">21.3k</span>
+            <span class="white-color">43.4k</span>
             
 
             <br>

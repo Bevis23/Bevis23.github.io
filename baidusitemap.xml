@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://bevis23.github.io/2023/07/15/liang-wan-zi-jiao-cheng-mysql-bi-zhi-bi-hui/</loc>
+    <lastmod>2023-07-14</lastmod>
+  </url>  <url>
+    <loc>https://bevis23.github.io/2023/06/11/mei-ri-60s/</loc>
+    <lastmod>2023-07-14</lastmod>
+  </url>  <url>
     <loc>https://bevis23.github.io/2023/07/06/frp-nei-wang-chuan-tou/</loc>
-    <lastmod>2023-07-05</lastmod>
+    <lastmod>2023-07-07</lastmod>
   </url>  <url>
     <loc>https://bevis23.github.io/2023/07/05/samba/</loc>
     <lastmod>2023-07-05</lastmod>
@@ -35,9 +41,6 @@
     <lastmod>2023-06-30</lastmod>
   </url>  <url>
     <loc>https://bevis23.github.io/everyday/index.html</loc>
-    <lastmod>2023-06-11</lastmod>
-  </url>  <url>
-    <loc>https://bevis23.github.io/2023/06/11/mei-ri-60s/</loc>
     <lastmod>2023-06-11</lastmod>
   </url>
 </urlset>

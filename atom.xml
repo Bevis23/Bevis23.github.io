@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://bevis23.github.io/"/>
-  <updated>2023-07-05T17:45:43.987Z</updated>
+  <updated>2023-07-14T11:19:56.002Z</updated>
   <id>https://bevis23.github.io/</id>
   
   <author>
@@ -17,11 +17,41 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>[两万字教程]MYSQL必知必会一站式完全教程</title>
+    <link href="https://bevis23.github.io/2023/07/15/liang-wan-zi-jiao-cheng-mysql-bi-zhi-bi-hui/"/>
+    <id>https://bevis23.github.io/2023/07/15/liang-wan-zi-jiao-cheng-mysql-bi-zhi-bi-hui/</id>
+    <published>2023-07-14T19:11:02.000Z</published>
+    <updated>2023-07-14T11:19:56.002Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="数据分析" scheme="https://bevis23.github.io/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"/>
+    
+    
+      <category term="技术分享" scheme="https://bevis23.github.io/tags/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
+    
+      <category term="数据分析" scheme="https://bevis23.github.io/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"/>
+    
+      <category term="mysql" scheme="https://bevis23.github.io/tags/mysql/"/>
+    
+  </entry>
+  
+  <entry>
     <title>frp内网穿透：打开局域网的远程大门</title>
     <link href="https://bevis23.github.io/2023/07/06/frp-nei-wang-chuan-tou/"/>
     <id>https://bevis23.github.io/2023/07/06/frp-nei-wang-chuan-tou/</id>
     <published>2023-07-06T01:41:53.000Z</published>
-    <updated>2023-07-05T17:45:43.987Z</updated>
+    <updated>2023-07-07T02:32:05.028Z</updated>
     
     <summary type="html">
     
@@ -227,7 +257,7 @@
     <link href="https://bevis23.github.io/2023/06/11/mei-ri-60s/"/>
     <id>https://bevis23.github.io/2023/06/11/mei-ri-60s/</id>
     <published>2023-06-11T01:49:10.000Z</published>
-    <updated>2023-06-11T07:47:22.640Z</updated>
+    <updated>2023-07-14T11:19:42.365Z</updated>
     
     <summary type="html">
     
