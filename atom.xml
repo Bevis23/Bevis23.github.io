@@ -156,9 +156,9 @@
       <category term="技术分享" scheme="https://bevis23.github.io/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
     
     
-      <category term="技术分享" scheme="https://bevis23.github.io/tags/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
-    
       <category term="linux" scheme="https://bevis23.github.io/tags/linux/"/>
+    
+      <category term="技术分享" scheme="https://bevis23.github.io/tags/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
     
       <category term="服务器" scheme="https://bevis23.github.io/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
@@ -186,11 +186,11 @@
       <category term="工具" scheme="https://bevis23.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
     
     
-      <category term="工具" scheme="https://bevis23.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
-    
       <category term="linux" scheme="https://bevis23.github.io/tags/linux/"/>
     
       <category term="服务器" scheme="https://bevis23.github.io/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+      <category term="工具" scheme="https://bevis23.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
     
       <category term="可视化" scheme="https://bevis23.github.io/tags/%E5%8F%AF%E8%A7%86%E5%8C%96/"/>
     
