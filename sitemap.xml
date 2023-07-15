@@ -2,14 +2,77 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://bevis23.github.io/2023/06/29/chatgpt-prompt-gong-cheng/</loc>
+    <loc>https://bevis23.github.io/2023/07/05/sheng-huo-ji-lu-bo-ke-li-cheng-yu-you-hua-ji-lu/</loc>
+    
+    <lastmod>2023-07-15T19:09:50.672Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://bevis23.github.io/2023/06/11/ai-chatgpt-jie-ru-wei-xin/</loc>
+    
+    <lastmod>2023-07-15T19:05:40.115Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://bevis23.github.io/2023/05/27/yue-du-fen-xiang-dream/</loc>
+    
+    <lastmod>2023-07-15T19:04:01.414Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://bevis23.github.io/2023/06/11/sheng-huo-ji-lu-mei-ri-60s/</loc>
+    
+    <lastmod>2023-07-15T19:03:24.567Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://bevis23.github.io/2023/07/16/shen-tou-nmap/</loc>
+    
+    <lastmod>2023-07-15T18:59:28.277Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://bevis23.github.io/2023/07/16/shen-tou-nessus/</loc>
+    
+    <lastmod>2023-07-15T18:59:12.753Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://bevis23.github.io/2023/07/16/shen-tou-metasploit-shen-tou-ce-shi-kuang-jia/</loc>
+    
+    <lastmod>2023-07-15T18:58:48.754Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://bevis23.github.io/2023/07/02/gong-ju-bao-ta/</loc>
+    
+    <lastmod>2023-07-15T18:55:54.628Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://bevis23.github.io/2023/07/16/shen-tou-wireshark-zhua-bao-ji-chang-yong-xie-yi-fen-xi/</loc>
+    
+    <lastmod>2023-07-15T14:02:20.697Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://bevis23.github.io/2023/06/29/ai-chatgpt-prompt-gong-cheng/</loc>
     
     <lastmod>2023-07-15T10:56:02.342Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://bevis23.github.io/2023/07/16/python-yuan-zu-yu-lie-biao/</loc>
+    <loc>https://bevis23.github.io/2023/07/16/bian-cheng-python-yuan-zu-yu-lie-biao/</loc>
     
     <lastmod>2023-07-15T10:44:06.113Z</lastmod>
     
@@ -30,16 +93,9 @@
   </url>
   
   <url>
-    <loc>https://bevis23.github.io/2023/07/15/liang-wan-zi-jiao-cheng-mysql-bi-zhi-bi-hui/</loc>
+    <loc>https://bevis23.github.io/2023/07/15/shu-ju-fen-xi-liang-wan-zi-jiao-cheng-mysql-bi-zhi-bi-hui/</loc>
     
     <lastmod>2023-07-14T11:27:16.787Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://bevis23.github.io/2023/06/11/mei-ri-60s/</loc>
-    
-    <lastmod>2023-07-14T11:19:42.365Z</lastmod>
     
   </url>
   
@@ -51,28 +107,21 @@
   </url>
   
   <url>
-    <loc>https://bevis23.github.io/2023/07/06/frp-nei-wang-chuan-tou/</loc>
+    <loc>https://bevis23.github.io/2023/07/06/ji-zhu-fen-xiang-frp-nei-wang-chuan-tou/</loc>
     
     <lastmod>2023-07-07T02:32:05.028Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://bevis23.github.io/2023/07/05/samba/</loc>
+    <loc>https://bevis23.github.io/2023/07/05/ji-zhu-fen-xiang-samba/</loc>
     
     <lastmod>2023-07-05T17:43:25.071Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://bevis23.github.io/2023/07/05/bo-ke-li-cheng-yu-you-hua-ji-lu/</loc>
-    
-    <lastmod>2023-07-05T15:22:00.247Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://bevis23.github.io/2023/06/13/google-hacking/</loc>
+    <loc>https://bevis23.github.io/2023/06/13/shen-tou-google-hacking/</loc>
     
     <lastmod>2023-07-05T01:14:53.765Z</lastmod>
     
@@ -93,13 +142,6 @@
   </url>
   
   <url>
-    <loc>https://bevis23.github.io/2023/07/02/bao-ta/</loc>
-    
-    <lastmod>2023-07-04T14:07:56.801Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://bevis23.github.io/about/index.html</loc>
     
     <lastmod>2023-07-02T07:53:09.476Z</lastmod>
@@ -107,35 +149,21 @@
   </url>
   
   <url>
-    <loc>https://bevis23.github.io/2023/06/11/chatgpt-jie-ru-wei-xin/</loc>
-    
-    <lastmod>2023-06-30T23:21:55.610Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://bevis23.github.io/2023/06/26/she-hui-gong-cheng-xue/</loc>
+    <loc>https://bevis23.github.io/2023/06/26/shen-tou-she-hui-gong-cheng-xue/</loc>
     
     <lastmod>2023-06-30T22:57:54.180Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://bevis23.github.io/2023/05/27/dream/</loc>
-    
-    <lastmod>2023-06-30T22:57:12.355Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://bevis23.github.io/2023/05/25/bo-ke-de-xin-kai-shi/</loc>
+    <loc>https://bevis23.github.io/2023/05/25/sheng-huo-ji-lu-bo-ke-de-xin-kai-shi/</loc>
     
     <lastmod>2023-06-30T22:55:14.231Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://bevis23.github.io/2023/06/09/gong-xiang-wu-jie-zi-yuan-fen-xiang-he-ji/</loc>
+    <loc>https://bevis23.github.io/2023/06/09/zi-yuan-fen-xiang-gong-xiang-wu-jie-zi-yuan-fen-xiang-he-ji/</loc>
     
     <lastmod>2023-06-30T22:40:31.601Z</lastmod>
     

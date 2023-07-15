@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://bevis23.github.io/"/>
-  <updated>2023-07-15T10:44:06.113Z</updated>
+  <updated>2023-07-15T18:58:48.754Z</updated>
   <id>https://bevis23.github.io/</id>
   
   <author>
@@ -17,9 +17,131 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Metasploit渗透测试框架：基础应用与安全防护</title>
+    <link href="https://bevis23.github.io/2023/07/16/shen-tou-metasploit-shen-tou-ce-shi-kuang-jia/"/>
+    <id>https://bevis23.github.io/2023/07/16/shen-tou-metasploit-shen-tou-ce-shi-kuang-jia/</id>
+    <published>2023-07-16T11:11:21.000Z</published>
+    <updated>2023-07-15T18:58:48.754Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="网络安全" scheme="https://bevis23.github.io/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
+    
+    
+      <category term="网络安全" scheme="https://bevis23.github.io/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
+    
+      <category term="Metasploit" scheme="https://bevis23.github.io/tags/Metasploit/"/>
+    
+      <category term="渗透测试" scheme="https://bevis23.github.io/tags/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>渗透-NESSUS：网络安全的守护神</title>
+    <link href="https://bevis23.github.io/2023/07/16/shen-tou-nessus/"/>
+    <id>https://bevis23.github.io/2023/07/16/shen-tou-nessus/</id>
+    <published>2023-07-16T02:41:49.000Z</published>
+    <updated>2023-07-15T18:59:12.753Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="网络安全" scheme="https://bevis23.github.io/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
+    
+    
+      <category term="工具" scheme="https://bevis23.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+      <category term="网络安全" scheme="https://bevis23.github.io/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
+    
+      <category term="渗透测试" scheme="https://bevis23.github.io/tags/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
+    
+      <category term="nessus" scheme="https://bevis23.github.io/tags/nessus/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>渗透-NMAP：揭秘网络安全的终极工具</title>
+    <link href="https://bevis23.github.io/2023/07/16/shen-tou-nmap/"/>
+    <id>https://bevis23.github.io/2023/07/16/shen-tou-nmap/</id>
+    <published>2023-07-16T02:41:27.000Z</published>
+    <updated>2023-07-15T18:59:28.277Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="网络安全" scheme="https://bevis23.github.io/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
+    
+    
+      <category term="工具" scheme="https://bevis23.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+      <category term="网络安全" scheme="https://bevis23.github.io/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
+    
+      <category term="渗透测试" scheme="https://bevis23.github.io/tags/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
+    
+      <category term="nmap" scheme="https://bevis23.github.io/tags/nmap/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>WireShark 简介和抓包原理及过程</title>
+    <link href="https://bevis23.github.io/2023/07/16/shen-tou-wireshark-zhua-bao-ji-chang-yong-xie-yi-fen-xi/"/>
+    <id>https://bevis23.github.io/2023/07/16/shen-tou-wireshark-zhua-bao-ji-chang-yong-xie-yi-fen-xi/</id>
+    <published>2023-07-15T21:59:41.000Z</published>
+    <updated>2023-07-15T14:02:20.697Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="工具" scheme="https://bevis23.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="工具" scheme="https://bevis23.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+      <category term="网络安全" scheme="https://bevis23.github.io/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Python编程：深入理解列表与元组的关键差异</title>
-    <link href="https://bevis23.github.io/2023/07/16/python-yuan-zu-yu-lie-biao/"/>
-    <id>https://bevis23.github.io/2023/07/16/python-yuan-zu-yu-lie-biao/</id>
+    <link href="https://bevis23.github.io/2023/07/16/bian-cheng-python-yuan-zu-yu-lie-biao/"/>
+    <id>https://bevis23.github.io/2023/07/16/bian-cheng-python-yuan-zu-yu-lie-biao/</id>
     <published>2023-07-15T18:39:29.000Z</published>
     <updated>2023-07-15T10:44:06.113Z</updated>
     
@@ -106,8 +228,8 @@
   
   <entry>
     <title>[两万字教程]MYSQL必知必会一站式完全教程</title>
-    <link href="https://bevis23.github.io/2023/07/15/liang-wan-zi-jiao-cheng-mysql-bi-zhi-bi-hui/"/>
-    <id>https://bevis23.github.io/2023/07/15/liang-wan-zi-jiao-cheng-mysql-bi-zhi-bi-hui/</id>
+    <link href="https://bevis23.github.io/2023/07/15/shu-ju-fen-xi-liang-wan-zi-jiao-cheng-mysql-bi-zhi-bi-hui/"/>
+    <id>https://bevis23.github.io/2023/07/15/shu-ju-fen-xi-liang-wan-zi-jiao-cheng-mysql-bi-zhi-bi-hui/</id>
     <published>2023-07-14T19:11:02.000Z</published>
     <updated>2023-07-14T11:27:16.787Z</updated>
     
@@ -136,8 +258,8 @@
   
   <entry>
     <title>frp内网穿透：打开局域网的远程大门</title>
-    <link href="https://bevis23.github.io/2023/07/06/frp-nei-wang-chuan-tou/"/>
-    <id>https://bevis23.github.io/2023/07/06/frp-nei-wang-chuan-tou/</id>
+    <link href="https://bevis23.github.io/2023/07/06/ji-zhu-fen-xiang-frp-nei-wang-chuan-tou/"/>
+    <id>https://bevis23.github.io/2023/07/06/ji-zhu-fen-xiang-frp-nei-wang-chuan-tou/</id>
     <published>2023-07-06T01:41:53.000Z</published>
     <updated>2023-07-07T02:32:05.028Z</updated>
     
@@ -156,20 +278,20 @@
       <category term="技术分享" scheme="https://bevis23.github.io/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
     
     
+      <category term="工具" scheme="https://bevis23.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
+    
       <category term="网络安全" scheme="https://bevis23.github.io/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
     
       <category term="技术分享" scheme="https://bevis23.github.io/tags/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
-    
-      <category term="工具" scheme="https://bevis23.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
     
   </entry>
   
   <entry>
     <title>博客历程与优化记录</title>
-    <link href="https://bevis23.github.io/2023/07/05/bo-ke-li-cheng-yu-you-hua-ji-lu/"/>
-    <id>https://bevis23.github.io/2023/07/05/bo-ke-li-cheng-yu-you-hua-ji-lu/</id>
+    <link href="https://bevis23.github.io/2023/07/05/sheng-huo-ji-lu-bo-ke-li-cheng-yu-you-hua-ji-lu/"/>
+    <id>https://bevis23.github.io/2023/07/05/sheng-huo-ji-lu-bo-ke-li-cheng-yu-you-hua-ji-lu/</id>
     <published>2023-07-05T09:15:46.000Z</published>
-    <updated>2023-07-05T15:22:00.247Z</updated>
+    <updated>2023-07-15T19:09:50.672Z</updated>
     
     <summary type="html">
     
@@ -190,12 +312,14 @@
     
       <category term="分享" scheme="https://bevis23.github.io/tags/%E5%88%86%E4%BA%AB/"/>
     
+      <category term="hexo" scheme="https://bevis23.github.io/tags/hexo/"/>
+    
   </entry>
   
   <entry>
     <title>samba服务器搭建配置与连接公网</title>
-    <link href="https://bevis23.github.io/2023/07/05/samba/"/>
-    <id>https://bevis23.github.io/2023/07/05/samba/</id>
+    <link href="https://bevis23.github.io/2023/07/05/ji-zhu-fen-xiang-samba/"/>
+    <id>https://bevis23.github.io/2023/07/05/ji-zhu-fen-xiang-samba/</id>
     <published>2023-07-04T21:59:19.000Z</published>
     <updated>2023-07-05T17:43:25.071Z</updated>
     
@@ -214,20 +338,20 @@
       <category term="技术分享" scheme="https://bevis23.github.io/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
     
     
+      <category term="服务器" scheme="https://bevis23.github.io/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
       <category term="linux" scheme="https://bevis23.github.io/tags/linux/"/>
     
       <category term="技术分享" scheme="https://bevis23.github.io/tags/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
-    
-      <category term="服务器" scheme="https://bevis23.github.io/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
   </entry>
   
   <entry>
     <title>宝塔面板-简化服务器管理与部署的利器</title>
-    <link href="https://bevis23.github.io/2023/07/02/bao-ta/"/>
-    <id>https://bevis23.github.io/2023/07/02/bao-ta/</id>
+    <link href="https://bevis23.github.io/2023/07/02/gong-ju-bao-ta/"/>
+    <id>https://bevis23.github.io/2023/07/02/gong-ju-bao-ta/</id>
     <published>2023-07-02T11:11:21.000Z</published>
-    <updated>2023-07-04T14:07:56.801Z</updated>
+    <updated>2023-07-15T18:55:54.628Z</updated>
     
     <summary type="html">
     
@@ -244,20 +368,20 @@
       <category term="工具" scheme="https://bevis23.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
     
     
-      <category term="linux" scheme="https://bevis23.github.io/tags/linux/"/>
-    
       <category term="工具" scheme="https://bevis23.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+      <category term="可视化" scheme="https://bevis23.github.io/tags/%E5%8F%AF%E8%A7%86%E5%8C%96/"/>
     
       <category term="服务器" scheme="https://bevis23.github.io/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
-      <category term="可视化" scheme="https://bevis23.github.io/tags/%E5%8F%AF%E8%A7%86%E5%8C%96/"/>
+      <category term="linux" scheme="https://bevis23.github.io/tags/linux/"/>
     
   </entry>
   
   <entry>
     <title>chatgpt-prompt工程</title>
-    <link href="https://bevis23.github.io/2023/06/29/chatgpt-prompt-gong-cheng/"/>
-    <id>https://bevis23.github.io/2023/06/29/chatgpt-prompt-gong-cheng/</id>
+    <link href="https://bevis23.github.io/2023/06/29/ai-chatgpt-prompt-gong-cheng/"/>
+    <id>https://bevis23.github.io/2023/06/29/ai-chatgpt-prompt-gong-cheng/</id>
     <published>2023-06-29T10:32:22.000Z</published>
     <updated>2023-07-15T10:56:02.342Z</updated>
     
@@ -286,8 +410,8 @@
   
   <entry>
     <title>社会工程学</title>
-    <link href="https://bevis23.github.io/2023/06/26/she-hui-gong-cheng-xue/"/>
-    <id>https://bevis23.github.io/2023/06/26/she-hui-gong-cheng-xue/</id>
+    <link href="https://bevis23.github.io/2023/06/26/shen-tou-she-hui-gong-cheng-xue/"/>
+    <id>https://bevis23.github.io/2023/06/26/shen-tou-she-hui-gong-cheng-xue/</id>
     <published>2023-06-26T15:11:24.000Z</published>
     <updated>2023-06-30T22:57:54.180Z</updated>
     
@@ -314,8 +438,8 @@
   
   <entry>
     <title>google_hacking</title>
-    <link href="https://bevis23.github.io/2023/06/13/google-hacking/"/>
-    <id>https://bevis23.github.io/2023/06/13/google-hacking/</id>
+    <link href="https://bevis23.github.io/2023/06/13/shen-tou-google-hacking/"/>
+    <id>https://bevis23.github.io/2023/06/13/shen-tou-google-hacking/</id>
     <published>2023-06-13T12:54:45.000Z</published>
     <updated>2023-07-05T01:14:53.765Z</updated>
     
@@ -342,10 +466,10 @@
   
   <entry>
     <title>每日60s读懂世界</title>
-    <link href="https://bevis23.github.io/2023/06/11/mei-ri-60s/"/>
-    <id>https://bevis23.github.io/2023/06/11/mei-ri-60s/</id>
+    <link href="https://bevis23.github.io/2023/06/11/sheng-huo-ji-lu-mei-ri-60s/"/>
+    <id>https://bevis23.github.io/2023/06/11/sheng-huo-ji-lu-mei-ri-60s/</id>
     <published>2023-06-11T01:49:10.000Z</published>
-    <updated>2023-07-14T11:19:42.365Z</updated>
+    <updated>2023-07-15T19:03:24.567Z</updated>
     
     <summary type="html">
     
@@ -359,7 +483,7 @@
     
     </summary>
     
-      <category term="分享" scheme="https://bevis23.github.io/categories/%E5%88%86%E4%BA%AB/"/>
+      <category term="生活记录" scheme="https://bevis23.github.io/categories/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
     
     
       <category term="分享" scheme="https://bevis23.github.io/tags/%E5%88%86%E4%BA%AB/"/>
@@ -368,10 +492,10 @@
   
   <entry>
     <title>chatgpt接入微信</title>
-    <link href="https://bevis23.github.io/2023/06/11/chatgpt-jie-ru-wei-xin/"/>
-    <id>https://bevis23.github.io/2023/06/11/chatgpt-jie-ru-wei-xin/</id>
+    <link href="https://bevis23.github.io/2023/06/11/ai-chatgpt-jie-ru-wei-xin/"/>
+    <id>https://bevis23.github.io/2023/06/11/ai-chatgpt-jie-ru-wei-xin/</id>
     <published>2023-06-10T20:46:24.000Z</published>
-    <updated>2023-06-30T23:21:55.610Z</updated>
+    <updated>2023-07-15T19:05:40.115Z</updated>
     
     <summary type="html">
     
@@ -390,16 +514,16 @@
     
       <category term="AI" scheme="https://bevis23.github.io/tags/AI/"/>
     
-      <category term="linux" scheme="https://bevis23.github.io/tags/linux/"/>
-    
       <category term="chatgpt" scheme="https://bevis23.github.io/tags/chatgpt/"/>
+    
+      <category term="linux" scheme="https://bevis23.github.io/tags/linux/"/>
     
   </entry>
   
   <entry>
     <title>共享无价：资源分享合集</title>
-    <link href="https://bevis23.github.io/2023/06/09/gong-xiang-wu-jie-zi-yuan-fen-xiang-he-ji/"/>
-    <id>https://bevis23.github.io/2023/06/09/gong-xiang-wu-jie-zi-yuan-fen-xiang-he-ji/</id>
+    <link href="https://bevis23.github.io/2023/06/09/zi-yuan-fen-xiang-gong-xiang-wu-jie-zi-yuan-fen-xiang-he-ji/"/>
+    <id>https://bevis23.github.io/2023/06/09/zi-yuan-fen-xiang-gong-xiang-wu-jie-zi-yuan-fen-xiang-he-ji/</id>
     <published>2023-06-08T16:59:55.000Z</published>
     <updated>2023-06-30T22:40:31.601Z</updated>
     
@@ -424,10 +548,10 @@
   
   <entry>
     <title>dream</title>
-    <link href="https://bevis23.github.io/2023/05/27/dream/"/>
-    <id>https://bevis23.github.io/2023/05/27/dream/</id>
+    <link href="https://bevis23.github.io/2023/05/27/yue-du-fen-xiang-dream/"/>
+    <id>https://bevis23.github.io/2023/05/27/yue-du-fen-xiang-dream/</id>
     <published>2023-05-26T21:17:21.000Z</published>
-    <updated>2023-06-30T22:57:12.355Z</updated>
+    <updated>2023-07-15T19:04:01.414Z</updated>
     
     <summary type="html">
     
@@ -452,8 +576,8 @@
   
   <entry>
     <title>博客的新开始</title>
-    <link href="https://bevis23.github.io/2023/05/25/bo-ke-de-xin-kai-shi/"/>
-    <id>https://bevis23.github.io/2023/05/25/bo-ke-de-xin-kai-shi/</id>
+    <link href="https://bevis23.github.io/2023/05/25/sheng-huo-ji-lu-bo-ke-de-xin-kai-shi/"/>
+    <id>https://bevis23.github.io/2023/05/25/sheng-huo-ji-lu-bo-ke-de-xin-kai-shi/</id>
     <published>2023-05-24T21:17:21.000Z</published>
     <updated>2023-06-30T22:55:14.231Z</updated>
     
