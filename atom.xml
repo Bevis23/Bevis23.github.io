@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://bevis23.github.io/"/>
-  <updated>2023-07-16T05:26:03.659Z</updated>
+  <updated>2023-07-26T17:44:40.909Z</updated>
   <id>https://bevis23.github.io/</id>
   
   <author>
@@ -17,11 +17,41 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Metasploit渗透测试框架：基础应用与安全防护</title>
-    <link href="https://bevis23.github.io/shen-tou-metasploit-shen-tou-ce-shi-kuang-jia.html"/>
-    <id>https://bevis23.github.io/shen-tou-metasploit-shen-tou-ce-shi-kuang-jia.html</id>
-    <published>2023-07-16T11:11:21.000Z</published>
-    <updated>2023-07-16T05:26:03.659Z</updated>
+    <title>Git:分布式版本控制系统的入门指南</title>
+    <link href="https://bevis23.github.io/gong-ju-git-fen-bu-shi-ban-ben-kong-zhi-xi-tong-de-ru-men-zhi-nan.html"/>
+    <id>https://bevis23.github.io/gong-ju-git-fen-bu-shi-ban-ben-kong-zhi-xi-tong-de-ru-men-zhi-nan.html</id>
+    <published>2023-07-27T01:27:04.000Z</published>
+    <updated>2023-07-26T17:44:40.909Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="工具" scheme="https://bevis23.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="Git" scheme="https://bevis23.github.io/tags/Git/"/>
+    
+      <category term="工具" scheme="https://bevis23.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+      <category term="分布式" scheme="https://bevis23.github.io/tags/%E5%88%86%E5%B8%83%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Metasploit信息收集</title>
+    <link href="https://bevis23.github.io/shen-tou-metasploit-xin-xi-shou-ji.html"/>
+    <id>https://bevis23.github.io/shen-tou-metasploit-xin-xi-shou-ji.html</id>
+    <published>2023-07-27T01:11:27.000Z</published>
+    <updated>2023-07-26T17:44:33.270Z</updated>
     
     <summary type="html">
     
@@ -47,11 +77,41 @@
   </entry>
   
   <entry>
-    <title>渗透-NESSUS：网络安全的守护神</title>
+    <title>Metasploit渗透测试框架：基础应用与安全防护</title>
+    <link href="https://bevis23.github.io/shen-tou-metasploit-shen-tou-ce-shi-kuang-jia.html"/>
+    <id>https://bevis23.github.io/shen-tou-metasploit-shen-tou-ce-shi-kuang-jia.html</id>
+    <published>2023-07-16T11:11:21.000Z</published>
+    <updated>2023-07-16T15:10:17.604Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="网络安全" scheme="https://bevis23.github.io/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
+    
+    
+      <category term="网络安全" scheme="https://bevis23.github.io/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
+    
+      <category term="Metasploit" scheme="https://bevis23.github.io/tags/Metasploit/"/>
+    
+      <category term="渗透测试" scheme="https://bevis23.github.io/tags/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>NESSUS：网络安全的守护神</title>
     <link href="https://bevis23.github.io/shen-tou-nessus.html"/>
     <id>https://bevis23.github.io/shen-tou-nessus.html</id>
     <published>2023-07-16T02:41:49.000Z</published>
-    <updated>2023-07-15T18:59:12.753Z</updated>
+    <updated>2023-07-16T06:20:21.139Z</updated>
     
     <summary type="html">
     
@@ -79,11 +139,11 @@
   </entry>
   
   <entry>
-    <title>渗透-NMAP：揭秘网络安全的终极工具</title>
+    <title>NMAP：揭秘网络安全的终极工具</title>
     <link href="https://bevis23.github.io/shen-tou-nmap.html"/>
     <id>https://bevis23.github.io/shen-tou-nmap.html</id>
     <published>2023-07-16T02:41:27.000Z</published>
-    <updated>2023-07-15T18:59:28.277Z</updated>
+    <updated>2023-07-16T06:20:28.660Z</updated>
     
     <summary type="html">
     
@@ -145,7 +205,7 @@
     <link href="https://bevis23.github.io/bian-cheng-python-yuan-zu-yu-lie-biao.html"/>
     <id>https://bevis23.github.io/bian-cheng-python-yuan-zu-yu-lie-biao.html</id>
     <published>2023-07-15T18:39:29.000Z</published>
-    <updated>2023-07-15T10:44:06.113Z</updated>
+    <updated>2023-07-26T02:19:42.379Z</updated>
     
     <summary type="html">
     
@@ -299,7 +359,7 @@
     <link href="https://bevis23.github.io/sheng-huo-ji-lu-bo-ke-li-cheng-yu-you-hua-ji-lu.html"/>
     <id>https://bevis23.github.io/sheng-huo-ji-lu-bo-ke-li-cheng-yu-you-hua-ji-lu.html</id>
     <published>2023-07-05T09:15:46.000Z</published>
-    <updated>2023-07-15T19:09:50.672Z</updated>
+    <updated>2023-07-26T02:18:36.436Z</updated>
     
     <summary type="html">
     
@@ -321,6 +381,8 @@
       <category term="分享" scheme="https://bevis23.github.io/tags/%E5%88%86%E4%BA%AB/"/>
     
       <category term="hexo" scheme="https://bevis23.github.io/tags/hexo/"/>
+    
+      <category term="blog" scheme="https://bevis23.github.io/tags/blog/"/>
     
   </entry>
   
@@ -348,9 +410,9 @@
     
       <category term="linux" scheme="https://bevis23.github.io/tags/linux/"/>
     
-      <category term="服务器" scheme="https://bevis23.github.io/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-    
       <category term="技术分享" scheme="https://bevis23.github.io/tags/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
+    
+      <category term="服务器" scheme="https://bevis23.github.io/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
       <category term="samba" scheme="https://bevis23.github.io/tags/samba/"/>
     
@@ -382,9 +444,9 @@
     
       <category term="工具" scheme="https://bevis23.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
     
-      <category term="可视化" scheme="https://bevis23.github.io/tags/%E5%8F%AF%E8%A7%86%E5%8C%96/"/>
-    
       <category term="服务器" scheme="https://bevis23.github.io/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+      <category term="可视化" scheme="https://bevis23.github.io/tags/%E5%8F%AF%E8%A7%86%E5%8C%96/"/>
     
   </entry>
   
@@ -393,7 +455,7 @@
     <link href="https://bevis23.github.io/ai-chatgpt-prompt-gong-cheng.html"/>
     <id>https://bevis23.github.io/ai-chatgpt-prompt-gong-cheng.html</id>
     <published>2023-06-29T10:32:22.000Z</published>
-    <updated>2023-07-15T10:56:02.342Z</updated>
+    <updated>2023-07-26T02:19:19.716Z</updated>
     
     <summary type="html">
     
@@ -416,6 +478,8 @@
     
       <category term="人工智能" scheme="https://bevis23.github.io/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
     
+      <category term="prompt" scheme="https://bevis23.github.io/tags/prompt/"/>
+    
   </entry>
   
   <entry>
@@ -423,7 +487,7 @@
     <link href="https://bevis23.github.io/shen-tou-she-hui-gong-cheng-xue.html"/>
     <id>https://bevis23.github.io/shen-tou-she-hui-gong-cheng-xue.html</id>
     <published>2023-06-26T15:11:24.000Z</published>
-    <updated>2023-06-30T22:57:54.180Z</updated>
+    <updated>2023-07-26T02:17:33.614Z</updated>
     
     <summary type="html">
     
@@ -443,6 +507,8 @@
       <category term="网络安全" scheme="https://bevis23.github.io/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
     
       <category term="社工" scheme="https://bevis23.github.io/tags/%E7%A4%BE%E5%B7%A5/"/>
+    
+      <category term="Maltego" scheme="https://bevis23.github.io/tags/Maltego/"/>
     
   </entry>
   
@@ -535,7 +601,7 @@
     <link href="https://bevis23.github.io/zi-yuan-fen-xiang-gong-xiang-wu-jie-zi-yuan-fen-xiang-he-ji.html"/>
     <id>https://bevis23.github.io/zi-yuan-fen-xiang-gong-xiang-wu-jie-zi-yuan-fen-xiang-he-ji.html</id>
     <published>2023-06-08T16:59:55.000Z</published>
-    <updated>2023-06-30T22:40:31.601Z</updated>
+    <updated>2023-07-26T17:51:06.521Z</updated>
     
     <summary type="html">
     
@@ -554,59 +620,9 @@
     
       <category term="资源分享" scheme="https://bevis23.github.io/tags/%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB/"/>
     
-  </entry>
-  
-  <entry>
-    <title>dream</title>
-    <link href="https://bevis23.github.io/yue-du-fen-xiang-dream.html"/>
-    <id>https://bevis23.github.io/yue-du-fen-xiang-dream.html</id>
-    <published>2023-05-26T21:17:21.000Z</published>
-    <updated>2023-07-15T19:04:01.414Z</updated>
+      <category term="geek" scheme="https://bevis23.github.io/tags/geek/"/>
     
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="阅读分享" scheme="https://bevis23.github.io/categories/%E9%98%85%E8%AF%BB%E5%88%86%E4%BA%AB/"/>
-    
-    
-      <category term="生活记录" scheme="https://bevis23.github.io/tags/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
-    
-      <category term="阅读" scheme="https://bevis23.github.io/tags/%E9%98%85%E8%AF%BB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>博客的新开始</title>
-    <link href="https://bevis23.github.io/sheng-huo-ji-lu-bo-ke-de-xin-kai-shi.html"/>
-    <id>https://bevis23.github.io/sheng-huo-ji-lu-bo-ke-de-xin-kai-shi.html</id>
-    <published>2023-05-24T21:17:21.000Z</published>
-    <updated>2023-06-30T22:55:14.231Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="生活记录" scheme="https://bevis23.github.io/categories/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
-    
-    
-      <category term="生活记录" scheme="https://bevis23.github.io/tags/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
+      <category term="hugo" scheme="https://bevis23.github.io/tags/hugo/"/>
     
   </entry>
   
