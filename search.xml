@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>docker:容器技术应用与常用命令</title>
+      <link href="/ji-zhu-fen-xiang-docker-rong-qi-ji-zhu-ying-yong-yu-chang-yong-ming-ling.html"/>
+      <url>/ji-zhu-fen-xiang-docker-rong-qi-ji-zhu-ying-yong-yu-chang-yong-ming-ling.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h1><p>个人基于hexo做了个博客网站，同时基于hugo做了一个导航网站；两者都基于一定的环境依赖，需要配置一定的环境，才能做一些操作；</p><p>Hexo博客每次的生成和部署都需要环境、依赖资源和所有博客文件，所以如果我们要换一台电脑写博客，则需要配置相同的环境、依赖和所有博客文件，最简单的方法就是用U盘或者其他存储方式拷贝；或者使用GitHub仓库； 更高级的方法是使用 Docker，它可以更方便地打包整个 Hexo 环境和依赖，以便在任何支持 Docker 的计算机上运行，无需重新配置 </p><h1 id="迁移的三种方式"><a href="#迁移的三种方式" class="headerlink" title="迁移的三种方式"></a>迁移的三种方式</h1><p>当你想在另一台电脑上继续管理和开发Hexo网站时，电脑A为原电脑，电脑B为一台没有任何环境的电脑，以下是三种常用的方法：</p><ol><li><p>使用U盘拷贝：</p><ul><li>在电脑A上将Hexo网站的文件和依赖项复制到U盘中。</li><li>将U盘连接到电脑B，将文件和依赖项复制到电脑B上。</li><li>在电脑B上安装Git和Node.js。</li><li>进入Hexo网站根目录，执行<code>npm install</code>安装依赖项。</li></ul><p>使用U盘拷贝的优点：</p><ul><li>便捷：U盘是一种常见的便携式存储设备，可以轻松地将文件和依赖项从一台电脑复制到另一台电脑。</li><li>简单：整个过程相对简单，不需要涉及复杂的工具或网络连接。</li></ul><p>使用U盘拷贝的缺点：</p><ul><li>繁琐：每次更新网站时都需要手动复制文件和依赖项，如果经常需要更新则会比较繁琐。</li><li>可能会存在版本差异：如果电脑A和电脑B的环境配置有所不同，可能会导致一些依赖项无法正常工作。</li></ul></li></ol><ol start="2"><li><p>使用GitHub仓库：</p><ul><li>在电脑A上创建一个GitHub仓库，并将Hexo网站的文件和依赖项推送到该仓库。</li><li>在电脑B上克隆该GitHub仓库的代码。</li><li>在电脑B上安装Git和Node.js。</li><li>进入Hexo网站根目录，执行<code>npm install</code>安装依赖项。</li><li>可以在电脑B上继续使用Hexo开发和管理网站了。每次在电脑B上进行更改后，可以将更改推送到GitHub仓库，以便在其他设备上同步。</li></ul><p>使用GitHub仓库的优点：</p><ul><li>版本控制：GitHub仓库可以方便地进行版本控制，记录每次提交的更改并提供协作功能。</li><li>管理方便：可以在不同设备上同步Hexo网站，并方便地进行代码管理和共享。</li></ul><p>使用GitHub仓库的缺点：</p><ul><li>需要网络连接：使用GitHub需要良好的网络连接，如果没有网络连接则无法进行同步和推送更改。</li><li>需要学习Git：使用GitHub仓库需要一定程度上的Git使用知识，对于初学者可能需要一些时间来适应。</li></ul></li></ol><ol start="3"><li><p>使用Docker镜像：</p><ul><li>在电脑A上构建一个包含Git和Node.js环境的Docker镜像，并将Hexo网站的文件和依赖项包含在镜像中。</li><li>将该Docker镜像导出为tar文件。</li><li>将tar文件传输到电脑B，并在电脑B上导入Docker镜像。</li><li>在电脑B上运行容器，以启动Hexo网站。</li><li>通过访问主机的4000端口在电脑B上访问Hexo网站</li></ul><p>使用Docker镜像的优点：</p><ul><li>环境一致性：Docker镜像能够提供相同的开发环境，确保在不同电脑上运行Hexo网站时，所需的环境一致。</li><li>可移植性：Docker容器可以在不同机器上轻松部署，减少了配置和安装的麻烦。</li></ul><p>使用Docker镜像的缺点：</p><ul><li>需要学习Docker：使用Docker需要一定的学习曲线，对于不熟悉Docker的用户来说，可能需要花费一些时间来学习和理解Docker的使用。</li><li>资源消耗：Docker容器需要一定的系统资源，包括内存和存储空间。</li></ul></li></ol><p>这三种方法各有优劣，取决于具体需求和使用场景。如果只需要简单地将Hexo网站文件复制到另一台电脑，使用U盘拷贝可能是最方便的方法。如果需要在多台设备之间同步和版本控制，使用GitHub仓库是一个不错的选择。而如果希望封装整个开发环境并在不同的机器上快速部署，使用Docker镜像可能更适合。</p><h1 id="什么是docker？"><a href="#什么是docker？" class="headerlink" title="什么是docker？"></a>什么是docker？</h1><h2 id="官方解释"><a href="#官方解释" class="headerlink" title="官方解释"></a>官方解释</h2><p>Docker是一种轻量级的容器化技术，可以帮助开发人员更有效地构建、部署和管理应用程序。下面是一些常见的Docker实用例子：</p><ol><li>应用程序打包和交付：Docker可以将应用程序及其所有依赖项打包到一个容器中，形成一个独立、可移植的单元。这使得应用程序在不同的环境中更容易部署和交付，并且能够确保应用程序在不同平台上具有一致的行为。</li><li>快速环境搭建和测试：Docker容器可以帮助快速创建和销毁开发、测试和演示环境。开发人员可以使用包含所需软件和配置的Docker镜像来快速搭建开发环境，而无需手动安装和配置各种依赖项。同时，Docker容器的隔离性确保了环境之间的互相隔离，避免了互相干扰。</li><li>扩展和负载均衡：使用Docker容器，可以很容易地创建多个相同的容器实例，形成一个应用程序的集群。这样可以实现应用程序的水平扩展和负载均衡，以提高性能和可靠性。</li><li>微服务架构：Docker可以配合微服务架构使用，将一个大型应用程序拆分为多个小型的、独立部署的服务。每个服务都可以打包为一个独立的容器，使得每个服务可以独立地进行开发、测试和部署，并且可以根据需要进行扩展和升级。</li><li>持续集成和持续部署：Docker容器可以与持续集成和持续部署工具集成，帮助实现快速、可靠的软件交付流程。容器化的应用程序可以更容易地在不同的环境中进行测试和部署，从而加速软件交付的速度和质量。</li></ol><h2 id="通俗化理解"><a href="#通俗化理解" class="headerlink" title="通俗化理解"></a>通俗化理解</h2><ul><li>dockerfile： image的源代码 </li><li>image： 可执行程序 </li><li>container： 运行起来的进程</li><li>docker：编译器</li></ul><p>在dockerfile中指定需要哪些程序、依赖什么样的配置，之后把dockerfile交给“编译器”docker进行“编译”，也就是docker build命令，生成的可执行程序就是image，之后就可以运行这个image了，这就是docker run命令，image运行起来后就是docker container。 </p><h1 id="概念："><a href="#概念：" class="headerlink" title="概念："></a>概念：</h1><ol><li><p>Docker镜像（Images）：理解Docker镜像的概念，它是用于构建容器的模板。镜像包含了运行应用程序所需的一切，如操作系统、库、依赖项等。</p></li><li><p>Docker容器（Containers）：容器是基于Docker镜像创建的运行实例。容器是可执行、可移植且可隔离的，可以在不同的环境中运行。</p></li><li><p>Dockerfile：Dockerfile是用于构建Docker镜像的文本文件。它描述了一系列指令，用于定义镜像的构建步骤和配置。</p></li><li><p>构建镜像：使用Dockerfile和docker build命令构建自定义的Docker镜像。通过指定Dockerfile路径和镜像名称，运行docker build命令来构建镜像。</p></li><li><p>运行容器：使用docker run命令来创建和运行容器。通过指定镜像名称和其他选项，比如端口映射、环境变量等，可以创建一个新的容器实例。</p></li><li><p>容器生命周期管理：了解常用的Docker命令，如docker start、docker stop、docker restart等，用于启动、停止和重启容器。</p></li><li><p>容器网络：学习如何在Docker中配置容器之间的网络连接，以及如何将容器暴露给主机或外部网络。</p></li><li><p>Docker Compose：学习使用Docker Compose来定义和管理多个容器组成的应用程序。使用YAML文件描述应用程序的不同服务，然后使用docker-compose命令启动、停止和管理这些服务。</p></li><li><p>数据卷（Volumes）：了解数据卷的概念，它是用于持久化存储容器数据的方法。数据卷可以在容器之间共享和重用，并且对宿主机和其他容器都是可访问的。</p></li><li><p>Docker Hub：熟悉Docker Hub，它是一个公共的Docker镜像仓库。可以从Docker Hub上获取现有的镜像，也可以上传自己构建的镜像到Docker Hub进行分享和存储。</p></li></ol><h1 id="常用的Docker命令"><a href="#常用的Docker命令" class="headerlink" title="常用的Docker命令"></a>常用的Docker命令</h1><ol><li><p>构建镜像：</p><pre><code>docker build -t &lt;image_name&gt; &lt;dockerfile_path&gt;</code></pre></li><li><p>运行容器：</p><pre><code>docker run -d --name &lt;container_name&gt; &lt;image_name&gt;</code></pre></li><li><p>列出正在运行的容器：</p><pre><code>docker ps</code></pre></li><li><p>列出所有容器（包括已停止的）：</p><pre><code>docker ps -a</code></pre></li><li><p>停止容器：</p><pre><code>docker stop &lt;container_name&gt;</code></pre></li><li><p>启动已停止的容器：</p><pre><code>docker start &lt;container_name&gt;</code></pre></li><li><p>删除容器：</p><pre><code>docker rm &lt;container_name&gt;</code></pre></li><li><p>列出镜像：</p><pre><code>docker images</code></pre></li><li><p>删除镜像：</p><pre><code>docker rmi &lt;image_name&gt;</code></pre></li><li><p>查看容器日志：</p><pre><code>docker logs &lt;container_name&gt;</code></pre></li><li><p>进入容器的交互式模式：</p><pre><code>docker exec -it &lt;container_name&gt; bash</code></pre></li><li><p>复制文件到/从容器：</p><pre><code>docker cp &lt;local_path&gt; &lt;container_name&gt;:&lt;container_path&gt;docker cp &lt;container_name&gt;:&lt;container_path&gt; &lt;local_path&gt;</code></pre></li><li><p>构建并启动Compose定义的服务：</p><pre><code>docker-compose up -d</code></pre></li><li><p>关闭已启动的Compose服务：</p><pre><code>docker-compose down</code></pre></li></ol><h1 id="docker-pull"><a href="#docker-pull" class="headerlink" title="docker pull"></a>docker pull</h1><p><code>docker pull</code>命令用于从Docker镜像仓库中拉取（下载）一个镜像到本地。以下是<code>docker pull</code>命令的使用方式：</p><pre><code>docker pull &lt;image_name&gt;</code></pre><p>其中，<code>&lt;image_name&gt;</code>指定了要拉取的镜像名称，可以是官方仓库中的镜像，也可以是自定义的仓库中的镜像。</p><p>例如，要拉取官方的Ubuntu镜像，可以运行以下命令：</p><pre><code>docker pull ubuntu</code></pre><p>如果要拉取指定版本的镜像，可以在镜像名称后面添加<code>:&lt;tag&gt;</code>，如下所示：</p><pre><code>docker pull ubuntu:20.04</code></pre><p>这将拉取Ubuntu 20.04版本的镜像。</p><p>执行<code>docker pull</code>命令后，Docker将开始下载镜像并保存到本地。你可以使用<code>docker images</code>命令查看已下载的镜像列表。</p><blockquote><p>使用<code>docker pull</code>命令需要联网，并且要确保本地环境可以连接到Docker镜像仓库。如果你使用的是私有仓库，还需要提供相应的身份验证信息。</p></blockquote><h1 id="docker实践"><a href="#docker实践" class="headerlink" title="docker实践"></a>docker实践</h1><h2 id="使用Docker将Hexo网站打包为一个镜像"><a href="#使用Docker将Hexo网站打包为一个镜像" class="headerlink" title="使用Docker将Hexo网站打包为一个镜像"></a>使用Docker将Hexo网站打包为一个镜像</h2><p>创建一个Dockerfile：在你Hexo网站根目录下创建一个名为Dockerfile的文件，并使用文本编辑器打开它。</p><ol start="2"><li>编写Dockerfile：在Dockerfile中，指定基础镜像以及构建和运行过程所需的命令</li></ol><pre class=" language-dockerfile"><code class="language-dockerfile"># 使用Node.js作为基础镜像FROM node:14-alpine# 设置工作目录WORKDIR /app# 复制网站文件到容器中COPY . .# 安装依赖RUN npm install# 执行Hexo命令生成静态网站RUN npx hexo generate# 暴露Hexo服务的端口EXPOSE 4000# 启动Hexo服务CMD ["npx", "hexo", "server"]</code></pre><p>以上Dockerfile使用了Node.js 14的Alpine版本作为基础镜像。它先将当前目录下的所有文件复制到容器的/app目录中，然后安装Hexo所需的依赖、生成静态网站并暴露4000端口，最后启动Hexo服务。</p><ol start="3"><li>构建镜像：在终端中进入Dockerfile所在的目录，并执行以下命令来构建镜像：</li></ol><pre><code>docker build -t &lt;image_name&gt; .    #使用当前目录作为上下文进行构建</code></pre><p>其中，<code>&lt;image_name&gt;</code>镜像起的名称，自定义；这个命令会在当前目录下根据Dockerfile构建一个镜像，并使用指定的名称标记它。</p><ol start="4"><li>运行容器：构建完成后，你可以使用以下命令来创建并运行一个容器：</li></ol><pre><code>docker run -d --name &lt;container_name&gt; -p 4000:4000 &lt;image_name&gt;</code></pre><p><code>&lt;container_name&gt;</code>为容器起的名称，可以自定义；<code>&lt;image_name&gt;</code>之前构建的镜像的名称。</p><p>此命令将创建一个后台运行的容器，将主机的4000端口映射到容器的4000端口，通过主机的4000端口可以访问Hexo网站。</p><h2 id="将Docker镜像部署到一台没有任何环境的电脑上运行"><a href="#将Docker镜像部署到一台没有任何环境的电脑上运行" class="headerlink" title="将Docker镜像部署到一台没有任何环境的电脑上运行"></a>将Docker镜像部署到一台没有任何环境的电脑上运行</h2><ol><li>将镜像导出：在已经构建好的Docker镜像所在的电脑上，使用以下命令将镜像导出为一个tar文件：</li></ol><pre><code>docker save -o &lt;image_file_name&gt;.tar &lt;image_name&gt;</code></pre><p><code>&lt;image_file_name&gt;</code>导出的镜像文件的名称，自定义；<code>&lt;image_name&gt;</code>是你之前构建的镜像的名称。</p><ol start="2"><li><p>将镜像移动到目标电脑：将导出的镜像文件（tar文件）通过移动、复制等方式传输到目标电脑上。</p></li><li><p>导入镜像：在目标电脑上，在终端中进入存放镜像文件的目录，并执行以下命令将镜像导入Docker中：</p></li></ol><pre><code>docker load -i &lt;image_file_name&gt;.tar</code></pre><p>其中，<code>&lt;image_file_name&gt;</code>是你导出的镜像文件的名称，可以自定义。这个命令会将镜像文件加载到Docker中，使得你可以在目标电脑上使用该镜像。</p><ol start="4"><li>运行容器：在目标电脑上，创建并运行一个容器：</li></ol><pre><code>docker run -d --name &lt;container_name&gt; -p 4000:4000 &lt;image_name&gt;</code></pre><p>其中，<code>&lt;container_name&gt;</code>是你为容器起的名称，可以自定义；<code>&lt;image_name&gt;</code>是你导入的镜像的名称。</p><p>这个命令将创建一个后台运行的容器，将主机的4000端口映射到容器的4000端口，使得你可以通过主机的4000端口访问Hexo网站。Hexo网站便可在目标电脑上成功部署并运行了。</p><h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p> Docker是一项流行的容器化技术，它帮助开发人员和运维团队更轻松地构建、部署和管理应用程序。使用Docker，可以将应用程序及其所有依赖项打包到一个可移植的容器中，然后在任何支持Docker的环境中运行；</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术分享 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> docker </tag>
+            
+            <tag> 技术分享 </tag>
+            
+            <tag> 容器技术 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Git:分布式版本控制系统的入门指南</title>
       <link href="/gong-ju-git-fen-bu-shi-ban-ben-kong-zhi-xi-tong-de-ru-men-zhi-nan.html"/>
       <url>/gong-ju-git-fen-bu-shi-ban-ben-kong-zhi-xi-tong-de-ru-men-zhi-nan.html</url>
@@ -20,9 +49,9 @@
       
         <tags>
             
-            <tag> Git </tag>
-            
             <tag> 工具 </tag>
+            
+            <tag> Git </tag>
             
             <tag> 分布式 </tag>
             
@@ -225,9 +254,9 @@
       
         <tags>
             
-            <tag> 网络安全 </tag>
-            
             <tag> 技术分享 </tag>
+            
+            <tag> 网络安全 </tag>
             
             <tag> 渗透测试 </tag>
             
@@ -256,9 +285,9 @@
       
         <tags>
             
-            <tag> 网络安全 </tag>
-            
             <tag> 技术分享 </tag>
+            
+            <tag> 网络安全 </tag>
             
             <tag> 渗透测试 </tag>
             
@@ -316,11 +345,11 @@
       
         <tags>
             
+            <tag> 技术分享 </tag>
+            
             <tag> 工具 </tag>
             
             <tag> 网络安全 </tag>
-            
-            <tag> 技术分享 </tag>
             
             <tag> frp </tag>
             
@@ -349,11 +378,11 @@
             
             <tag> 生活记录 </tag>
             
+            <tag> blog </tag>
+            
             <tag> 分享 </tag>
             
             <tag> hexo </tag>
-            
-            <tag> blog </tag>
             
         </tags>
       
@@ -380,9 +409,9 @@
             
             <tag> linux </tag>
             
-            <tag> 服务器 </tag>
-            
             <tag> 技术分享 </tag>
+            
+            <tag> 服务器 </tag>
             
             <tag> samba </tag>
             
@@ -500,9 +529,9 @@
       
         <tags>
             
-            <tag> 网络安全 </tag>
-            
             <tag> 技术分享 </tag>
+            
+            <tag> 网络安全 </tag>
             
         </tags>
       
@@ -554,9 +583,9 @@
             
             <tag> AI </tag>
             
-            <tag> linux </tag>
-            
             <tag> chatgpt </tag>
+            
+            <tag> linux </tag>
             
         </tags>
       

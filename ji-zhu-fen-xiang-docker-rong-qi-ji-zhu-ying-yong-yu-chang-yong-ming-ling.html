@@ -4,13 +4,12 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="渗透-被动信息收集, seek">
+    <meta name="keywords" content="docker:容器技术应用与常用命令, seek">
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
-    <meta name="description" content="被动信息收集被动信息收集指在不直接与目标交互或者不打扰目标的情况下获取信息的一种方式。与主动信息收集（比如问卷调查或面试）相比，被动信息收集更依赖于现有的公开信息资源，或者通过监听和观察来获取信息。 
-被动信息收集的内容
-公开信息：例如新闻">
+    <meta name="description" content="引言个人基于hexo做了个博客网站，同时基于hugo做了一个导航网站；两者都基于一定的环境依赖，需要配置一定的环境，才能做一些操作；
+Hexo博客每次的生成和部署都需要环境、依赖资源和所有博客文件，所以如果我们要换一台电脑写博客，则需要配置">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +17,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>渗透-被动信息收集 | Bevis23&#39;s Blog</title>
+    <title>docker:容器技术应用与常用命令 | Bevis23&#39;s Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -366,13 +365,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/21.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        渗透-被动信息收集
+                        docker:容器技术应用与常用命令
                     </div>
                 </div>
             </div>
@@ -511,20 +510,16 @@ overflow-y: scroll;
                     
                     <div class="article-tag">
                         
+                        <a href="/tags/docker/" target="_blank">
+                            <span class="chip bg-color">docker</span>
+                        </a>
+                        
                         <a href="/tags/技术分享/" target="_blank">
                             <span class="chip bg-color">技术分享</span>
                         </a>
                         
-                        <a href="/tags/网络安全/" target="_blank">
-                            <span class="chip bg-color">网络安全</span>
-                        </a>
-                        
-                        <a href="/tags/渗透测试/" target="_blank">
-                            <span class="chip bg-color">渗透测试</span>
-                        </a>
-                        
-                        <a href="/tags/shodan/" target="_blank">
-                            <span class="chip bg-color">shodan</span>
+                        <a href="/tags/容器技术/" target="_blank">
+                            <span class="chip bg-color">容器技术</span>
                         </a>
                         
                     </div>
@@ -535,8 +530,8 @@ overflow-y: scroll;
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                        <a href="/categories/网络安全/" class="post-category" target="_blank">
-                            网络安全
+                        <a href="/categories/技术分享/" class="post-category" target="_blank">
+                            技术分享
                         </a>
                         
                     </div>
@@ -547,7 +542,7 @@ overflow-y: scroll;
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-07-15
+                    2023-07-27
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -561,14 +556,14 @@ overflow-y: scroll;
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    3.8k
+                    3.5k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    13 分
+                    12 分
                 </div>
                 
                 
@@ -584,140 +579,200 @@ overflow-y: scroll;
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="被动信息收集"><a href="#被动信息收集" class="headerlink" title="被动信息收集"></a>被动信息收集</h1><h2 id="被动信息收集-1"><a href="#被动信息收集-1" class="headerlink" title="被动信息收集"></a>被动信息收集</h2><p>指在不直接与目标交互或者不打扰目标的情况下获取信息的一种方式。与主动信息收集（比如问卷调查或面试）相比，被动信息收集更依赖于现有的公开信息资源，或者通过监听和观察来获取信息。 </p>
-<h2 id="被动信息收集的内容"><a href="#被动信息收集的内容" class="headerlink" title="被动信息收集的内容"></a>被动信息收集的内容</h2><ol>
-<li>公开信息：例如新闻报告、社交媒体发帖、公开数据库或报告。</li>
-<li>网络行为数据：如浏览记录、购物习惯、搜索历史等。</li>
-<li>环境数据：例如，通过使用各种传感器收集的环境或行为数据。</li>
-<li>元数据：例如，邮件通信的时间戳和发件人/收件人信息，不包括邮件内容本身。</li>
-</ol>
-<h2 id="信息用途"><a href="#信息用途" class="headerlink" title="信息用途"></a>信息用途</h2><ol>
-<li>市场研究：企业可能会收集潜在客户的信息，以更好地理解他们的需求和行为，然后优化产品或服务。</li>
-<li>竞争情报：企业也可能会收集关于竞争对手的信息，以便在战略决策中获取优势。</li>
-<li>个性化推荐：互联网公司常常使用用户的浏览历史和购物行为来推荐相关的产品或服务。</li>
-<li>安全和防御：政府或安全机构可能会收集公开的信息，以识别和防止可能的威胁。</li>
-<li>科研：学者和研究人员可能会收集公开数据来进行科学研究，例如社会学研究、公共卫生研究等。</li>
-<li>广告定向：通过分析用户的网络行为数据，可以推送更精准的广告，提高广告效益。</li>
-</ol>
-<h1 id="信息收集-DNS"><a href="#信息收集-DNS" class="headerlink" title="信息收集-DNS"></a>信息收集-DNS</h1><h2 id="DNS-服务器概述"><a href="#DNS-服务器概述" class="headerlink" title="DNS 服务器概述:"></a>DNS 服务器概述:</h2><p>运行 DNS 服务器程序的计算机，储存 DNS 数据库信息。DNS 服务器分为根域 DNS 服务器、顶级域名DNS 服务器。[根域DNS 服务器有 13个，都存储了全部的顶级域名服务器的所在地址;顶级域名服务器存储了每位客户所注册的主机地址，这里对应到 163.com这个级别。</p>
-<h2 id="域名记录"><a href="#域名记录" class="headerlink" title="域名记录"></a>域名记录</h2><ol>
-<li>A 记录：用于将域名映射到对应的 IPv4 地址。</li>
-<li>AAAA 记录：用于将域名映射到对应的 IPv6 地址。</li>
-<li>CNAME 记录：将一个域名映射到另一个域名，也称为别名。</li>
-<li>MX 记录：定义用于处理特定域名的邮件的邮件服务器。</li>
-<li>NS 记录：用于指定负责特定域名的 DNS 服务器。</li>
-<li>TXT 记录：可以包含任何文本，经常用于验证域名所有权，或为 SPF（Sender Policy Framework，发送方策略框架）提供信息，这是一种防止垃圾邮件的技术。</li>
-<li>SRV 记录：提供特定服务的服务器的信息。</li>
-<li>SOA 记录：在 DNS 区域中的每个域名服务器上都有一个 SOA 记录，它包含关于 DNS 区域的元数据，如负责区域的主 DNS 服务器和联系邮箱等。</li>
-</ol>
-<h2 id="DNS缓存服务器"><a href="#DNS缓存服务器" class="headerlink" title="DNS缓存服务器"></a>DNS缓存服务器</h2><p>缓存DNS 服务器:不负责解析域，只是缓存域名解析结果。一般来说 DNS 缓存服务器是最接近客户的一个服务器，当有客户机需要访问某个网址时就会访问该服务器，DNS 缓存服务器则去查询根域-&gt;顶级域名-&gt;WEB 提供商的域名服务器DNS 缓存服务器得到具体主机记录时，将该记录缓存在本地缓存中存放一定的时间，当该缓存未被丢弃时，有客户机访问对应网址，则由 DNS 缓存服务器直接返回相应主机记录。</p>
-<h2 id="DNS信息收集"><a href="#DNS信息收集" class="headerlink" title="DNS信息收集"></a>DNS信息收集</h2><h3 id="nslookup"><a href="#nslookup" class="headerlink" title="nslookup"></a>nslookup</h3><p><code>nslookup</code> 是一个网络管理命令行工具，它用于查询 DNS（域名系统）以获取域名或 IP 地址映射，或者其他 DNS 记录。它是大多数操作系统（如 Windows，macOS，Linux）中的标准工具。</p>
-<p>下面是使用 <code>nslookup</code> 的一些基本用法：</p>
+                <h1 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h1><p>个人基于hexo做了个博客网站，同时基于hugo做了一个导航网站；两者都基于一定的环境依赖，需要配置一定的环境，才能做一些操作；</p>
+<p>Hexo博客每次的生成和部署都需要环境、依赖资源和所有博客文件，所以如果我们要换一台电脑写博客，则需要配置相同的环境、依赖和所有博客文件，最简单的方法就是用U盘或者其他存储方式拷贝；或者使用GitHub仓库； 更高级的方法是使用 Docker，它可以更方便地打包整个 Hexo 环境和依赖，以便在任何支持 Docker 的计算机上运行，无需重新配置 </p>
+<h1 id="迁移的三种方式"><a href="#迁移的三种方式" class="headerlink" title="迁移的三种方式"></a>迁移的三种方式</h1><p>当你想在另一台电脑上继续管理和开发Hexo网站时，电脑A为原电脑，电脑B为一台没有任何环境的电脑，以下是三种常用的方法：</p>
 <ol>
-<li><strong>查询域名的 IP 地址</strong>：只需在命令行中输入 <code>nslookup</code>，后面跟上你想查询的域名。例如：</li>
+<li><p>使用U盘拷贝：</p>
+<ul>
+<li>在电脑A上将Hexo网站的文件和依赖项复制到U盘中。</li>
+<li>将U盘连接到电脑B，将文件和依赖项复制到电脑B上。</li>
+<li>在电脑B上安装Git和Node.js。</li>
+<li>进入Hexo网站根目录，执行<code>npm install</code>安装依赖项。</li>
+</ul>
+<p>使用U盘拷贝的优点：</p>
+<ul>
+<li>便捷：U盘是一种常见的便携式存储设备，可以轻松地将文件和依赖项从一台电脑复制到另一台电脑。</li>
+<li>简单：整个过程相对简单，不需要涉及复杂的工具或网络连接。</li>
+</ul>
+<p>使用U盘拷贝的缺点：</p>
+<ul>
+<li>繁琐：每次更新网站时都需要手动复制文件和依赖项，如果经常需要更新则会比较繁琐。</li>
+<li>可能会存在版本差异：如果电脑A和电脑B的环境配置有所不同，可能会导致一些依赖项无法正常工作。</li>
+</ul>
+</li>
 </ol>
-<pre><code>nslookup www.example.com</code></pre><p>这将返回该域名对应的 IP 地址。</p>
 <ol start="2">
-<li><strong>查询特定 DNS 记录</strong>：你可以使用 <code>-query</code> 选项查询特定类型的 DNS 记录。例如，要查询一个域的 MX 记录（邮件交换记录），你可以输入：</li>
+<li><p>使用GitHub仓库：</p>
+<ul>
+<li>在电脑A上创建一个GitHub仓库，并将Hexo网站的文件和依赖项推送到该仓库。</li>
+<li>在电脑B上克隆该GitHub仓库的代码。</li>
+<li>在电脑B上安装Git和Node.js。</li>
+<li>进入Hexo网站根目录，执行<code>npm install</code>安装依赖项。</li>
+<li>可以在电脑B上继续使用Hexo开发和管理网站了。每次在电脑B上进行更改后，可以将更改推送到GitHub仓库，以便在其他设备上同步。</li>
+</ul>
+<p>使用GitHub仓库的优点：</p>
+<ul>
+<li>版本控制：GitHub仓库可以方便地进行版本控制，记录每次提交的更改并提供协作功能。</li>
+<li>管理方便：可以在不同设备上同步Hexo网站，并方便地进行代码管理和共享。</li>
+</ul>
+<p>使用GitHub仓库的缺点：</p>
+<ul>
+<li>需要网络连接：使用GitHub需要良好的网络连接，如果没有网络连接则无法进行同步和推送更改。</li>
+<li>需要学习Git：使用GitHub仓库需要一定程度上的Git使用知识，对于初学者可能需要一些时间来适应。</li>
+</ul>
+</li>
 </ol>
-<pre><code>nslookup -query=mx example.com</code></pre><p>这将返回处理该域名邮件的邮件服务器。</p>
 <ol start="3">
-<li><strong>查询特定 DNS 服务器</strong>：你还可以指定一个特定的 DNS 服务器来查询。例如，要使用 Google 的公共 DNS 服务器查询一个域名，可以输入：</li>
-</ol>
-<pre><code>nslookup example.com 8.8.8.8</code></pre><p>其中，8.8.8.8 是 Google 公共 DNS 的 IP 地址。</p>
-<h3 id="dig"><a href="#dig" class="headerlink" title="dig"></a>dig</h3><p><code>dig</code>（域信息搜寻器）是一个强大而灵活的命令行工具，主要用于查询 DNS 名称服务器。它可以用于获取各种类型的 DNS 记录，包括 A 记录，MX 记录，CNAME 记录等。它是 Unix 和 Linux 系统中的一个常见工具，但也可以在其他系统如 Windows 和 macOS 上安装。</p>
-<p>以下是 <code>dig</code> 的一些基本用法：</p>
-<ol>
-<li><p><strong>查询 A 记录</strong>：要查询一个域名的 A 记录（也就是该域名的 IP 地址），你只需在命令行中输入 <code>dig</code>，后面跟上你想查询的域名。例如：</p>
-<pre><code>dig www.example.com</code></pre><p>默认情况下，<code>dig</code> 查询的就是 A 记录。</p>
-</li>
-<li><p><strong>查询其他类型的记录</strong>：你可以通过在 <code>dig</code> 后面加上记录类型来查询其他类型的 DNS 记录。例如，要查询一个域名的 MX 记录，你可以输入：</p>
-<pre><code>dig MX example.com</code></pre></li>
-<li><p><strong>查询特定 DNS 服务器</strong>：你还可以指定一个特定的 DNS 服务器进行查询。例如，要使用 Google 的公共 DNS 服务器查询一个域名，你可以输入：</p>
-<pre><code>dig @8.8.8.8 www.example.com</code></pre></li>
-<li><p><strong>简化输出</strong>：<code>dig</code> 的输出包含很多详细信息，如果你只需要 IP 地址，可以使用 <code>+short</code> 选项来简化输出。例如：</p>
-<pre><code>dig +short www.example.com</code></pre></li>
-</ol>
-<h1 id="子域名信息收集"><a href="#子域名信息收集" class="headerlink" title="子域名信息收集"></a>子域名信息收集</h1><h2 id="maltego"><a href="#maltego" class="headerlink" title="maltego"></a>maltego</h2><p>Maltego 是一种开源的情报收集和数据可视化工具。它广泛应用于网络防御、信息安全、侦查和其他相关领域。Maltego 主要用于收集公开可获取的信息（Open-source intelligence, OSINT）并将这些信息关联起来以发现隐藏的关系。</p>
-<p>这种工具可以提取大量数据，并通过各种转换工具分析这些数据，以揭示网络、个人、组织、网址、社交网络账户等之间的关系。Maltego 可以通过图形化界面显示这些信息和关系，让用户能够更好地理解和解读数据。</p>
-<p>Maltego 可以收集和分析的信息类型包括：</p>
+<li><p>使用Docker镜像：</p>
 <ul>
-<li>域名、网站和网络基础设施</li>
-<li>人员姓名、社交媒体信息和电子邮件地址</li>
-<li>电话号码和地理位置信息</li>
-<li>公司、组织和业务关系信息</li>
+<li>在电脑A上构建一个包含Git和Node.js环境的Docker镜像，并将Hexo网站的文件和依赖项包含在镜像中。</li>
+<li>将该Docker镜像导出为tar文件。</li>
+<li>将tar文件传输到电脑B，并在电脑B上导入Docker镜像。</li>
+<li>在电脑B上运行容器，以启动Hexo网站。</li>
+<li>通过访问主机的4000端口在电脑B上访问Hexo网站</li>
 </ul>
-<p>这些信息可以帮助安全研究员、调查人员、情报机构等用户追踪网络攻击、侦查欺诈活动、进行企业情报收集、网络侦查等活动</p>
-<h2 id="子域名"><a href="#子域名" class="headerlink" title="子域名"></a>子域名</h2><p>子域名是 Internet 域名系统（DNS）层级结构中的一部分，位于主域名之下。子域名可以帮助组织管理和分发其主域名下的内容，它常常用于区分公司的不同业务部门或产品，或者提供不同地区的本地化服务。</p>
-<p>例如，在域名 “<a href="http://www.example.com&quot;" target="_blank" rel="noopener">www.example.com&quot;</a> 中，”www” 就是一个子域名，”example.com” 是主域名。实际上，”www” 只是约定俗成的子域名，表示一个公司的主网站。其他常见的子域名可能包括 “mail.example.com”（用于电子邮件服务）、”blog.example.com”（用于博客）或者 “us.example.com”（用于美国的本地化服务）等。</p>
-<p>一个主域名下可以有多个子域名，甚至可以有多级子域名。例如，你可以有一个 “sales.ny.us.example.com” 的子域名，其中 “sales” 是一级子域名，”ny” 是二级子域名，”us” 是三级子域名。</p>
-<p>使用子域名的好处之一是，它们可以指向不同的 IP 地址，因此可以分散网站流量，提供更好的用户体验。此外，它们还可以帮助提高网站的搜索引擎优化（SEO）效果，因为搜索引擎通常将子域名视为独立的网站。</p>
-<h2 id="如何查找子域名"><a href="#如何查找子域名" class="headerlink" title="如何查找子域名"></a>如何查找子域名</h2><p>1.子域名挖掘工具 : Maltego 子域名挖掘机。<br>2.搜索引擎挖掘 如: 在Google 中输入 site:qq.comu<br>3.第三方网站查询: <a href="http://tool.chinaz.com/subdomain、https://dnsdumpster.com/" target="_blank" rel="noopener">http://tool.chinaz.com/subdomain、https://dnsdumpster.com/</a></p>
-<p>4.证书透明度公开日志枚举: <a href="https://crt.sh/" target="_blank" rel="noopener">https://crt.sh/</a> 、<a href="http://censys.io/4" target="_blank" rel="noopener">http://censys.io/4</a><br>5.其他途径: <a href="https://phpinfo.me/domain" target="_blank" rel="noopener">https://phpinfo.me/domain</a> 、<a href="http://dns.aizhan.com" target="_blank" rel="noopener">http://dns.aizhan.com</a></p>
-<h1 id="shodan-信息收集"><a href="#shodan-信息收集" class="headerlink" title="shodan 信息收集"></a>shodan 信息收集</h1><h2 id="Shodan介绍"><a href="#Shodan介绍" class="headerlink" title="Shodan介绍"></a>Shodan介绍</h2><p>Shodan 搜索引擎概述:虽然目前人们都认为谷歌是最强劲的搜索引擎，但Shodan 才是互联网上最可怕的搜索引擎。与谷歌不同的是，Shodan 不是在网上搜索网址，而是直接进入互联网背后的通道。Shodan 可以说是一款“黑暗”谷歌，一刻不停的在寻找着所有和互联网关联的服务器、摄像头、打印机、路由器等等。还可以直接显示出目标的县体地理位置信息。</p>
-<p>  网址：<a href="https://www.shodan.io/" target="_blank" rel="noopener">https://www.shodan.io/</a></p>
-<h2 id="Shodan-的工作原理："><a href="#Shodan-的工作原理：" class="headerlink" title="Shodan 的工作原理："></a>Shodan 的工作原理：</h2><p>它通过互联网扫描各类设备，收集关于这些设备的信息，如 IP 地址、操作系统、开放的网络端口、所在地理位置等。这些信息会被 Shodan 索引并存储，用户可以通过关键词或者特定的搜索过滤器在 Shodan 上进行查询。</p>
-<h2 id="Shodan-的主要用途"><a href="#Shodan-的主要用途" class="headerlink" title="Shodan 的主要用途"></a>Shodan 的主要用途</h2><p>可以被归纳为两大类：安全研究和威胁侦查。安全研究人员可以利用 Shodan 检查自家网络中可能存在的安全漏洞，或者研究新的攻击方式。另一方面，威胁猎人和安全响应团队可以使用 Shodan 追踪恶意活动和攻击者。Shodan 也常被用于侦查网络犯罪活动，如寻找可能被利用为僵尸网络的设备。</p>
-<h2 id="Shodan-的搜索语法"><a href="#Shodan-的搜索语法" class="headerlink" title="Shodan 的搜索语法"></a>Shodan 的搜索语法</h2><p>能够进行细致的过滤以帮助你找到特定的设备。下面是一些基本的搜索过滤器：</p>
-<ol>
-<li><p><strong>城市（city）</strong>：可以通过 <code>city:北京</code> 这样的搜索过滤器找到特定城市的设备。</p>
-</li>
-<li><p><strong>国家（country）</strong>：同样，<code>country:CN</code> 可以帮助你找到位于中国的设备。</p>
-</li>
-<li><p><strong>端口（port）</strong>：<code>port:22</code> 会返回所有开放了 22 端口（通常为 SSH 服务）的设备。</p>
-</li>
-<li><p><strong>操作系统（os）</strong>：<code>os:windows</code> 会返回所有运行 Windows 操作系统的设备。</p>
-</li>
-<li><p><strong>组织（org）</strong>：<code>org:&quot;Microsoft&quot;</code> 可以搜索特定组织的设备。</p>
-</li>
-<li><p><strong>产品（product）</strong>：<code>product:&quot;Apache httpd&quot;</code> 会返回使用了特定软件产品的设备。</p>
-</li>
-</ol>
-<p>这些只是 Shodan 的基本搜索过滤器，实际上 Shodan 还支持很多其他的搜索过滤器，甚至可以组合使用多个过滤器，如 <code>city:北京 country:CN port:22</code>。</p>
-<ol>
-<li><p><strong>hostname</strong>：可以搜索特定主机名的设备，例如：<code>hostname:google.com</code>。</p>
-</li>
-<li><p><strong>net</strong>：搜索特定 IP 地址范围的设备，例如：<code>net:192.168.1.0/24</code>。</p>
-</li>
-<li><p><strong>before/after</strong>：可以搜索特定日期之前或之后的设备，例如：<code>before:2023-01-01</code> 或 <code>after:2023-01-01</code>。</p>
-</li>
-<li><p><strong>geo</strong>：搜索指定地理坐标范围的设备，例如：<code>geo:37.7749,-122.4194</code>。</p>
-</li>
-<li><p><strong>has_ipv6</strong>：搜索支持 IPv6 的设备，例如：<code>has_ipv6:true</code>。</p>
-</li>
-<li><p><strong>ssl</strong>：搜索使用 SSL 的设备，例如：<code>ssl:cert.subject.CN:google</code>。</p>
-</li>
-<li><p><strong>version</strong>：搜索特定版本的设备，例如：<code>version:1.0</code>。</p>
-</li>
-</ol>
-<p>还可以使用一些逻辑运算符来结合多个过滤器，如 <code>AND</code>、<code>OR</code> 和 <code>NOT</code>。例如：<code>port:80 AND city:Beijing</code> 会返回在北京并开放了 80 端口的设备。</p>
-<p>以上只是一部分 Shodan 的搜索过滤器，要获取更详细的信息，可以查阅 Shodan 的官方文档或搜索语法指南。</p>
-<h1 id="Google-搜索引擎的使用"><a href="#Google-搜索引擎的使用" class="headerlink" title="Google 搜索引擎的使用"></a>Google 搜索引擎的使用</h1><h2 id="Google-hacking是什么？"><a href="#Google-hacking是什么？" class="headerlink" title="Google hacking是什么？"></a>Google hacking是什么？</h2><p>Google hacking，维基百科解释： 是指利用谷歌搜索引擎中的高级操作符，在搜索结果中定位特定的文本字符串 。这种技术利用的是网站配置和代码中存在的安全漏洞，通过特定的搜索语法来寻找和利用这些漏洞。</p>
-<h2 id="Google-hacking常用的技术语法"><a href="#Google-hacking常用的技术语法" class="headerlink" title="Google hacking常用的技术语法"></a>Google hacking常用的技术语法</h2><p>列举常用的google语法，通过这些语法更好定位想要的信息；更多详细的语法，可以进数据库查看</p>
+<p>使用Docker镜像的优点：</p>
 <ul>
-<li><strong>site:</strong>：这个操作符可以让你只在特定网站内进行搜索。例如，”site:example.com” 就会在 example.com 网站内搜索。</li>
-<li><strong>filetype:</strong>：这个操作符可以帮助你搜索特定类型的文件。例如，”filetype:pdf” 就会搜索PDF文件。</li>
-<li><strong>intitle:</strong>：使用这个操作符可以搜索包含特定词语的网页标题。例如，”intitle:password” 会搜索标题中含有 “password” 的网页。</li>
-<li><strong>inurl:</strong>：这个操作符可以搜索URL中包含特定词语的网页。例如，”inurl:admin” 会搜索URL中包含 “admin” 的网页。</li>
-<li><strong>intext:</strong>：使用这个操作符可以搜索网页正文中包含特定词语的网页。例如，”intext:confidential” 会搜索正文中含有 “confidential” 的网页。</li>
-<li><strong>cache:</strong>：这个操作符可以帮助你查看Google对某个网页的缓存版本。例如，”cache:example.com” 会显示Google最近一次索引 example.com 的快照。</li>
-<li><strong>link:</strong>：这个操作符可以帮助你查找链接到特定URL的所有网页，不过这个功能在2017年被Google关闭，现在可能已经不能用了。</li>
-<li><strong>info:</strong>：这个操作符可以帮助你获取关于特定URL的基本信息，如网页描述、相关链接等。</li>
-<li><strong>related:</strong>：这个操作符可以帮你查找和特定网站内容相关的网站。</li>
-<li><strong>stocks:</strong>：这个操作符可以帮助你查找特定公司的股票信息。</li>
+<li>环境一致性：Docker镜像能够提供相同的开发环境，确保在不同电脑上运行Hexo网站时，所需的环境一致。</li>
+<li>可移植性：Docker容器可以在不同机器上轻松部署，减少了配置和安装的麻烦。</li>
 </ul>
+<p>使用Docker镜像的缺点：</p>
+<ul>
+<li>需要学习Docker：使用Docker需要一定的学习曲线，对于不熟悉Docker的用户来说，可能需要花费一些时间来学习和理解Docker的使用。</li>
+<li>资源消耗：Docker容器需要一定的系统资源，包括内存和存储空间。</li>
+</ul>
+</li>
+</ol>
+<p>这三种方法各有优劣，取决于具体需求和使用场景。如果只需要简单地将Hexo网站文件复制到另一台电脑，使用U盘拷贝可能是最方便的方法。如果需要在多台设备之间同步和版本控制，使用GitHub仓库是一个不错的选择。而如果希望封装整个开发环境并在不同的机器上快速部署，使用Docker镜像可能更适合。</p>
+<h1 id="什么是docker？"><a href="#什么是docker？" class="headerlink" title="什么是docker？"></a>什么是docker？</h1><h2 id="官方解释"><a href="#官方解释" class="headerlink" title="官方解释"></a>官方解释</h2><p>Docker是一种轻量级的容器化技术，可以帮助开发人员更有效地构建、部署和管理应用程序。下面是一些常见的Docker实用例子：</p>
+<ol>
+<li>应用程序打包和交付：Docker可以将应用程序及其所有依赖项打包到一个容器中，形成一个独立、可移植的单元。这使得应用程序在不同的环境中更容易部署和交付，并且能够确保应用程序在不同平台上具有一致的行为。</li>
+<li>快速环境搭建和测试：Docker容器可以帮助快速创建和销毁开发、测试和演示环境。开发人员可以使用包含所需软件和配置的Docker镜像来快速搭建开发环境，而无需手动安装和配置各种依赖项。同时，Docker容器的隔离性确保了环境之间的互相隔离，避免了互相干扰。</li>
+<li>扩展和负载均衡：使用Docker容器，可以很容易地创建多个相同的容器实例，形成一个应用程序的集群。这样可以实现应用程序的水平扩展和负载均衡，以提高性能和可靠性。</li>
+<li>微服务架构：Docker可以配合微服务架构使用，将一个大型应用程序拆分为多个小型的、独立部署的服务。每个服务都可以打包为一个独立的容器，使得每个服务可以独立地进行开发、测试和部署，并且可以根据需要进行扩展和升级。</li>
+<li>持续集成和持续部署：Docker容器可以与持续集成和持续部署工具集成，帮助实现快速、可靠的软件交付流程。容器化的应用程序可以更容易地在不同的环境中进行测试和部署，从而加速软件交付的速度和质量。</li>
+</ol>
+<h2 id="通俗化理解"><a href="#通俗化理解" class="headerlink" title="通俗化理解"></a>通俗化理解</h2><ul>
+<li>dockerfile： image的源代码 </li>
+<li>image： 可执行程序 </li>
+<li>container： 运行起来的进程</li>
+<li>docker：编译器</li>
+</ul>
+<p>在dockerfile中指定需要哪些程序、依赖什么样的配置，之后把dockerfile交给“编译器”docker进行“编译”，也就是docker build命令，生成的可执行程序就是image，之后就可以运行这个image了，这就是docker run命令，image运行起来后就是docker container。 </p>
+<h1 id="概念："><a href="#概念：" class="headerlink" title="概念："></a>概念：</h1><ol>
+<li><p>Docker镜像（Images）：理解Docker镜像的概念，它是用于构建容器的模板。镜像包含了运行应用程序所需的一切，如操作系统、库、依赖项等。</p>
+</li>
+<li><p>Docker容器（Containers）：容器是基于Docker镜像创建的运行实例。容器是可执行、可移植且可隔离的，可以在不同的环境中运行。</p>
+</li>
+<li><p>Dockerfile：Dockerfile是用于构建Docker镜像的文本文件。它描述了一系列指令，用于定义镜像的构建步骤和配置。</p>
+</li>
+<li><p>构建镜像：使用Dockerfile和docker build命令构建自定义的Docker镜像。通过指定Dockerfile路径和镜像名称，运行docker build命令来构建镜像。</p>
+</li>
+<li><p>运行容器：使用docker run命令来创建和运行容器。通过指定镜像名称和其他选项，比如端口映射、环境变量等，可以创建一个新的容器实例。</p>
+</li>
+<li><p>容器生命周期管理：了解常用的Docker命令，如docker start、docker stop、docker restart等，用于启动、停止和重启容器。</p>
+</li>
+<li><p>容器网络：学习如何在Docker中配置容器之间的网络连接，以及如何将容器暴露给主机或外部网络。</p>
+</li>
+<li><p>Docker Compose：学习使用Docker Compose来定义和管理多个容器组成的应用程序。使用YAML文件描述应用程序的不同服务，然后使用docker-compose命令启动、停止和管理这些服务。</p>
+</li>
+<li><p>数据卷（Volumes）：了解数据卷的概念，它是用于持久化存储容器数据的方法。数据卷可以在容器之间共享和重用，并且对宿主机和其他容器都是可访问的。</p>
+</li>
+<li><p>Docker Hub：熟悉Docker Hub，它是一个公共的Docker镜像仓库。可以从Docker Hub上获取现有的镜像，也可以上传自己构建的镜像到Docker Hub进行分享和存储。</p>
+</li>
+</ol>
+<h1 id="常用的Docker命令"><a href="#常用的Docker命令" class="headerlink" title="常用的Docker命令"></a>常用的Docker命令</h1><ol>
+<li><p>构建镜像：</p>
+<pre><code>docker build -t &lt;image_name&gt; &lt;dockerfile_path&gt;</code></pre></li>
+<li><p>运行容器：</p>
+<pre><code>docker run -d --name &lt;container_name&gt; &lt;image_name&gt;</code></pre></li>
+<li><p>列出正在运行的容器：</p>
+<pre><code>docker ps</code></pre></li>
+<li><p>列出所有容器（包括已停止的）：</p>
+<pre><code>docker ps -a</code></pre></li>
+<li><p>停止容器：</p>
+<pre><code>docker stop &lt;container_name&gt;</code></pre></li>
+<li><p>启动已停止的容器：</p>
+<pre><code>docker start &lt;container_name&gt;</code></pre></li>
+<li><p>删除容器：</p>
+<pre><code>docker rm &lt;container_name&gt;</code></pre></li>
+<li><p>列出镜像：</p>
+<pre><code>docker images</code></pre></li>
+<li><p>删除镜像：</p>
+<pre><code>docker rmi &lt;image_name&gt;</code></pre></li>
+<li><p>查看容器日志：</p>
+<pre><code>docker logs &lt;container_name&gt;</code></pre></li>
+<li><p>进入容器的交互式模式：</p>
+<pre><code>docker exec -it &lt;container_name&gt; bash</code></pre></li>
+<li><p>复制文件到/从容器：</p>
+<pre><code>docker cp &lt;local_path&gt; &lt;container_name&gt;:&lt;container_path&gt;
+docker cp &lt;container_name&gt;:&lt;container_path&gt; &lt;local_path&gt;</code></pre></li>
+<li><p>构建并启动Compose定义的服务：</p>
+<pre><code>docker-compose up -d</code></pre></li>
+<li><p>关闭已启动的Compose服务：</p>
+<pre><code>docker-compose down</code></pre></li>
+</ol>
+<h1 id="docker-pull"><a href="#docker-pull" class="headerlink" title="docker pull"></a>docker pull</h1><p><code>docker pull</code>命令用于从Docker镜像仓库中拉取（下载）一个镜像到本地。以下是<code>docker pull</code>命令的使用方式：</p>
+<pre><code>docker pull &lt;image_name&gt;</code></pre><p>其中，<code>&lt;image_name&gt;</code>指定了要拉取的镜像名称，可以是官方仓库中的镜像，也可以是自定义的仓库中的镜像。</p>
+<p>例如，要拉取官方的Ubuntu镜像，可以运行以下命令：</p>
+<pre><code>docker pull ubuntu</code></pre><p>如果要拉取指定版本的镜像，可以在镜像名称后面添加<code>:&lt;tag&gt;</code>，如下所示：</p>
+<pre><code>docker pull ubuntu:20.04</code></pre><p>这将拉取Ubuntu 20.04版本的镜像。</p>
+<p>执行<code>docker pull</code>命令后，Docker将开始下载镜像并保存到本地。你可以使用<code>docker images</code>命令查看已下载的镜像列表。</p>
 <blockquote>
-<p>google hacking语法库：<a href="https://www.exploit-db.com/google-hacking-database" target="_blank" rel="noopener">https://www.exploit-db.com/google-hacking-database</a></p>
+<p>使用<code>docker pull</code>命令需要联网，并且要确保本地环境可以连接到Docker镜像仓库。如果你使用的是私有仓库，还需要提供相应的身份验证信息。</p>
 </blockquote>
-<p>符号类</p>
-<ul>
-<li><strong>使用双引号(“ “)进行精确匹配</strong>：例如，搜索 “太阳能电池” 将只返回包含完整词组 “太阳能电池” 的结果。</li>
-<li><strong>使用减号(-)排除特定词汇</strong>：例如，搜索 “iPhone -12” 将返回与 iPhone 相关的结果，但不包括 “iPhone 12”。</li>
-<li><strong>使用星号(*)作为通配符</strong>：例如，搜索 “Apple 的 * 手机” 可以返回 “Apple 的 iPhone 手机”、”Apple 的 5G 手机” 等结果。</li>
-<li><strong>使用 OR 查询多个词</strong>：例如，搜索 “华为 OR 小米” 将返回与 “华为” 或 “小米” 相关的结果</li>
-</ul>
-<h2 id="如何利用-防范Google-hacking？"><a href="#如何利用-防范Google-hacking？" class="headerlink" title="如何利用/防范Google hacking？"></a>如何利用/防范Google hacking？</h2><p>利用: 利用好google hacking 可以更准确找到自己需要的信息，做到真正的高效搜索</p>
-<p>防范：Google hacking的首要步骤是对自己的网络环境有深入的了解，包括服务器配置、代码安全等。其次，定期进行安全审计和漏洞扫描也非常重要，这可以帮助我们及时发现并修复潜在的安全问题。最后，我们还可以通过robots.txt文件来限制搜索引擎对敏感信息的索引，从而避免信息被黑客搜索到。</p>
+<h1 id="docker实践"><a href="#docker实践" class="headerlink" title="docker实践"></a>docker实践</h1><h2 id="使用Docker将Hexo网站打包为一个镜像"><a href="#使用Docker将Hexo网站打包为一个镜像" class="headerlink" title="使用Docker将Hexo网站打包为一个镜像"></a>使用Docker将Hexo网站打包为一个镜像</h2><p>创建一个Dockerfile：在你Hexo网站根目录下创建一个名为Dockerfile的文件，并使用文本编辑器打开它。</p>
+<ol start="2">
+<li>编写Dockerfile：在Dockerfile中，指定基础镜像以及构建和运行过程所需的命令</li>
+</ol>
+<pre class=" language-dockerfile"><code class="language-dockerfile"># 使用Node.js作为基础镜像
+FROM node:14-alpine
+
+# 设置工作目录
+WORKDIR /app
+
+# 复制网站文件到容器中
+COPY . .
+
+# 安装依赖
+RUN npm install
+
+# 执行Hexo命令生成静态网站
+RUN npx hexo generate
+
+# 暴露Hexo服务的端口
+EXPOSE 4000
+
+# 启动Hexo服务
+CMD ["npx", "hexo", "server"]</code></pre>
+<p>以上Dockerfile使用了Node.js 14的Alpine版本作为基础镜像。它先将当前目录下的所有文件复制到容器的/app目录中，然后安装Hexo所需的依赖、生成静态网站并暴露4000端口，最后启动Hexo服务。</p>
+<ol start="3">
+<li>构建镜像：在终端中进入Dockerfile所在的目录，并执行以下命令来构建镜像：</li>
+</ol>
+<pre><code>docker build -t &lt;image_name&gt; .    #使用当前目录作为上下文进行构建</code></pre><p>其中，<code>&lt;image_name&gt;</code>镜像起的名称，自定义；这个命令会在当前目录下根据Dockerfile构建一个镜像，并使用指定的名称标记它。</p>
+<ol start="4">
+<li>运行容器：构建完成后，你可以使用以下命令来创建并运行一个容器：</li>
+</ol>
+<pre><code>docker run -d --name &lt;container_name&gt; -p 4000:4000 &lt;image_name&gt;</code></pre><p><code>&lt;container_name&gt;</code>为容器起的名称，可以自定义；<code>&lt;image_name&gt;</code>之前构建的镜像的名称。</p>
+<p>此命令将创建一个后台运行的容器，将主机的4000端口映射到容器的4000端口，通过主机的4000端口可以访问Hexo网站。</p>
+<h2 id="将Docker镜像部署到一台没有任何环境的电脑上运行"><a href="#将Docker镜像部署到一台没有任何环境的电脑上运行" class="headerlink" title="将Docker镜像部署到一台没有任何环境的电脑上运行"></a>将Docker镜像部署到一台没有任何环境的电脑上运行</h2><ol>
+<li>将镜像导出：在已经构建好的Docker镜像所在的电脑上，使用以下命令将镜像导出为一个tar文件：</li>
+</ol>
+<pre><code>docker save -o &lt;image_file_name&gt;.tar &lt;image_name&gt;</code></pre><p><code>&lt;image_file_name&gt;</code>导出的镜像文件的名称，自定义；<code>&lt;image_name&gt;</code>是你之前构建的镜像的名称。</p>
+<ol start="2">
+<li><p>将镜像移动到目标电脑：将导出的镜像文件（tar文件）通过移动、复制等方式传输到目标电脑上。</p>
+</li>
+<li><p>导入镜像：在目标电脑上，在终端中进入存放镜像文件的目录，并执行以下命令将镜像导入Docker中：</p>
+</li>
+</ol>
+<pre><code>docker load -i &lt;image_file_name&gt;.tar</code></pre><p>其中，<code>&lt;image_file_name&gt;</code>是你导出的镜像文件的名称，可以自定义。这个命令会将镜像文件加载到Docker中，使得你可以在目标电脑上使用该镜像。</p>
+<ol start="4">
+<li>运行容器：在目标电脑上，创建并运行一个容器：</li>
+</ol>
+<pre><code>docker run -d --name &lt;container_name&gt; -p 4000:4000 &lt;image_name&gt;</code></pre><p>其中，<code>&lt;container_name&gt;</code>是你为容器起的名称，可以自定义；<code>&lt;image_name&gt;</code>是你导入的镜像的名称。</p>
+<p>这个命令将创建一个后台运行的容器，将主机的4000端口映射到容器的4000端口，使得你可以通过主机的4000端口访问Hexo网站。Hexo网站便可在目标电脑上成功部署并运行了。</p>
+<h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p> Docker是一项流行的容器化技术，它帮助开发人员和运维团队更轻松地构建、部署和管理应用程序。使用Docker，可以将应用程序及其所有依赖项打包到一个可移植的容器中，然后在任何支持Docker的环境中运行；</p>
 
             </div>
             <hr />
@@ -876,9 +931,9 @@ overflow-y: scroll;
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《渗透-被动信息收集》
+                    《docker:容器技术应用与常用命令》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/shen-tou-bei-dong-xin-xi-shou-ji.html" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/ji-zhu-fen-xiang-docker-rong-qi-ji-zhu-ying-yong-yu-chang-yong-ming-ling.html" property="cc:attributionName"
                rel="cc:attributionURL">
                 Bevis23
             </a> 采用
@@ -919,7 +974,7 @@ overflow-y: scroll;
         repo: 'Bevis23.github.io',
         owner: 'Bevis23',
         admin: "Bevis23",
-        id: 'shen-tou-bei-dong-xin-xi-shou-ji.html',
+        id: 'ji-zhu-fen-xiang-docker-rong-qi-ji-zhu-ying-yong-yu-chang-yong-ming-ling.html',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -1202,50 +1257,57 @@ overflow-y: scroll;
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/bian-cheng-python-yuan-zu-yu-lie-biao.html">
+                <a href="/ji-zhu-fen-xiang-docker-rong-qi-ji-zhu-ying-yong-yu-chang-yong-ming-ling.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="Python编程：深入理解列表与元组的关键差异">
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="docker:容器技术应用与常用命令">
                         
-                        <span class="card-title">Python编程：深入理解列表与元组的关键差异</span>
+                        <span class="card-title">docker:容器技术应用与常用命令</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            引言：在Python编程中，我们经常会使用到的两种基础数据结构就是列表（List）和元组（Tuple）。这两者都用于存储数据集合，但它们之间存在着一些关键的差异。理解这些差异以及何时使用哪种数据结构是成为一名高效的Python程序员的关键。
+                            引言个人基于hexo做了个博客网站，同时基于hugo做了一个导航网站；两者都基于一定的环境依赖，需要配置一定的环境，才能做一些操作；
+Hexo博客每次的生成和部署都需要环境、依赖资源和所有博客文件，所以如果我们要换一台电脑写博客，则需要配置
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2023-07-15
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2023-07-27
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/编程/" class="post-category" target="_blank">
-                                    编程
+                            <a href="/categories/技术分享/" class="post-category" target="_blank">
+                                    技术分享
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/编程/" target="_blank">
-                        <span class="chip bg-color">编程</span>
+                    <a href="/tags/docker/" target="_blank">
+                        <span class="chip bg-color">docker</span>
                     </a>
                     
-                    <a href="/tags/python/" target="_blank">
-                        <span class="chip bg-color">python</span>
+                    <a href="/tags/技术分享/" target="_blank">
+                        <span class="chip bg-color">技术分享</span>
+                    </a>
+                    
+                    <a href="/tags/容器技术/" target="_blank">
+                        <span class="chip bg-color">容器技术</span>
                     </a>
                     
                 </div>
@@ -1259,32 +1321,31 @@ overflow-y: scroll;
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/shen-tou-zhu-dong-xin-xi-shou-ji.html">
+                <a href="/gong-ju-git-fen-bu-shi-ban-ben-kong-zhi-xi-tong-de-ru-men-zhi-nan.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="渗透-主动信息收集">
+                        <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="Git:分布式版本控制系统的入门指南">
                         
-                        <span class="card-title">渗透-主动信息收集</span>
+                        <span class="card-title">Git:分布式版本控制系统的入门指南</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            主动信息收集什么是主动信息收集主动信息收集指的是主体根据自身需求和目标，通过主动搜集、查询、调查等方式，积极主动地获取所需的信息。在主动信息收集中，个体或组织作为信息的主动者，主动发起搜索和查询行为，以获得所需的有用信息 
-主动信息收集的原
+                            Git是什么？1.git简介Git是一个分布式版本控制系统，用于跟踪文件和项目的变化。它可以帮助开发人员在多人协作的项目中管理代码，记录每一次修改，并且能够方便地回退到任何历史版本。Git还提供了分支管理功能，使得开发人员能够同时处理多个功
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2023-07-15
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2023-07-27
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/网络安全/" class="post-category" target="_blank">
-                                    网络安全
+                            <a href="/categories/工具/" class="post-category" target="_blank">
+                                    工具
                                 </a>
                             
                             
@@ -1294,20 +1355,16 @@ overflow-y: scroll;
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/技术分享/" target="_blank">
-                        <span class="chip bg-color">技术分享</span>
+                    <a href="/tags/工具/" target="_blank">
+                        <span class="chip bg-color">工具</span>
                     </a>
                     
-                    <a href="/tags/网络安全/" target="_blank">
-                        <span class="chip bg-color">网络安全</span>
+                    <a href="/tags/Git/" target="_blank">
+                        <span class="chip bg-color">Git</span>
                     </a>
                     
-                    <a href="/tags/渗透测试/" target="_blank">
-                        <span class="chip bg-color">渗透测试</span>
-                    </a>
-                    
-                    <a href="/tags/OSI/" target="_blank">
-                        <span class="chip bg-color">OSI</span>
+                    <a href="/tags/分布式/" target="_blank">
+                        <span class="chip bg-color">分布式</span>
                     </a>
                     
                 </div>
