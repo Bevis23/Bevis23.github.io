@@ -345,9 +345,9 @@
       
         <tags>
             
-            <tag> 技术分享 </tag>
-            
             <tag> 工具 </tag>
+            
+            <tag> 技术分享 </tag>
             
             <tag> 网络安全 </tag>
             
@@ -378,11 +378,11 @@
             
             <tag> 生活记录 </tag>
             
-            <tag> blog </tag>
-            
             <tag> 分享 </tag>
             
             <tag> hexo </tag>
+            
+            <tag> blog </tag>
             
         </tags>
       
@@ -409,9 +409,9 @@
             
             <tag> linux </tag>
             
-            <tag> 技术分享 </tag>
-            
             <tag> 服务器 </tag>
+            
+            <tag> 技术分享 </tag>
             
             <tag> samba </tag>
             
