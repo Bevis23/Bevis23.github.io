@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://bevis23.github.io/"/>
-  <updated>2023-09-14T08:29:06.869Z</updated>
+  <updated>2023-10-04T11:56:35.567Z</updated>
   <id>https://bevis23.github.io/</id>
   
   <author>
@@ -15,6 +15,64 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>冥想之外：思绪归零的个人心理技巧</title>
+    <link href="https://bevis23.github.io/ren-wen-she-ke-ji-xian-gui-ling.html"/>
+    <id>https://bevis23.github.io/ren-wen-she-ke-ji-xian-gui-ling.html</id>
+    <published>2023-10-04T19:51:56.000Z</published>
+    <updated>2023-10-04T11:56:35.567Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="人文社科" scheme="https://bevis23.github.io/categories/%E4%BA%BA%E6%96%87%E7%A4%BE%E7%A7%91/"/>
+    
+    
+      <category term="心理技巧" scheme="https://bevis23.github.io/tags/%E5%BF%83%E7%90%86%E6%8A%80%E5%B7%A7/"/>
+    
+      <category term="自我管理" scheme="https://bevis23.github.io/tags/%E8%87%AA%E6%88%91%E7%AE%A1%E7%90%86/"/>
+    
+      <category term="人文社科" scheme="https://bevis23.github.io/tags/%E4%BA%BA%E6%96%87%E7%A4%BE%E7%A7%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>RSS：简化信息获取的利器</title>
+    <link href="https://bevis23.github.io/gong-ju-rss.html"/>
+    <id>https://bevis23.github.io/gong-ju-rss.html</id>
+    <published>2023-10-04T19:51:56.000Z</published>
+    <updated>2023-10-04T12:31:26.787Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="工具" scheme="https://bevis23.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="RSS" scheme="https://bevis23.github.io/tags/RSS/"/>
+    
+      <category term="工具" scheme="https://bevis23.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
   
   <entry>
     <title>随笔-用英语思考</title>
@@ -66,9 +124,9 @@
       <category term="技术分享" scheme="https://bevis23.github.io/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
     
     
-      <category term="技术分享" scheme="https://bevis23.github.io/tags/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
-    
       <category term="docker" scheme="https://bevis23.github.io/tags/docker/"/>
+    
+      <category term="技术分享" scheme="https://bevis23.github.io/tags/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
     
       <category term="容器技术" scheme="https://bevis23.github.io/tags/%E5%AE%B9%E5%99%A8%E6%8A%80%E6%9C%AF/"/>
     
@@ -96,9 +154,9 @@
       <category term="工具" scheme="https://bevis23.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
     
     
-      <category term="Git" scheme="https://bevis23.github.io/tags/Git/"/>
-    
       <category term="工具" scheme="https://bevis23.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+      <category term="Git" scheme="https://bevis23.github.io/tags/Git/"/>
     
       <category term="分布式" scheme="https://bevis23.github.io/tags/%E5%88%86%E5%B8%83%E5%BC%8F/"/>
     
@@ -308,9 +366,9 @@
       <category term="网络安全" scheme="https://bevis23.github.io/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
     
     
-      <category term="网络安全" scheme="https://bevis23.github.io/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
-    
       <category term="技术分享" scheme="https://bevis23.github.io/tags/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
+    
+      <category term="网络安全" scheme="https://bevis23.github.io/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
     
       <category term="渗透测试" scheme="https://bevis23.github.io/tags/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
     
@@ -340,9 +398,9 @@
       <category term="网络安全" scheme="https://bevis23.github.io/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
     
     
-      <category term="网络安全" scheme="https://bevis23.github.io/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
-    
       <category term="技术分享" scheme="https://bevis23.github.io/tags/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
+    
+      <category term="网络安全" scheme="https://bevis23.github.io/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
     
       <category term="渗透测试" scheme="https://bevis23.github.io/tags/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
     
@@ -404,9 +462,9 @@
     
       <category term="工具" scheme="https://bevis23.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
     
-      <category term="网络安全" scheme="https://bevis23.github.io/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
-    
       <category term="技术分享" scheme="https://bevis23.github.io/tags/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
+    
+      <category term="网络安全" scheme="https://bevis23.github.io/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
     
       <category term="frp" scheme="https://bevis23.github.io/tags/frp/"/>
     
@@ -468,9 +526,9 @@
     
       <category term="linux" scheme="https://bevis23.github.io/tags/linux/"/>
     
-      <category term="服务器" scheme="https://bevis23.github.io/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-    
       <category term="技术分享" scheme="https://bevis23.github.io/tags/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
+    
+      <category term="服务器" scheme="https://bevis23.github.io/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
       <category term="samba" scheme="https://bevis23.github.io/tags/samba/"/>
     
@@ -498,9 +556,9 @@
       <category term="工具" scheme="https://bevis23.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
     
     
-      <category term="工具" scheme="https://bevis23.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
-    
       <category term="linux" scheme="https://bevis23.github.io/tags/linux/"/>
+    
+      <category term="工具" scheme="https://bevis23.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
     
       <category term="可视化" scheme="https://bevis23.github.io/tags/%E5%8F%AF%E8%A7%86%E5%8C%96/"/>
     
@@ -567,60 +625,6 @@
       <category term="社工" scheme="https://bevis23.github.io/tags/%E7%A4%BE%E5%B7%A5/"/>
     
       <category term="Maltego" scheme="https://bevis23.github.io/tags/Maltego/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>google_hacking</title>
-    <link href="https://bevis23.github.io/shen-tou-google-hacking.html"/>
-    <id>https://bevis23.github.io/shen-tou-google-hacking.html</id>
-    <published>2023-06-13T12:54:45.000Z</published>
-    <updated>2023-07-05T01:14:53.765Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="网络安全" scheme="https://bevis23.github.io/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
-    
-    
-      <category term="网络安全" scheme="https://bevis23.github.io/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
-    
-      <category term="技术分享" scheme="https://bevis23.github.io/tags/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>每日60s读懂世界</title>
-    <link href="https://bevis23.github.io/sui-bi-mei-ri-60s.html"/>
-    <id>https://bevis23.github.io/sui-bi-mei-ri-60s.html</id>
-    <published>2023-06-11T01:49:10.000Z</published>
-    <updated>2023-09-14T08:19:46.109Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="随笔" scheme="https://bevis23.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
-    
-    
-      <category term="分享" scheme="https://bevis23.github.io/tags/%E5%88%86%E4%BA%AB/"/>
     
   </entry>
   
