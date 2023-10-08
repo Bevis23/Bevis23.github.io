@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://bevis23.github.io/"/>
-  <updated>2023-10-04T12:35:34.845Z</updated>
+  <updated>2023-10-07T21:45:26.003Z</updated>
   <id>https://bevis23.github.io/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>逻辑推理的艺术：归纳与演绎</title>
+    <link href="https://bevis23.github.io/ren-wen-she-ke-gui-na-yu-yan-yi.html"/>
+    <id>https://bevis23.github.io/ren-wen-she-ke-gui-na-yu-yan-yi.html</id>
+    <published>2023-10-08T11:11:21.000Z</published>
+    <updated>2023-10-07T21:45:26.003Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="人文社科" scheme="https://bevis23.github.io/categories/%E4%BA%BA%E6%96%87%E7%A4%BE%E7%A7%91/"/>
+    
+    
+      <category term="人文社科" scheme="https://bevis23.github.io/tags/%E4%BA%BA%E6%96%87%E7%A4%BE%E7%A7%91/"/>
+    
+      <category term="思维工具" scheme="https://bevis23.github.io/tags/%E6%80%9D%E7%BB%B4%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
+  
+  <entry>
     <title>RSS：简化信息获取的利器</title>
     <link href="https://bevis23.github.io/gong-ju-rss.html"/>
     <id>https://bevis23.github.io/gong-ju-rss.html</id>
     <published>2023-10-04T19:51:56.000Z</published>
-    <updated>2023-10-04T12:35:34.845Z</updated>
+    <updated>2023-10-05T16:58:37.796Z</updated>
     
     <summary type="html">
     
@@ -126,9 +154,9 @@
       <category term="技术分享" scheme="https://bevis23.github.io/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
     
     
-      <category term="技术分享" scheme="https://bevis23.github.io/tags/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
-    
       <category term="docker" scheme="https://bevis23.github.io/tags/docker/"/>
+    
+      <category term="技术分享" scheme="https://bevis23.github.io/tags/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
     
       <category term="容器技术" scheme="https://bevis23.github.io/tags/%E5%AE%B9%E5%99%A8%E6%8A%80%E6%9C%AF/"/>
     
@@ -368,9 +396,9 @@
       <category term="网络安全" scheme="https://bevis23.github.io/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
     
     
-      <category term="网络安全" scheme="https://bevis23.github.io/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
-    
       <category term="技术分享" scheme="https://bevis23.github.io/tags/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
+    
+      <category term="网络安全" scheme="https://bevis23.github.io/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
     
       <category term="渗透测试" scheme="https://bevis23.github.io/tags/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
     
@@ -400,9 +428,9 @@
       <category term="网络安全" scheme="https://bevis23.github.io/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
     
     
-      <category term="网络安全" scheme="https://bevis23.github.io/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
-    
       <category term="技术分享" scheme="https://bevis23.github.io/tags/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
+    
+      <category term="网络安全" scheme="https://bevis23.github.io/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
     
       <category term="渗透测试" scheme="https://bevis23.github.io/tags/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
     
@@ -464,9 +492,9 @@
     
       <category term="工具" scheme="https://bevis23.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
     
-      <category term="网络安全" scheme="https://bevis23.github.io/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
-    
       <category term="技术分享" scheme="https://bevis23.github.io/tags/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
+    
+      <category term="网络安全" scheme="https://bevis23.github.io/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
     
       <category term="frp" scheme="https://bevis23.github.io/tags/frp/"/>
     
@@ -494,13 +522,13 @@
       <category term="随笔" scheme="https://bevis23.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
     
     
-      <category term="随笔" scheme="https://bevis23.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
+      <category term="blog" scheme="https://bevis23.github.io/tags/blog/"/>
     
       <category term="分享" scheme="https://bevis23.github.io/tags/%E5%88%86%E4%BA%AB/"/>
     
-      <category term="hexo" scheme="https://bevis23.github.io/tags/hexo/"/>
+      <category term="随笔" scheme="https://bevis23.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
     
-      <category term="blog" scheme="https://bevis23.github.io/tags/blog/"/>
+      <category term="hexo" scheme="https://bevis23.github.io/tags/hexo/"/>
     
   </entry>
   
@@ -597,36 +625,6 @@
       <category term="人工智能" scheme="https://bevis23.github.io/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
     
       <category term="prompt" scheme="https://bevis23.github.io/tags/prompt/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>社会工程学</title>
-    <link href="https://bevis23.github.io/shen-tou-she-hui-gong-cheng-xue.html"/>
-    <id>https://bevis23.github.io/shen-tou-she-hui-gong-cheng-xue.html</id>
-    <published>2023-06-26T15:11:24.000Z</published>
-    <updated>2023-07-26T02:17:33.614Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="网络安全" scheme="https://bevis23.github.io/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
-    
-    
-      <category term="网络安全" scheme="https://bevis23.github.io/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
-    
-      <category term="社工" scheme="https://bevis23.github.io/tags/%E7%A4%BE%E5%B7%A5/"/>
-    
-      <category term="Maltego" scheme="https://bevis23.github.io/tags/Maltego/"/>
     
   </entry>
   
