@@ -49,9 +49,9 @@
             
             <tag> 思维工具 </tag>
             
-            <tag> 思维 </tag>
-            
             <tag> 数据分析 </tag>
+            
+            <tag> 思维 </tag>
             
         </tags>
       
@@ -132,9 +132,9 @@
       
         <tags>
             
-            <tag> RSS </tag>
-            
             <tag> 工具 </tag>
+            
+            <tag> RSS </tag>
             
             <tag> 信息聚合 </tag>
             
@@ -161,11 +161,11 @@
       
         <tags>
             
-            <tag> 人文社科 </tag>
-            
             <tag> 心理技巧 </tag>
             
             <tag> 自我管理 </tag>
+            
+            <tag> 人文社科 </tag>
             
         </tags>
       
@@ -217,9 +217,9 @@
       
         <tags>
             
-            <tag> docker </tag>
-            
             <tag> 技术分享 </tag>
+            
+            <tag> docker </tag>
             
             <tag> 容器技术 </tag>
             
@@ -246,9 +246,9 @@
       
         <tags>
             
-            <tag> 工具 </tag>
-            
             <tag> Git </tag>
+            
+            <tag> 工具 </tag>
             
             <tag> 分布式 </tag>
             
@@ -424,9 +424,9 @@
       
         <tags>
             
-            <tag> python </tag>
-            
             <tag> 编程 </tag>
+            
+            <tag> python </tag>
             
         </tags>
       
@@ -604,9 +604,9 @@
       
         <tags>
             
-            <tag> 服务器 </tag>
-            
             <tag> linux </tag>
+            
+            <tag> 服务器 </tag>
             
             <tag> 技术分享 </tag>
             
@@ -635,13 +635,13 @@
       
         <tags>
             
+            <tag> linux </tag>
+            
             <tag> 工具 </tag>
             
             <tag> 可视化 </tag>
             
             <tag> 服务器 </tag>
-            
-            <tag> linux </tag>
             
         </tags>
       
