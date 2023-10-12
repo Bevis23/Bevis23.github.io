@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://bevis23.github.io/"/>
-  <updated>2023-10-11T23:24:34.540Z</updated>
+  <updated>2023-10-12T22:36:02.900Z</updated>
   <id>https://bevis23.github.io/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python生成器与yield</title>
+    <link href="https://bevis23.github.io/bian-cheng-python-sheng-cheng-qi-yu-yield.html"/>
+    <id>https://bevis23.github.io/bian-cheng-python-sheng-cheng-qi-yu-yield.html</id>
+    <published>2023-10-13T11:11:21.000Z</published>
+    <updated>2023-10-12T22:36:02.900Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="python" scheme="https://bevis23.github.io/categories/python/"/>
+    
+    
+      <category term="python" scheme="https://bevis23.github.io/tags/python/"/>
+    
+      <category term="yield" scheme="https://bevis23.github.io/tags/yield/"/>
+    
+      <category term="Generator" scheme="https://bevis23.github.io/tags/Generator/"/>
+    
+  </entry>
   
   <entry>
     <title>探索pyhon的面向对象编程</title>
@@ -68,9 +98,9 @@
     
       <category term="思维工具" scheme="https://bevis23.github.io/tags/%E6%80%9D%E7%BB%B4%E5%B7%A5%E5%85%B7/"/>
     
-      <category term="数据分析" scheme="https://bevis23.github.io/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"/>
-    
       <category term="思维" scheme="https://bevis23.github.io/tags/%E6%80%9D%E7%BB%B4/"/>
+    
+      <category term="数据分析" scheme="https://bevis23.github.io/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"/>
     
   </entry>
   
@@ -184,11 +214,11 @@
       <category term="人文社科" scheme="https://bevis23.github.io/categories/%E4%BA%BA%E6%96%87%E7%A4%BE%E7%A7%91/"/>
     
     
-      <category term="人文社科" scheme="https://bevis23.github.io/tags/%E4%BA%BA%E6%96%87%E7%A4%BE%E7%A7%91/"/>
-    
       <category term="心理技巧" scheme="https://bevis23.github.io/tags/%E5%BF%83%E7%90%86%E6%8A%80%E5%B7%A7/"/>
     
       <category term="自我管理" scheme="https://bevis23.github.io/tags/%E8%87%AA%E6%88%91%E7%AE%A1%E7%90%86/"/>
+    
+      <category term="人文社科" scheme="https://bevis23.github.io/tags/%E4%BA%BA%E6%96%87%E7%A4%BE%E7%A7%91/"/>
     
   </entry>
   
@@ -456,9 +486,9 @@
       <category term="编程" scheme="https://bevis23.github.io/categories/%E7%BC%96%E7%A8%8B/"/>
     
     
-      <category term="编程" scheme="https://bevis23.github.io/tags/%E7%BC%96%E7%A8%8B/"/>
-    
       <category term="python" scheme="https://bevis23.github.io/tags/python/"/>
+    
+      <category term="编程" scheme="https://bevis23.github.io/tags/%E7%BC%96%E7%A8%8B/"/>
     
   </entry>
   
@@ -585,38 +615,6 @@
       <category term="网络安全" scheme="https://bevis23.github.io/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
     
       <category term="frp" scheme="https://bevis23.github.io/tags/frp/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>博客历程与优化记录</title>
-    <link href="https://bevis23.github.io/sui-bi-bo-ke-li-cheng-yu-you-hua-ji-lu.html"/>
-    <id>https://bevis23.github.io/sui-bi-bo-ke-li-cheng-yu-you-hua-ji-lu.html</id>
-    <published>2023-07-05T09:15:46.000Z</published>
-    <updated>2023-09-14T08:19:40.613Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="随笔" scheme="https://bevis23.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
-    
-    
-      <category term="blog" scheme="https://bevis23.github.io/tags/blog/"/>
-    
-      <category term="随笔" scheme="https://bevis23.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
-    
-      <category term="分享" scheme="https://bevis23.github.io/tags/%E5%88%86%E4%BA%AB/"/>
-    
-      <category term="hexo" scheme="https://bevis23.github.io/tags/hexo/"/>
     
   </entry>
   

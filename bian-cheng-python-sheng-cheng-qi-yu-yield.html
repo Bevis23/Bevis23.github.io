@@ -4,11 +4,11 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="每日60s读懂世界, seek">
+    <meta name="keywords" content="python生成器与yield, seek">
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
-    <meta name="description" content="每日60s读懂世界 | Bevis23&#39;s Blog">
+    <meta name="description" content="引言在Python编程世界中，有一种神奇的机制，它能够以惊人的效率管理数据流，同时又占用极少的内存空间。这个机制就是生成器，而它的魔力关键字是”yield”。生成器和yield在处理大型数据集或无限序列时，可以成为性能的保障，同时让代码变得">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -16,7 +16,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>每日60s读懂世界 | Bevis23&#39;s Blog</title>
+    <title>python生成器与yield | Bevis23&#39;s Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -364,13 +364,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/28.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        每日60s读懂世界
+                        python生成器与yield
                     </div>
                 </div>
             </div>
@@ -509,8 +509,16 @@ overflow-y: scroll;
                     
                     <div class="article-tag">
                         
-                        <a href="/tags/分享/" target="_blank">
-                            <span class="chip bg-color">分享</span>
+                        <a href="/tags/python/" target="_blank">
+                            <span class="chip bg-color">python</span>
+                        </a>
+                        
+                        <a href="/tags/yield/" target="_blank">
+                            <span class="chip bg-color">yield</span>
+                        </a>
+                        
+                        <a href="/tags/Generator/" target="_blank">
+                            <span class="chip bg-color">Generator</span>
                         </a>
                         
                     </div>
@@ -521,8 +529,8 @@ overflow-y: scroll;
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                        <a href="/categories/随笔/" class="post-category" target="_blank">
-                            随笔
+                        <a href="/categories/python/" class="post-category" target="_blank">
+                            python
                         </a>
                         
                     </div>
@@ -533,7 +541,7 @@ overflow-y: scroll;
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-06-11
+                    2023-10-13
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -547,14 +555,14 @@ overflow-y: scroll;
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    0
+                    2.9k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    10 分
                 </div>
                 
                 
@@ -570,7 +578,183 @@ overflow-y: scroll;
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <img src="https://api.03c3.cn/zb/" alt="每日60s读懂世界">
+                <h1 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h1><p>在Python编程世界中，有一种神奇的机制，它能够以惊人的效率管理数据流，同时又占用极少的内存空间。这个机制就是生成器，而它的魔力关键字是”yield”。生成器和yield在处理大型数据集或无限序列时，可以成为性能的保障，同时让代码变得更加优雅。无需担心内存泄漏或效率问题，生成器和yield将为你打开崭新的编程大门。</p>
+<h1 id="什么是生成器"><a href="#什么是生成器" class="headerlink" title="什么是生成器"></a>什么是生成器</h1><p>在Python中，生成器（Generator）是一种特殊类型的迭代器，它们以一种独特的方式生成值。与普通的列表不同，生成器并不一次性将所有值存储在内存中，而是按需生成并返回数据。这使得生成器在处理大型数据集或需要无限生成数据的情况下非常有用。</p>
+<h2 id="生成器和普通列表的区别"><a href="#生成器和普通列表的区别" class="headerlink" title="生成器和普通列表的区别"></a>生成器和普通列表的区别</h2><p>生成器和普通的列表之间存在一些关键的区别：</p>
+<ul>
+<li><p><strong>内存占用</strong>：列表将所有元素存储在内存中，占据大量空间，尤其在处理大型数据集时。生成器仅在需要时生成数据，因此占用的内存非常有限。</p>
+</li>
+<li><p><strong>迭代方式</strong>：生成器是一种迭代器，通过<code>for</code>循环逐个生成值，而列表可以一次性获取所有值。这使生成器在处理大数据集或无限序列时更具优势。</p>
+</li>
+<li><p><strong>延迟计算</strong>：生成器的值是按需计算的，而不是提前计算和存储的。这使得生成器能够处理无限序列，例如斐波那契数列，而列表则不适用于这种情况。</p>
+</li>
+</ul>
+<h2 id="生成器的优势，包括节省空间和提高效率"><a href="#生成器的优势，包括节省空间和提高效率" class="headerlink" title="生成器的优势，包括节省空间和提高效率"></a>生成器的优势，包括节省空间和提高效率</h2><p>生成器的优势在于其能力以及如何节省空间和提高效率：</p>
+<ul>
+<li><p><strong>节省内存</strong>：生成器一次只生成一个值，不需要在内存中保存整个序列，因此适用于处理大型数据集或无限数据流。</p>
+</li>
+<li><p><strong>高效迭代</strong>：生成器在迭代时能够以非常高效的方式生成数据，因为它们按需生成值，而不是预先计算和存储所有值。</p>
+</li>
+<li><p><strong>惰性计算</strong>：生成器允许你以惰性计算的方式处理数据，只有在需要时才会生成新值，这在某些情况下可以提高性能。</p>
+</li>
+<li><p><strong>支持无限序列</strong>：生成器可以轻松处理无限序列，例如自然数序列，而列表不适合。</p>
+</li>
+</ul>
+<h2 id="生成器使用与常规代码的执行时间对比"><a href="#生成器使用与常规代码的执行时间对比" class="headerlink" title="生成器使用与常规代码的执行时间对比"></a>生成器使用与常规代码的执行时间对比</h2><pre class=" language-python"><code class="language-python"><span class="token keyword">import</span> time
+
+<span class="token keyword">def</span> <span class="token function">calculate_time</span><span class="token punctuation">(</span>func<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token comment" spellcheck="true"># 定义一个计算时间的函数，该函数接受一个函数作为参数，并返回该函数执行所需要的时间</span>
+    start_time <span class="token operator">=</span> time<span class="token punctuation">.</span>time<span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 记录开始时间</span>
+    func<span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 调用传入的函数</span>
+    end_time <span class="token operator">=</span> time<span class="token punctuation">.</span>time<span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 记录结束时间</span>
+    execution_time <span class="token operator">=</span> end_time <span class="token operator">-</span> start_time  <span class="token comment" spellcheck="true"># 计算函数执行所需的时间</span>
+    <span class="token keyword">return</span> execution_time  <span class="token comment" spellcheck="true"># 返回时间差</span>
+
+<span class="token comment" spellcheck="true"># 接下来是示例函数，分别使用生成器和列表进行迭代，用来比较它们的执行效率</span>
+<span class="token keyword">def</span> <span class="token function">calculate_with_generator</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    generator <span class="token operator">=</span> <span class="token punctuation">(</span>i <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">1000000</span><span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 定义一个生成器</span>
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> generator<span class="token punctuation">:</span>  <span class="token comment" spellcheck="true"># 遍历生成器中的所有元素</span>
+        <span class="token keyword">pass</span>  
+
+<span class="token keyword">def</span> <span class="token function">calculate_without_generator</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    lst <span class="token operator">=</span> <span class="token punctuation">[</span>i <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">1000000</span><span class="token punctuation">)</span><span class="token punctuation">]</span>  <span class="token comment" spellcheck="true"># 定义一个列表</span>
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> lst<span class="token punctuation">:</span>  <span class="token comment" spellcheck="true"># 遍历列表中的所有元素</span>
+        <span class="token keyword">pass</span>  
+
+time_with_generator <span class="token operator">=</span> calculate_time<span class="token punctuation">(</span>calculate_with_generator<span class="token punctuation">)</span>
+time_without_generator <span class="token operator">=</span> calculate_time<span class="token punctuation">(</span>calculate_without_generator<span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>f<span class="token string">"使用生成器的函数执行时间：{time_with_generator} 秒"</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>f<span class="token string">"不使用生成器的函数执行时间：{time_without_generator} 秒"</span><span class="token punctuation">)</span>
+
+
+<span class="token comment" spellcheck="true"># 输出结果</span>
+使用生成器的函数执行时间：<span class="token number">0.00123</span> 秒
+不使用生成器的函数执行时间：<span class="token number">0.01567</span> 秒</code></pre>
+<p>从执行的时间上来看，使用生成器的执行时间相对更少， 生成器是根据一定的规律算法生成的，当我们去遍历它的时候，它可以通过特定的算法不断的推算出相应的元素，边运行边推算结果，从而节省了很多空间。 </p>
+<h1 id="yield关键词及其作用"><a href="#yield关键词及其作用" class="headerlink" title="yield关键词及其作用"></a><code>yield</code>关键词及其作用</h1><p><code>yield</code> 是生成器函数中的一个关键词，它在生成器的定义和行为中发挥着关键作用。<strong><code>yield</code> 允许你在生成器函数中产生一个值，同时保持函数的状态，以便在之后的迭代中从上次停止的地方继续执行</strong>。</p>
+<h3 id="yield-与-return-的异同"><a href="#yield-与-return-的异同" class="headerlink" title="yield 与 return 的异同"></a><code>yield</code> 与 <code>return</code> 的异同</h3><p><code>yield</code> 和 <code>return</code> 是在函数中用于返回值的两个关键词，但它们之间存在一些重要的异同点：</p>
+<ul>
+<li><strong><code>return</code></strong>：<ul>
+<li>用于从函数中返回一个值。</li>
+<li>当函数执行 <code>return</code> 后，函数的状态会被完全销毁。</li>
+<li>函数的下次调用会重新开始执行，从头开始。</li>
+</ul>
+</li>
+<li><strong><code>yield</code></strong>：<ul>
+<li>用于在生成器函数中产生一个值，并在函数的状态中保持位置。</li>
+<li>函数执行 <code>yield</code> 后，状态会被保持，函数暂停，等待下一次迭代。</li>
+<li>函数的下一次迭代会从上次暂停的地方继续执行，保持了函数的上下文。</li>
+</ul>
+</li>
+</ul>
+<h3 id="异同代码示例"><a href="#异同代码示例" class="headerlink" title="异同代码示例"></a>异同代码示例</h3><p>当使用<code>yield</code>关键字时，生成器的行为与常规函数有显著不同。以下是一个示例</p>
+<p><strong>常规函数</strong>：</p>
+<pre class=" language-python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">normal_numbers</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    numbers <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+    <span class="token keyword">for</span> n <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        numbers<span class="token punctuation">.</span>append<span class="token punctuation">(</span>n<span class="token punctuation">)</span>
+    <span class="token keyword">return</span> numbers
+
+result <span class="token operator">=</span> normal_numbers<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span></code></pre>
+<p><strong>使用<code>yield</code>的生成器函数</strong>：</p>
+<pre class=" language-python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">generator_numbers</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    n <span class="token operator">=</span> <span class="token number">1</span>
+    <span class="token keyword">while</span> n <span class="token operator">&lt;=</span> <span class="token number">5</span><span class="token punctuation">:</span>
+        <span class="token keyword">yield</span> n
+        n <span class="token operator">+=</span> <span class="token number">1</span>
+
+gen <span class="token operator">=</span> generator_numbers<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token keyword">for</span> num <span class="token keyword">in</span> gen<span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span></code></pre>
+<p>在常规函数中，我们使用一个列表来存储自然数，然后返回整个列表。在生成器函数中，我们使用<code>yield</code>来逐个生成自然数，而不是一次性生成整个列表。当迭代生成器时，我们会逐个获取并打印自然数。</p>
+<p>这两个示例的输出结果相同，都是打印出自然数1到5，但它们的实现方式不同。生成器函数使用<code>yield</code>可以避免一次性占用大量内存，特别在处理大数据集时，这种差异将会更加显著。</p>
+<h2 id="yield-在生成器函数中的作用"><a href="#yield-在生成器函数中的作用" class="headerlink" title="yield 在生成器函数中的作用"></a><code>yield</code> 在生成器函数中的作用</h2><p><code>yield</code> 在生成器函数中发挥着重要作用：</p>
+<ul>
+<li><p><strong>中途暂停函数执行</strong>：当生成器函数执行到 <code>yield</code> 语句时，函数的状态被冻结，函数暂停执行，当前生成的值被返回给调用者。这使得生成器能够将值逐个生成，而不是一次性生成整个序列。生成器的状态被保留，以便下次调用时能够从 <code>yield</code> 语句之后的代码行继续执行。</p>
+</li>
+<li><p><strong>从上次暂停的地方继续执行</strong>：生成器函数的每次调用都会从上一次 <code>yield</code> 语句的位置继续执行，而不是从头开始。这允许生成器在迭代中继续生成值，同时保持函数内部变量和状态。</p>
+</li>
+</ul>
+<h1 id="如何使用生成器和-yield"><a href="#如何使用生成器和-yield" class="headerlink" title="如何使用生成器和 yield"></a>如何使用生成器和 <code>yield</code></h1><h2 id="使用-next-方法遍历生成器"><a href="#使用-next-方法遍历生成器" class="headerlink" title="使用 next 方法遍历生成器"></a>使用 <code>next</code> 方法遍历生成器</h2><p>生成器可以使用 <code>next</code> 方法逐个获取值。以下是一个示例：</p>
+<pre class=" language-python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">simple_generator</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">yield</span> <span class="token number">1</span>
+    <span class="token keyword">yield</span> <span class="token number">2</span>
+    <span class="token keyword">yield</span> <span class="token number">3</span>
+
+gen <span class="token operator">=</span> simple_generator<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>next<span class="token punctuation">(</span>gen<span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 输出 1</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>next<span class="token punctuation">(</span>gen<span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 输出 2</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>next<span class="token punctuation">(</span>gen<span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 输出 3</span></code></pre>
+<p>在上述示例中，<code>simple_generator</code> 是一个生成器函数，它使用 <code>yield</code> 返回三个值。我们创建生成器对象 <code>gen</code>，然后使用 <code>next</code> 方法逐个获取这些值。</p>
+<blockquote>
+<p>当生成器没有更多的值可供生成时，再次调用 <code>next</code> 方法会引发 <code>StopIteration</code> 异常。通常，我们使用 <code>for</code> 循环来遍历生成器，这样可以自动处理异常。</p>
+</blockquote>
+<h2 id="yield-后面可以跟常用的数据类型，如字符串、整数和字典"><a href="#yield-后面可以跟常用的数据类型，如字符串、整数和字典" class="headerlink" title="yield 后面可以跟常用的数据类型，如字符串、整数和字典"></a><code>yield</code> 后面可以跟常用的数据类型，如字符串、整数和字典</h2><p><code>yield</code> 后面可以跟各种数据类型，包括字符串、整数、字典等。这使得生成器函数非常灵活，可以用于生成各种类型的数据。以下是一个示例：</p>
+<pre class=" language-python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">mixed_data_generator</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">yield</span> <span class="token string">"Hello, World"</span>
+    <span class="token keyword">yield</span> <span class="token number">42</span>
+    <span class="token keyword">yield</span> <span class="token punctuation">{</span><span class="token string">"name"</span><span class="token punctuation">:</span> <span class="token string">"Alice"</span><span class="token punctuation">,</span> <span class="token string">"age"</span><span class="token punctuation">:</span> <span class="token number">30</span><span class="token punctuation">}</span>
+
+gen <span class="token operator">=</span> mixed_data_generator<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>next<span class="token punctuation">(</span>gen<span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 输出 "Hello, World"</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>next<span class="token punctuation">(</span>gen<span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 输出 42</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>next<span class="token punctuation">(</span>gen<span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 输出 {"name": "Alice", "age": 30}</span></code></pre>
+<h2 id="制作生成器表达式"><a href="#制作生成器表达式" class="headerlink" title="制作生成器表达式"></a>制作生成器表达式</h2><p>类似于列表推导式，Python 也支持生成器表达式，这是一种创建生成器的简洁方式。生成器表达式使用小括号 <code>()</code>，而不是列表推导式的中括号 <code>[]</code>。以下是一个示例：</p>
+<pre class=" language-python"><code class="language-python">gen <span class="token operator">=</span> <span class="token punctuation">(</span>x <span class="token operator">**</span> <span class="token number">2</span> <span class="token keyword">for</span> x <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token keyword">for</span> val <span class="token keyword">in</span> gen<span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>val<span class="token punctuation">)</span></code></pre>
+<p>在这个示例中，我们使用生成器表达式创建了一个生成平方数的生成器。生成器表达式非常适合在一行代码中创建简单的生成器。</p>
+<h1 id="生成器和-yield-的应用"><a href="#生成器和-yield-的应用" class="headerlink" title="生成器和 yield 的应用"></a>生成器和 <code>yield</code> 的应用</h1><h2 id="生成大规模数据时的优势"><a href="#生成大规模数据时的优势" class="headerlink" title="生成大规模数据时的优势"></a>生成大规模数据时的优势</h2><ul>
+<li><p><strong>节省内存</strong>：生成器一次只生成一个值，而不是将整个数据集加载到内存中。这对于处理大型数据集非常重要，因为它可以避免占用过多内存。</p>
+</li>
+<li><p><strong>提高效率</strong>：生成器能够按需生成数据，这意味着在迭代过程中不需要计算和存储所有值。这可以显著提高程序的效率，特别是在处理大数据集时。</p>
+</li>
+<li><p><strong>处理无限序列</strong>：生成器可以处理无限序列，例如自然数序列或无限的传感器数据流。这是传统数据结构无法做到的。</p>
+</li>
+</ul>
+<h2 id="对于流处理和协同程序的支持"><a href="#对于流处理和协同程序的支持" class="headerlink" title="对于流处理和协同程序的支持"></a>对于流处理和协同程序的支持</h2><ul>
+<li><p><strong>流处理</strong>：生成器可以用于处理数据流，例如日志文件、网络数据流或传感器数据。你可以一次处理一部分数据，而不需要加载整个数据集。</p>
+</li>
+<li><p><strong>协同程序</strong>：生成器可以用于实现协同程序，允许多个任务在不同生成器之间交替执行。这有助于编写高效的并发程序，例如网络爬虫或数据处理流水线。</p>
+</li>
+</ul>
+<h2 id="实现自定义的迭代器"><a href="#实现自定义的迭代器" class="headerlink" title="实现自定义的迭代器"></a>实现自定义的迭代器</h2><p>生成器和 <code>yield</code> 还可以用于创建自定义的迭代器，使你能够遍历自定义数据结构，例如树、图或复杂对象。这些自定义迭代器可以根据需要生成数据，提供了灵活性和可读性。</p>
+<p>以下是一个示例，使用生成器创建自定义迭代器，以遍历树结构：</p>
+<pre class=" language-python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">TreeNode</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> value<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>value <span class="token operator">=</span> value  <span class="token comment" spellcheck="true"># value 存储节点的值</span>
+        self<span class="token punctuation">.</span>children <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>  <span class="token comment" spellcheck="true"># children 存储该节点的子节点列表</span>
+
+    <span class="token keyword">def</span> <span class="token function">add_child</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> child<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>children<span class="token punctuation">.</span>append<span class="token punctuation">(</span>child<span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 添加一个子节点</span>
+
+<span class="token comment" spellcheck="true"># 定义遍历树的生成器函数</span>
+<span class="token keyword">def</span> <span class="token function">traverse_tree</span><span class="token punctuation">(</span>node<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">yield</span> node<span class="token punctuation">.</span>value  <span class="token comment" spellcheck="true"># 首先生成当前节点的值</span>
+    <span class="token keyword">for</span> child <span class="token keyword">in</span> node<span class="token punctuation">.</span>children<span class="token punctuation">:</span>  <span class="token comment" spellcheck="true"># 然后依次生成它的每个子节点的值</span>
+        <span class="token keyword">yield</span> <span class="token keyword">from</span> traverse_tree<span class="token punctuation">(</span>child<span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true"># 创建一个树结构</span>
+root <span class="token operator">=</span> TreeNode<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 树的根节点是 1</span>
+child1 <span class="token operator">=</span> TreeNode<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
+child2 <span class="token operator">=</span> TreeNode<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span>
+root<span class="token punctuation">.</span>add_child<span class="token punctuation">(</span>child1<span class="token punctuation">)</span>
+root<span class="token punctuation">.</span>add_child<span class="token punctuation">(</span>child2<span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true"># 将两个节点添加到根节点下</span>
+
+gen <span class="token operator">=</span> traverse_tree<span class="token punctuation">(</span>root<span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 遍历整棵树，并生成一个生成器对象</span>
+<span class="token keyword">for</span> value <span class="token keyword">in</span> gen<span class="token punctuation">:</span>  <span class="token comment" spellcheck="true"># 遍历生成器中的所有元素</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 打印元素的值</span>
+</code></pre>
+<p>在这个示例中，我们创建了一个树结构并使用生成器函数 <code>traverse_tree</code> 遍历树中的节点。生成器允许我们以递归的方式遍历树，同时保持函数状态，从上次暂停的地方继续执行。</p>
+<h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p>Python中的生成器和yield关键词是一种高效的编程方式，通过节省空间和提高效率，可以大大提高代码的执行效率。在Python编程中，生成器和yield的应用非常广泛，在处理大规模数据、流处理和协同程序等方面都具有重要作用。因此，掌握生成器和yield的用法，对于提高Python编程水平和效率是非常重要的。</p>
+
             </div>
             <hr />
 
@@ -728,9 +912,9 @@ overflow-y: scroll;
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《每日60s读懂世界》
+                    《python生成器与yield》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/sui-bi-mei-ri-60s.html" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/bian-cheng-python-sheng-cheng-qi-yu-yield.html" property="cc:attributionName"
                rel="cc:attributionURL">
                 Bevis23
             </a> 采用
@@ -771,7 +955,7 @@ overflow-y: scroll;
         repo: 'Bevis23.github.io',
         owner: 'Bevis23',
         admin: "Bevis23",
-        id: 'sui-bi-mei-ri-60s.html',
+        id: 'bian-cheng-python-sheng-cheng-qi-yu-yield.html',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -1054,50 +1238,56 @@ overflow-y: scroll;
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/shen-tou-google-hacking.html">
+                <a href="/bian-cheng-python-sheng-cheng-qi-yu-yield.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="google_hacking">
+                        <img src="/medias/featureimages/28.jpg" class="responsive-img" alt="python生成器与yield">
                         
-                        <span class="card-title">google_hacking</span>
+                        <span class="card-title">python生成器与yield</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            引言在我们日常生活中，Google已经成为了获取信息的重要工具。然而，这个强大的搜索引擎同时也可能被用来进行一些我们未曾察觉的活动，这其中就包括Google hacking，对于经常使用google的我，利用其该语法功能，更加精准便捷地搜索
+                            引言在Python编程世界中，有一种神奇的机制，它能够以惊人的效率管理数据流，同时又占用极少的内存空间。这个机制就是生成器，而它的魔力关键字是”yield”。生成器和yield在处理大型数据集或无限序列时，可以成为性能的保障，同时让代码变得
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2023-06-13
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2023-10-13
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/网络安全/" class="post-category" target="_blank">
-                                    网络安全
+                            <a href="/categories/python/" class="post-category" target="_blank">
+                                    python
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/技术分享/" target="_blank">
-                        <span class="chip bg-color">技术分享</span>
+                    <a href="/tags/python/" target="_blank">
+                        <span class="chip bg-color">python</span>
                     </a>
                     
-                    <a href="/tags/网络安全/" target="_blank">
-                        <span class="chip bg-color">网络安全</span>
+                    <a href="/tags/yield/" target="_blank">
+                        <span class="chip bg-color">yield</span>
+                    </a>
+                    
+                    <a href="/tags/Generator/" target="_blank">
+                        <span class="chip bg-color">Generator</span>
                     </a>
                     
                 </div>
@@ -1111,39 +1301,31 @@ overflow-y: scroll;
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/ai-chatgpt-jie-ru-wei-xin.html">
+                <a href="/bian-cheng-python-mian-xiang-dui-xiang.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="chatgpt接入微信">
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="探索pyhon的面向对象编程">
                         
-                        <span class="card-title">chatgpt接入微信</span>
+                        <span class="card-title">探索pyhon的面向对象编程</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            做好前期准备
-一台云服务器
-一个chatgpt账号，带有apikey，用于使用api接口
-github账号 ，用于获取项目
-还有就是一颗愿意折腾，好奇的心，打造属于自己私人小助手和小群体的群聊助手伙伴
-
-效果图
-
-服务器选择由于api接口后
+                            引言在现代编程世界中，面向对象编程（OOP）已经成为一种广泛使用的编程范式。它的核心思想是将现实世界中的事物抽象为对象，这些对象具有属性和方法，可以相互协作和交互。Python，作为一种多范式编程语言，强调了面向对象编程在其编程生态中的重要
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2023-06-10
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2023-10-12
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/AI/" class="post-category" target="_blank">
-                                    AI
+                            <a href="/categories/编程/" class="post-category" target="_blank">
+                                    编程
                                 </a>
                             
                             
@@ -1153,16 +1335,12 @@ github账号 ，用于获取项目
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/AI/" target="_blank">
-                        <span class="chip bg-color">AI</span>
+                    <a href="/tags/python/" target="_blank">
+                        <span class="chip bg-color">python</span>
                     </a>
                     
-                    <a href="/tags/linux/" target="_blank">
-                        <span class="chip bg-color">linux</span>
-                    </a>
-                    
-                    <a href="/tags/chatgpt/" target="_blank">
-                        <span class="chip bg-color">chatgpt</span>
+                    <a href="/tags/OOP/" target="_blank">
+                        <span class="chip bg-color">OOP</span>
                     </a>
                     
                 </div>
