@@ -1,3 +1,6 @@
+https://bevis23.github.io/shu-fen-matplotlib.html
+https://bevis23.github.io/shu-fen-pandas.html
+https://bevis23.github.io/shu-fen-numpy.html
 https://bevis23.github.io/bian-cheng-python-sheng-cheng-qi-yu-yield.html
 https://bevis23.github.io/bian-cheng-python-mian-xiang-dui-xiang.html
 https://bevis23.github.io/shu-fen-shu-ju-fen-xi-si-wei.html
