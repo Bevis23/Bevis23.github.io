@@ -22,9 +22,9 @@
             
             <tag> python </tag>
             
-            <tag> matplotlib </tag>
-            
             <tag> 数据分析 </tag>
+            
+            <tag> matplotlib </tag>
             
         </tags>
       
@@ -80,9 +80,9 @@
             
             <tag> python </tag>
             
-            <tag> 数据分析 </tag>
-            
             <tag> numpy </tag>
+            
+            <tag> 数据分析 </tag>
             
         </tags>
       
@@ -780,9 +780,9 @@
             
             <tag> linux </tag>
             
-            <tag> 服务器 </tag>
-            
             <tag> 技术分享 </tag>
+            
+            <tag> 服务器 </tag>
             
             <tag> samba </tag>
             
