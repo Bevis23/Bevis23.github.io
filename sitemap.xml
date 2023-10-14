@@ -2,30 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://bevis23.github.io/shu-fen-matplotlib.html</loc>
+    <loc>https://bevis23.github.io/bian-cheng-shu-ju-jie-gou-yu-suan-fa-python.html</loc>
     
-    <lastmod>2023-10-13T06:59:37.864Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://bevis23.github.io/shu-fen-numpy.html</loc>
-    
-    <lastmod>2023-10-13T05:21:09.070Z</lastmod>
+    <lastmod>2023-10-14T01:21:12.285Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://bevis23.github.io/shu-fen-pandas.html</loc>
+    <loc>https://bevis23.github.io/bian-cheng-python-jing-dian-pai-xu-suan-fa.html</loc>
     
-    <lastmod>2023-10-13T05:20:48.911Z</lastmod>
+    <lastmod>2023-10-14T01:19:14.762Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://bevis23.github.io/bian-cheng-python-sheng-cheng-qi-yu-yield.html</loc>
     
-    <lastmod>2023-10-12T22:36:02.900Z</lastmod>
+    <lastmod>2023-10-14T01:18:09.962Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://bevis23.github.io/shu-fen-numpy.html</loc>
+    
+    <lastmod>2023-10-13T07:06:14.844Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://bevis23.github.io/shu-fen-pandas.html</loc>
+    
+    <lastmod>2023-10-13T07:05:38.799Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://bevis23.github.io/shu-fen-matplotlib.html</loc>
+    
+    <lastmod>2023-10-13T07:04:36.219Z</lastmod>
     
   </url>
   

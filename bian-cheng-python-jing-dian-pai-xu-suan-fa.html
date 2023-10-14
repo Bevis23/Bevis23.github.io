@@ -4,19 +4,11 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="chatgpt接入微信, seek">
+    <meta name="keywords" content="排序算法探究, seek">
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
-    <meta name="description" content="做好前期准备
-一台云服务器
-一个chatgpt账号，带有apikey，用于使用api接口
-github账号 ，用于获取项目
-还有就是一颗愿意折腾，好奇的心，打造属于自己私人小助手和小群体的群聊助手伙伴
-
-效果图
-
-服务器选择由于api接口后">
+    <meta name="description" content="引言A. 背景介绍：排序算法是计算机科学中一个非常重要的领域，它涉及将一组数据元素按照特定顺序重新排列的方法。排序是许多计算机科学和软件开发任务的基础，它在数据分析、数据库查询、搜索算法、图形渲染等众多应用中发挥着关键作用。不同的排序算法有">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -24,7 +16,7 @@ github账号 ，用于获取项目
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>chatgpt接入微信 | Bevis23&#39;s Blog</title>
+    <title>排序算法探究 | Bevis23&#39;s Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -372,13 +364,13 @@ github账号 ，用于获取项目
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        chatgpt接入微信
+                        排序算法探究
                     </div>
                 </div>
             </div>
@@ -517,16 +509,16 @@ overflow-y: scroll;
                     
                     <div class="article-tag">
                         
-                        <a href="/tags/AI/" target="_blank">
-                            <span class="chip bg-color">AI</span>
+                        <a href="/tags/python/" target="_blank">
+                            <span class="chip bg-color">python</span>
                         </a>
                         
-                        <a href="/tags/chatgpt/" target="_blank">
-                            <span class="chip bg-color">chatgpt</span>
+                        <a href="/tags/算法/" target="_blank">
+                            <span class="chip bg-color">算法</span>
                         </a>
                         
-                        <a href="/tags/linux/" target="_blank">
-                            <span class="chip bg-color">linux</span>
+                        <a href="/tags/编程/" target="_blank">
+                            <span class="chip bg-color">编程</span>
                         </a>
                         
                     </div>
@@ -537,8 +529,8 @@ overflow-y: scroll;
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                        <a href="/categories/AI/" class="post-category" target="_blank">
-                            AI
+                        <a href="/categories/编程/" class="post-category" target="_blank">
+                            编程
                         </a>
                         
                     </div>
@@ -549,7 +541,7 @@ overflow-y: scroll;
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-06-10
+                    2023-08-02
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -563,14 +555,14 @@ overflow-y: scroll;
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.5k
+                    4.5k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    6 分
+                    16 分
                 </div>
                 
                 
@@ -586,108 +578,326 @@ overflow-y: scroll;
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="做好前期准备"><a href="#做好前期准备" class="headerlink" title="做好前期准备"></a>做好前期准备</h1><ul>
-<li>一台云服务器</li>
-<li>一个chatgpt账号，带有apikey，用于使用api接口</li>
-<li>github账号 ，用于获取项目</li>
-<li>还有就是一颗愿意折腾，好奇的心，打造属于自己私人小助手和小群体的群聊助手伙伴</li>
+                <h1 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h1><h2 id="A-背景介绍："><a href="#A-背景介绍：" class="headerlink" title="A. 背景介绍："></a>A. 背景介绍：</h2><p>排序算法是计算机科学中一个非常重要的领域，它涉及将一组数据元素按照特定顺序重新排列的方法。排序是许多计算机科学和软件开发任务的基础，它在数据分析、数据库查询、搜索算法、图形渲染等众多应用中发挥着关键作用。不同的排序算法有不同的优势和适用场景，因此了解它们的原理和性能是非常重要的。</p>
+<h2 id="B-目的说明："><a href="#B-目的说明：" class="headerlink" title="B. 目的说明："></a>B. 目的说明：</h2><p>本文的目的是深入剖析一些经典的排序算法，以帮助读者更好地理解它们的原理和应用。我们将关注一些最常见的排序算法，如冒泡排序、插入排序、选择排序、快速排序、归并排序等，并提供每种算法的详细描述、时间复杂度分析、示例代码以及适用场景的讨论。通过本文，读者将能够更好地理解排序算法的工作方式，选择合适的算法来满足特定需求，并优化其在实际应用中的性能。</p>
+<p>接下来，我们将深入研究这些排序算法的原理和应用，从而更好地理解它们的优势和限制。</p>
+<blockquote>
+<p>本文算法均以python实现</p>
+</blockquote>
+<h1 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h1><h2 id="基本思想："><a href="#基本思想：" class="headerlink" title="基本思想："></a>基本思想：</h2><p>   冒泡排序是一种简单的排序算法，它的基本思想是通过不断比较相邻的元素并交换它们的位置，将最大（或最小）的元素逐步”冒泡”到数组的一端。在每一轮排序中，比较相邻的两个元素，如果它们的顺序不正确（例如，前一个元素大于后一个元素），则交换它们的位置。这个过程一直重复，直到整个数组变得有序。</p>
+<h2 id="算法过程："><a href="#算法过程：" class="headerlink" title="算法过程："></a>算法过程：</h2><p>   冒泡排序的算法过程如下：</p>
+<ol>
+<li>从数组的第一个元素开始，比较它与下一个元素。</li>
+<li>如果当前元素大于下一个元素，交换它们的位置。</li>
+<li>移动到下一个相邻元素，重复步骤1和2，直到到达数组的末尾。此时，数组中的最大元素已经”冒泡”到了最后一个位置。</li>
+<li>重复步骤1-3，但这次不考虑已经排序好的最后一个元素，将次大的元素”冒泡”到倒数第二个位置。</li>
+<li>重复这个过程，直到整个数组有序。</li>
+</ol>
+<h2 id="时间复杂度分析："><a href="#时间复杂度分析：" class="headerlink" title="时间复杂度分析："></a>时间复杂度分析：</h2><ul>
+<li>最好情况：如果输入数组已经是有序的，冒泡排序只需要进行一趟比较，不需要交换元素，时间复杂度为O(n)。</li>
+<li>最坏情况：如果输入数组是逆序的，每一趟排序都需要比较和交换元素，需要进行n-1趟排序，时间复杂度为O(n^2)。</li>
+<li>平均情况：在平均情况下，冒泡排序的时间复杂度也是O(n^2)。因此，冒泡排序并不是一个高效的排序算法。</li>
 </ul>
-<h1 id="效果图"><a href="#效果图" class="headerlink" title="效果图"></a>效果图</h1><img src="https://cdn.jsdelivr.net/gh/Bevis23/blog-pic/bot%E6%95%88%E6%9E%9C%E5%9B%BE.png" style="zoom:20%;">
+<h2 id="示例和应用场景："><a href="#示例和应用场景：" class="headerlink" title="示例和应用场景："></a>示例和应用场景：</h2><p>   <strong>示例：</strong><br>   假设有一个整数数组：[5, 2, 9, 3, 4, 6]。使用冒泡排序进行排序：</p>
+<ul>
+<li><p>第一轮排序：[2, 5, 3, 4, 6, 9]</p>
+</li>
+<li><p>第二轮排序：[2, 3, 4, 5, 6, 9]</p>
+<p>最终数组有序，冒泡排序完成。</p>
+</li>
+</ul>
+<p>   <strong>应用场景</strong>：<br>   冒泡排序是一个简单的排序算法，通常不用于处理大规模数据集，因为它的时间复杂度较高。它可以用于以下情况：</p>
+<ol>
+<li>教学和学习：冒泡排序通常用于教育和学习排序算法的基本原理。</li>
+<li>当数据集较小，性能要求不高时，可以使用冒泡排序。</li>
+<li>冒泡排序在实际应用中不常见，因为更高效的排序算法（如快速排序和归并排序）通常被优先选用，特别是对于大型数据集。</li>
+</ol>
+<p>冒泡排序虽然简单，但效率低下，不适合处理大规模数据，更适合用于教育和理解排序算法的基本原理</p>
+<h2 id="python示例代码"><a href="#python示例代码" class="headerlink" title="python示例代码"></a>python示例代码</h2><pre class=" language-python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">bubbleSort</span><span class="token punctuation">(</span>arr<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">"""
+    冒泡排序函数
+    :param arr: 待排序的列表
+    :return: 排序后的列表
+    """</span>
+    n <span class="token operator">=</span> len<span class="token punctuation">(</span>arr<span class="token punctuation">)</span>
+    <span class="token comment" spellcheck="true"># 遍历所有元素</span>
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token comment" spellcheck="true"># 最后i个元素已经排好序，不需要再比较</span>
+        <span class="token keyword">for</span> j <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> n<span class="token operator">-</span>i<span class="token number">-1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token comment" spellcheck="true"># 如果当前元素比下一个元素大，则交换它们</span>
+            <span class="token keyword">if</span> arr<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">></span> arr<span class="token punctuation">[</span>j<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">:</span>
+                arr<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">,</span> arr<span class="token punctuation">[</span>j<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> arr<span class="token punctuation">[</span>j<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> arr<span class="token punctuation">[</span>j<span class="token punctuation">]</span>
+    <span class="token keyword">return</span> arr
 
-<h2 id="服务器选择"><a href="#服务器选择" class="headerlink" title="服务器选择"></a>服务器选择</h2><p>由于api接口后期也被墙了，使用境外服务器的话就不需要配置代理，相对方便；</p>
-<p>我个人是弄了一台腾讯云，轻量级， CentOS7.6的操作系统 ；新人首次112一年，够用；</p>
-<h2 id="chatgpt账号注册"><a href="#chatgpt账号注册" class="headerlink" title="chatgpt账号注册"></a>chatgpt账号注册</h2><p>注册的话，用邮箱，用sms接码验证便可注册，这里不具体阐述，会自带5$的api额度</p>
-<h2 id="github账号"><a href="#github账号" class="headerlink" title="github账号"></a>github账号</h2><p>直接账号注册，做好相关配置，获取机器人项目</p>
-<p>项目地址：<a href="https://github.com/zhayujie/chatgpt-on-wechat" target="_blank" rel="noopener">https://github.com/zhayujie/chatgpt-on-wechat</a></p>
-<p>项目克隆步骤:</p>
-<p>1配置ssh key</p>
-<p>到服务器输入命令： </p>
-<pre class=" language-linux"><code class="language-linux">ssh-keygen -t rsa -C "xxxx@test.com"  #然后一直回车即可</code></pre>
-<p> 2 输入以下命令，查看，复制生成的key ：</p>
-<pre><code>cat ~/.ssh/id_rsa.pub</code></pre><p>3将复制的内容放置于github上ssh keys上，保存即可</p>
-<h1 id="部署操作步骤"><a href="#部署操作步骤" class="headerlink" title="部署操作步骤"></a>部署操作步骤</h1><h2 id="安装相关工具和环境部署"><a href="#安装相关工具和环境部署" class="headerlink" title="安装相关工具和环境部署"></a>安装相关工具和环境部署</h2><p>环境要求为python3.9+版本</p>
-<p> 查看一下服务器是否有下载python和git：</p>
-<pre><code>[root@miyi_server ~]# python3 -V
-Python 3.9.2
-[root@miyi_server ~]# git --version
-git version 1.8.3.1</code></pre><p>我已经安装，假设你的服务器还没安装的话，则做如下操作，代码和注释已经很清晰，照着来就可以</p>
-<pre><code>yum update #更新下yum源
-yum install -y git #安装git
-cd /home #切换到/home目录下
-git clone git@github.com:zhayujie/chatgpt-on-wechat.git #去github仓库克隆项目
-yum install -y wget #安装wget，用于从Web服务器上下载python3文件
-wget https://www.python.org/ftp/python/3.9.2/Python-3.9.2.tgz #下载文件
-tar -xzvf Python-3.9.2.tgz #对文件进行解压
-yum install -y gcc # 从这里开始安装相关依赖
-yum install -y zlib-devel
-yum install openssl-devel
-yum install libffi-devel</code></pre><h2 id="配置python环境"><a href="#配置python环境" class="headerlink" title="配置python环境"></a>配置python环境</h2><p>对python进行相关操作</p>
-<pre><code>cd /home/Python-3.9.2 #进入目录
-##编译python
-./configure
-make altinstall
-ln -s /usr/local/bin/python3.9 /usr/bin/python3 #加入软链接，指向该目录
-yum install -y python3-pip  #安装pip3
+<span class="token comment" spellcheck="true"># 测试用例</span>
+arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">64</span><span class="token punctuation">,</span> <span class="token number">34</span><span class="token punctuation">,</span> <span class="token number">25</span><span class="token punctuation">,</span> <span class="token number">12</span><span class="token punctuation">,</span> <span class="token number">22</span><span class="token punctuation">,</span> <span class="token number">11</span><span class="token punctuation">,</span> <span class="token number">90</span><span class="token punctuation">]</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"排序前："</span><span class="token punctuation">,</span> arr<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"排序后："</span><span class="token punctuation">,</span> bubbleSort<span class="token punctuation">(</span>arr<span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+<h1 id="选择排序"><a href="#选择排序" class="headerlink" title="选择排序"></a>选择排序</h1><h2 id="基本思想：-1"><a href="#基本思想：-1" class="headerlink" title="基本思想："></a>基本思想：</h2><p>   选择排序是一种简单的排序算法，其基本思想是每次从待排序序列中选择最大（或最小）的元素，然后将它放置到已排序部分的末尾。这个过程不断重复，直到整个序列变得有序。</p>
+<h2 id="算法过程：-1"><a href="#算法过程：-1" class="headerlink" title="算法过程："></a>算法过程：</h2><p>   选择排序的算法过程如下：</p>
+<ol>
+<li>初始时，整个序列被分为两部分：已排序部分和待排序部分。初始时，已排序部分为空，而待排序部分包含所有元素。</li>
+<li>在待排序部分中找到最小（或最大）的元素。</li>
+<li>将找到的最小（或最大）元素与待排序部分的第一个元素交换位置，将其放置到已排序部分的末尾。</li>
+<li>已排序部分增加一个元素，待排序部分减少一个元素。</li>
+<li>重复步骤2-4，直到待排序部分为空。此时，整个序列已排序完成。</li>
+</ol>
+<h2 id="时间复杂度分析：-1"><a href="#时间复杂度分析：-1" class="headerlink" title="时间复杂度分析："></a>时间复杂度分析：</h2><ul>
+<li>最好情况：无论什么情况，选择排序的外层循环都需要执行n-1次。内层循环需要执行n次比较，但交换次数较少（最多n-1次）。因此，最好情况、最坏情况和平均情况下的时间复杂度都是O(n^2)。</li>
+</ul>
+<h2 id="示例和应用场景：-1"><a href="#示例和应用场景：-1" class="headerlink" title="示例和应用场景："></a>示例和应用场景：</h2><p>   <strong>示例：</strong><br>   假设有一个整数数组：[5, 2, 9, 3, 4, 6]。使用选择排序进行排序：</p>
+<ul>
+<li>第一轮排序：找到最小的元素2，并与第一个元素5交换位置，序列变为：[2, 5, 9, 3, 4, 6]</li>
+<li>第二轮排序：在剩下的序列中找到最小的元素3，并与第二个元素5交换位置，序列变为：[2, 3, 9, 5, 4, 6]</li>
+<li>以此类推，继续进行选择排序，直到整个数组有序。</li>
+</ul>
+<p>   <strong>应用场景：</strong></p>
+<ol>
+<li>选择排序是一种直观易懂的排序算法，适合用于教学和学习排序算法的基本原理。</li>
+<li>当数据集较小，性能要求不高时，可以使用选择排序。</li>
+<li>选择排序在实际应用中相对较少，因为它的时间复杂度较高，尤其在大型数据集的情况下，更高效的排序算法（如快速排序或归并排序）更为常见。</li>
+</ol>
+<p>选择排序是一种简单的排序算法，但在性能方面较差。它主要用于教学和小型数据集，而在实际应用中，通常会选择更高效的排序算法。</p>
+<h2 id="python示例代码-1"><a href="#python示例代码-1" class="headerlink" title="python示例代码"></a>python示例代码</h2><pre class=" language-python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">selection_sort</span><span class="token punctuation">(</span>arr<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    n <span class="token operator">=</span> len<span class="token punctuation">(</span>arr<span class="token punctuation">)</span>
 
-##安装相关依赖包
-pip3 install itchat-uos==1.5.0.dev0 #安装微信机器人的包
-pip3 install --upgrade openai  #对openai 的包进行更新
+    <span class="token comment" spellcheck="true"># 遍历数组</span>
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token comment" spellcheck="true"># 找到未排序部分中的最小元素的索引</span>
+        min_index <span class="token operator">=</span> i
+        <span class="token keyword">for</span> j <span class="token keyword">in</span> range<span class="token punctuation">(</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span> n<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">if</span> arr<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">&lt;</span> arr<span class="token punctuation">[</span>min_index<span class="token punctuation">]</span><span class="token punctuation">:</span>
+                min_index <span class="token operator">=</span> j
 
-##假如更新过后python的版本发生了改变，则需要重新设置一下
-rm /usr/bin/python3 #删除python3软连接 
-ln -s /usr/local/bin/python3.9 /usr/bin/python3 #重新加入软连接
-pip3 install --upgrade openai #对openai 的包进行更新</code></pre><h2 id="项目配置文件操作"><a href="#项目配置文件操作" class="headerlink" title="项目配置文件操作"></a>项目配置文件操作</h2><p>python相关配置完成之后，对项目目录进行设置，配置相关参数</p>
-<pre><code>cd ../chatgpt-on-wechat/ #进入项目目录
-cp config-template.json config.json #负制一份配置文件
+        <span class="token comment" spellcheck="true"># 将最小元素与当前位置交换</span>
+        arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> arr<span class="token punctuation">[</span>min_index<span class="token punctuation">]</span> <span class="token operator">=</span> arr<span class="token punctuation">[</span>min_index<span class="token punctuation">]</span><span class="token punctuation">,</span> arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
 
-## 使用vim工具进行编辑，假设你服务器没有，只需要
-yum install -y vim
-vim config.json #打开配置文件</code></pre><p>以下配置文件的内容参数解析，根据我的注释做个人设置即可</p>
-<pre><code>{
-  &quot;open_ai_api_key&quot;: &quot;此处输入你自己的apikey&quot;,
-  &quot;model&quot;: &quot;gpt-3.5-turbo&quot;,
-  &quot;proxy&quot;: &quot;http://127.0.0.1:7890&quot;, #这便是需要配置代理的情况，假设你是境外服务器，则没有这个
-  &quot;single_chat_prefix&quot;: [
-    &quot;dan&quot; #此处为私人聊天的触发词选项，我设置为dan，私人聊天便会按照这个触发词来决定是否由bot回答
-  ],
-  &quot;single_chat_reply_prefix&quot;: &quot;&quot;,
-  &quot;group_chat_prefix&quot;: [
-    &quot;@dan&quot;  #群聊触发 为@dan
-  ],
-  &quot;group_name_white_list&quot;: [
-    &quot;ALL_GROUP&quot;  #设置所有群都开启bot功能
-  ],
-  &quot;group_chat_in_one_session&quot;: [
-    &quot;ChatGPT测试群&quot; 
-  ],
-  &quot;image_create_prefix&quot;: [
-    &quot;画&quot;,
-    &quot;看&quot;,
-    &quot;找&quot; #此为图片触发词
-  ],
-  &quot;speech_recognition&quot;: true,  #是否打开语音识别，针对私聊
-  &quot;group_speech_recognition&quot;: false,  #是否打开语音识别，针对群聊
-  &quot;voice_reply_voice&quot;: false, #是否开启语音回复
-  &quot;conversation_max_tokens&quot;: 10000, #回复token的限制长度
-  &quot;expires_in_seconds&quot;: 3600, #响应时间
-  &quot;character_desc&quot;: &quot;你是ChatGPT, 一个由OpenAI训练的大型语言模型, 你旨在回答并解决人们的任何问题，并且可以使用多种语言与人交流。&quot;,
-  &quot;subscribe_msg&quot;: &quot;感谢您的关注！\n这里是ChatGPT，可以自由对话。\n支持语音对话。\n支持图片输入。\n支持图片输出，画字开头的消息将按要求创作图片。\n支持tool、角色扮演和文字冒险等丰富的插件。\n输入{trigger_prefix}#help 查看详细指令。&quot;
-}
-</code></pre><p>配置完成 按ESC 输入  :wq 便可以保存退出</p>
-<p>安装运行相关的python3库</p>
-<pre><code>pip3 install chatgpt_tool_hub
-pip3 install qrcode
-pip3 install pyqrcode
-python3 app.py #运行app.py，便会出现二维码，扫码登录即可使用机器人</code></pre><h2 id="让bot永不间断地回复"><a href="#让bot永不间断地回复" class="headerlink" title="让bot永不间断地回复"></a>让bot永不间断地回复</h2><p>服务是用终端进行连接的，终端进程会随着终端的关闭同时关闭，这时候即使服务器24小时开着，bot也会随着终端的关闭而停止，这时候需要想个法子让它在后台一直运行</p>
-<p>面对这个问题，采用linux下的 nohup工具便可解决</p>
-<pre><code>touch nohup.out #先创建一个nohup.out
-nohup python3 app.py &amp; tail -f nohup.out #让应用程序以后台方式运行，并将输出日志重定向到nohup.out文件中，同时使用tail -f命令来实时监控nohup.out文件的内容变化;
+    <span class="token keyword">return</span> arr
 
-# 当需要关闭后台时候
-ps -ef | grep app.py #查看进程
-kill -9 进程号</code></pre><p>到此，整个操作就完成了，可以实现微信机器人的功能了</p>
-<h1 id="服务器代理设置"><a href="#服务器代理设置" class="headerlink" title="服务器代理设置"></a>服务器代理设置</h1><p>上面提到，用国内服务器的，需要配置相关的代理服务，在这篇里不做阐述； 大体的实现是在服务器上配置代理，方式有很多种，个人使用的是clash for linux，同样需要配置后台运行，这时候使用的则是配置systemd服务了，相对方便；配置代理文件等</p>
-<p>综上，直接使用不需要配置代理的服务器会方便很多，只需按我上面提到的操作即可。</p>
+<span class="token comment" spellcheck="true"># 测试</span>
+arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">64</span><span class="token punctuation">,</span> <span class="token number">25</span><span class="token punctuation">,</span> <span class="token number">12</span><span class="token punctuation">,</span> <span class="token number">22</span><span class="token punctuation">,</span> <span class="token number">11</span><span class="token punctuation">]</span>
+sorted_arr <span class="token operator">=</span> selection_sort<span class="token punctuation">(</span>arr<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"排序后的数组:"</span><span class="token punctuation">,</span> sorted_arr<span class="token punctuation">)</span>
+</code></pre>
+<h1 id="插入排序"><a href="#插入排序" class="headerlink" title="插入排序"></a>插入排序</h1><h2 id="基本思想：-2"><a href="#基本思想：-2" class="headerlink" title="基本思想："></a>基本思想：</h2><p>   插入排序是一种简单的排序算法，其基本思想是通过构建有序子序列，将未排序的元素逐个插入到合适的位置。在整个排序过程中，已排序部分总是位于数组的前部，而未排序部分位于后部。</p>
+<h2 id="算法过程：-2"><a href="#算法过程：-2" class="headerlink" title="算法过程："></a>算法过程：</h2><p>   插入排序的算法过程如下：</p>
+<ol>
+<li>初始时，整个序列被分为两部分：已排序部分和待排序部分。初始时，已排序部分只包含第一个元素，而待排序部分包含其余元素。</li>
+<li>从待排序部分取出第一个元素，称为当前元素。</li>
+<li>将当前元素与已排序部分的元素依次比较，找到当前元素在已排序部分中的合适位置。这通常涉及到多次比较和移动元素的过程。</li>
+<li>插入当前元素到已排序部分的合适位置。</li>
+<li>已排序部分增加一个元素，待排序部分减少一个元素。</li>
+<li>重复步骤2-5，直到待排序部分为空。此时，整个序列已排序完成。</li>
+</ol>
+<h2 id="时间复杂度分析：-2"><a href="#时间复杂度分析：-2" class="headerlink" title="时间复杂度分析："></a>时间复杂度分析：</h2><ul>
+<li>最好情况：在最好情况下，如果输入序列已经有序，插入排序只需要进行n-1次比较，没有交换操作，时间复杂度为O(n)。</li>
+<li>最坏情况：在最坏情况下，如果输入序列是逆序的，插入排序需要进行n-1次比较和n-1次交换操作，时间复杂度为O(n^2)。</li>
+<li>平均情况：平均情况下，插入排序的时间复杂度也是O(n^2)。</li>
+</ul>
+<h2 id="示例和应用场景：-2"><a href="#示例和应用场景：-2" class="headerlink" title="示例和应用场景："></a>示例和应用场景：</h2><p>   <strong>示例：</strong><br>   假设有一个整数数组：[5, 2, 9, 3, 4, 6]。使用插入排序进行排序：</p>
+<ul>
+<li>第一轮排序：已排序部分：[5]，待排序部分：[2, 9, 3, 4, 6]。取出2，插入到已排序部分中，结果为：[2, 5]，[9, 3, 4, 6]。</li>
+<li>第二轮排序：已排序部分：[2, 5]，待排序部分：[9, 3, 4, 6]。取出9，插入到已排序部分中，结果为：[2, 5, 9]，[3, 4, 6]。</li>
+<li>以此类推，继续进行插入排序，直到整个数组有序。</li>
+</ul>
+<p>   <strong>应用场景：</strong></p>
+<ol>
+<li>插入排序是一种稳定的排序算法，适用于小型数据集，尤其在数据基本有序的情况下表现良好。</li>
+<li>它在实际应用中常用于对小型数组或部分已排序的数据进行排序，如在线扑克牌游戏中对手中的牌进行排序。</li>
+<li>插入排序还可以用作其他排序算法的一部分，例如希尔排序中的子过程。</li>
+</ol>
+<p>插入排序是一种简单但有效的排序算法，适用于小规模数据集和特定情况下。它的时间复杂度较低，但在大规模数据集上性能不如快速排序或归并排序等高效排序算法。</p>
+<h2 id="python示例代码-2"><a href="#python示例代码-2" class="headerlink" title="python示例代码"></a>python示例代码</h2><pre class=" language-python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">insertion_sort</span><span class="token punctuation">(</span>arr<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    n <span class="token operator">=</span> len<span class="token punctuation">(</span>arr<span class="token punctuation">)</span>
+
+    <span class="token comment" spellcheck="true"># 从第2个元素开始遍历数组，将其插入已排序的部分</span>
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> n<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        key <span class="token operator">=</span> arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span>    <span class="token comment" spellcheck="true"># 当前待插入的元素</span>
+        j <span class="token operator">=</span> i <span class="token operator">-</span> <span class="token number">1</span>       <span class="token comment" spellcheck="true"># 已排序部分的最后一个元素的索引</span>
+
+        <span class="token comment" spellcheck="true"># 将大于待插入元素的元素向右移动</span>
+        <span class="token keyword">while</span> j <span class="token operator">>=</span> <span class="token number">0</span> <span class="token operator">and</span> arr<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">></span> key<span class="token punctuation">:</span>
+            arr<span class="token punctuation">[</span>j<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> arr<span class="token punctuation">[</span>j<span class="token punctuation">]</span>
+            j <span class="token operator">-=</span> <span class="token number">1</span>
+
+        <span class="token comment" spellcheck="true"># 将待插入元素放入正确的位置</span>
+        arr<span class="token punctuation">[</span>j<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> key
+
+    <span class="token keyword">return</span> arr
+
+<span class="token comment" spellcheck="true"># 测试</span>
+arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">64</span><span class="token punctuation">,</span> <span class="token number">25</span><span class="token punctuation">,</span> <span class="token number">12</span><span class="token punctuation">,</span> <span class="token number">22</span><span class="token punctuation">,</span> <span class="token number">11</span><span class="token punctuation">]</span>
+sorted_arr <span class="token operator">=</span> insertion_sort<span class="token punctuation">(</span>arr<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"排序后的数组:"</span><span class="token punctuation">,</span> sorted_arr<span class="token punctuation">)</span>
+</code></pre>
+<h1 id="快速排序"><a href="#快速排序" class="headerlink" title="快速排序"></a>快速排序</h1><h2 id="基本思想：-3"><a href="#基本思想：-3" class="headerlink" title="基本思想："></a>基本思想：</h2><p>   快速排序是一种分治排序算法，其基本思想是通过一趟排序将待排序序列分割为两个独立的子序列，再递归地对这两个子序列进行排序。这个分割过程依赖于选择一个枢纽元素，将小于枢纽元素的元素放在它的左边，大于枢纽元素的元素放在它的右边。</p>
+<h2 id="算法过程：-3"><a href="#算法过程：-3" class="headerlink" title="算法过程："></a>算法过程：</h2><p>   快速排序的算法过程如下：</p>
+<ol>
+<li>选择一个枢纽元素（通常选择待排序序列的第一个元素）。</li>
+<li>划分（Partitioning）：将序列中小于枢纽元素的元素放在枢纽元素的左边，大于枢纽元素的元素放在右边，枢纽元素自身已经在正确的位置。</li>
+<li>递归地对枢纽元素左边和右边的子序列进行快速排序。</li>
+<li>重复步骤1-3，直到所有子序列有序。</li>
+</ol>
+<h2 id="时间复杂度分析：-3"><a href="#时间复杂度分析：-3" class="headerlink" title="时间复杂度分析："></a>时间复杂度分析：</h2><ul>
+<li>最好情况：当每次划分都能均匀地将序列分成大致相等的两部分时，快速排序的性能最好。在这种情况下，时间复杂度为O(n*log(n))。</li>
+<li>最坏情况：当每次划分都将序列分为一个较小的子序列和一个较大的子序列时，快速排序的性能最差。最坏情况下的时间复杂度为O(n^2)。但通过选择合适的枢纽元素，可以避免最坏情况的发生。</li>
+<li>平均情况：在平均情况下，快速排序的时间复杂度为O(n*log(n))。</li>
+</ul>
+<h2 id="示例和应用场景：-3"><a href="#示例和应用场景：-3" class="headerlink" title="示例和应用场景："></a>示例和应用场景：</h2><p>   <strong>示例</strong>：<br>   假设有一个整数数组：[5, 2, 9, 3, 4, 6]。使用快速排序进行排序：</p>
+<ul>
+<li>选择枢纽元素，通常选择第一个元素，如5。</li>
+<li>划分序列，将小于5的元素放在左边，大于5的元素放在右边：[2, 3, 4], [5], [9, 6]。</li>
+<li>递归对左右两个子序列进行快速排序：[2, 3, 4] 和 [9, 6]。</li>
+<li>重复上述过程，直到整个数组有序。</li>
+</ul>
+<p>   <strong>应用场景：</strong></p>
+<ol>
+<li>快速排序是一种高效的排序算法，通常用于大规模数据集的排序，因为它的平均时间复杂度较低。</li>
+<li>它在各种编程语言的标准库中常用于排序操作，如C++中的<code>std::sort</code>和Python中的<code>sorted</code>。</li>
+<li>快速排序还用于各种应用场景，包括数据库查询优化、图像处理、文件系统等需要高性能排序的领域。</li>
+</ol>
+<p>快速排序是一种常用且高效的排序算法，特别适合处理大型数据集。通过选择合适的枢纽元素，可以提高其性能，避免最坏情况的发生。</p>
+<h2 id="python示例代码-3"><a href="#python示例代码-3" class="headerlink" title="python示例代码"></a>python示例代码</h2><pre class=" language-python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">partition</span><span class="token punctuation">(</span>arr<span class="token punctuation">,</span> low<span class="token punctuation">,</span> high<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    i <span class="token operator">=</span> low <span class="token operator">-</span> <span class="token number">1</span>   <span class="token comment" spellcheck="true"># 小于等于pivot的元素的最右索引</span>
+    pivot <span class="token operator">=</span> arr<span class="token punctuation">[</span>high<span class="token punctuation">]</span>   <span class="token comment" spellcheck="true"># 选择最后一个元素作为pivot</span>
+
+    <span class="token keyword">for</span> j <span class="token keyword">in</span> range<span class="token punctuation">(</span>low<span class="token punctuation">,</span> high<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> arr<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">&lt;=</span> pivot<span class="token punctuation">:</span>
+            i <span class="token operator">+=</span> <span class="token number">1</span>
+            arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> arr<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> arr<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">,</span> arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+
+    arr<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> arr<span class="token punctuation">[</span>high<span class="token punctuation">]</span> <span class="token operator">=</span> arr<span class="token punctuation">[</span>high<span class="token punctuation">]</span><span class="token punctuation">,</span> arr<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span>
+    <span class="token keyword">return</span> i<span class="token operator">+</span><span class="token number">1</span>
+
+<span class="token keyword">def</span> <span class="token function">quick_sort</span><span class="token punctuation">(</span>arr<span class="token punctuation">,</span> low<span class="token punctuation">,</span> high<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">if</span> low <span class="token operator">&lt;</span> high<span class="token punctuation">:</span>
+        pi <span class="token operator">=</span> partition<span class="token punctuation">(</span>arr<span class="token punctuation">,</span> low<span class="token punctuation">,</span> high<span class="token punctuation">)</span>
+
+        quick_sort<span class="token punctuation">(</span>arr<span class="token punctuation">,</span> low<span class="token punctuation">,</span> pi<span class="token number">-1</span><span class="token punctuation">)</span>
+        quick_sort<span class="token punctuation">(</span>arr<span class="token punctuation">,</span> pi<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span> high<span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true"># 测试</span>
+arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">64</span><span class="token punctuation">,</span> <span class="token number">25</span><span class="token punctuation">,</span> <span class="token number">12</span><span class="token punctuation">,</span> <span class="token number">22</span><span class="token punctuation">,</span> <span class="token number">11</span><span class="token punctuation">]</span>
+n <span class="token operator">=</span> len<span class="token punctuation">(</span>arr<span class="token punctuation">)</span>
+quick_sort<span class="token punctuation">(</span>arr<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> n<span class="token number">-1</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"排序后的数组:"</span><span class="token punctuation">,</span> arr<span class="token punctuation">)</span>
+</code></pre>
+<h1 id="归并排序"><a href="#归并排序" class="headerlink" title="归并排序"></a>归并排序</h1><h2 id="基本思想：-4"><a href="#基本思想：-4" class="headerlink" title="基本思想："></a>基本思想：</h2><p>   归并排序是一种分治排序算法，其基本思想是将待排序序列递归地分割为单个元素，然后合并相邻的有序子序列，直到整个序列有序。</p>
+<h2 id="算法过程：-4"><a href="#算法过程：-4" class="headerlink" title="算法过程："></a>算法过程：</h2><p>   归并排序的算法过程如下：</p>
+<ol>
+<li>分割（Divide）：将待排序序列递归地分割为单个元素或长度为1的子序列。</li>
+<li>合并（Conquer）：将相邻的有序子序列合并为较大的有序子序列。这一过程重复进行，直到整个序列有序。</li>
+<li>归并（Merge）：在合并过程中，将两个有序子序列合并为一个更大的有序序列。这个合并过程通常需要借助额外的空间来存储中间结果。</li>
+</ol>
+<h2 id="时间复杂度分析：-4"><a href="#时间复杂度分析：-4" class="headerlink" title="时间复杂度分析："></a>时间复杂度分析：</h2><ul>
+<li>最好情况、最坏情况和平均情况下的时间复杂度都是O(n*log(n))。归并排序的性能稳定，不受输入数据的顺序影响，因此在各种情况下都表现良好。</li>
+</ul>
+<h2 id="示例和应用场景：-4"><a href="#示例和应用场景：-4" class="headerlink" title="示例和应用场景："></a>示例和应用场景：</h2><p>   <strong>示例：</strong><br>   假设有一个整数数组：[5, 2, 9, 3, 4, 6]。使用归并排序进行排序：</p>
+<ul>
+<li>分割过程：将序列分割为单个元素的子序列：[5], [2], [9], [3], [4], [6]。</li>
+<li>合并过程：依次将相邻的子序列合并，生成较大的有序子序列。最终，整个数组有序。</li>
+</ul>
+<p>   <strong>应用场景：</strong></p>
+<ol>
+<li>归并排序是一种高效的排序算法，适用于各种规模的数据集。它通常用于外部排序，例如对磁盘上的大型数据文件进行排序。</li>
+<li>归并排序常用于处理链表数据结构，因为它天然适合链表的特点，不需要额外的存储空间。</li>
+<li>在许多编程语言的标准库中，归并排序也用于排序操作，例如Python中的<code>sorted</code>函数。</li>
+</ol>
+<p>归并排序是一种高效且稳定的排序算法，适用于各种数据规模和数据类型。它具有良好的性能和可读性，适用于多种应用场景，尤其是需要稳定性和预测性能的情况。</p>
+<h2 id="python示例代码-4"><a href="#python示例代码-4" class="headerlink" title="python示例代码"></a>python示例代码</h2><pre class=" language-Python"><code class="language-Python">def merge_sort(arr):
+    if len(arr) > 1:
+        mid = len(arr) // 2   # 将数组分为两半
+
+        L = arr[:mid]         # 左半部分
+        R = arr[mid:]         # 右半部分
+
+        merge_sort(L)         # 递归地将左半部分排序
+        merge_sort(R)         # 递归地将右半部分排序
+
+        i = j = k = 0
+
+        # 合并两个已排序的数组
+        while i < len(L) and j < len(R):
+            if L[i] < R[j]:
+                arr[k] = L[i]
+                i += 1
+            else:
+                arr[k] = R[j]
+                j += 1
+            k += 1
+
+        # 处理剩余的元素
+        while i < len(L):
+            arr[k] = L[i]
+            i += 1
+            k += 1
+
+        while j < len(R):
+            arr[k] = R[j]
+            j += 1
+            k += 1
+
+    return arr
+
+# 测试
+arr = [64, 25, 12, 22, 11]
+sorted_arr = merge_sort(arr)
+print("排序后的数组:", sorted_arr)
+</code></pre>
+<h1 id="排序算法对比"><a href="#排序算法对比" class="headerlink" title="排序算法对比"></a>排序算法对比</h1><table>
+<thead>
+<tr>
+<th>排序算法</th>
+<th>平均情况时间复杂度</th>
+<th>最好情况时间复杂度</th>
+<th>最坏情况时间复杂度</th>
+<th>辅助空间复杂度</th>
+<th>稳定性</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>冒泡排序</td>
+<td>O(n^2)</td>
+<td>O(n)</td>
+<td>O(n^2)</td>
+<td>O(1)</td>
+<td>稳定</td>
+</tr>
+<tr>
+<td>选择排序</td>
+<td>O(n^2)</td>
+<td>O(n^2)</td>
+<td>O(n^2)</td>
+<td>O(1)</td>
+<td>不稳定</td>
+</tr>
+<tr>
+<td>插入排序</td>
+<td>O(n^2)</td>
+<td>O(n)</td>
+<td>O(n^2)</td>
+<td>O(1)</td>
+<td>稳定</td>
+</tr>
+<tr>
+<td>快速排序</td>
+<td>O(nlogn)</td>
+<td>O(nlogn)</td>
+<td>O(n^2)</td>
+<td>O(logn)</td>
+<td>不稳定</td>
+</tr>
+<tr>
+<td>归并排序</td>
+<td>O(nlogn)</td>
+<td>O(nlogn)</td>
+<td>O(nlogn)</td>
+<td>O(n)</td>
+<td>稳定</td>
+</tr>
+</tbody></table>
+<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><strong>《算法图解》</strong>：这本书以图解的方式阐述了各种算法，使复杂的概念更容易理解。它适合那些希望更深入了解算法的人，无论是初学者还是有经验的开发人员。</p>
 
             </div>
             <hr />
@@ -846,9 +1056,9 @@ kill -9 进程号</code></pre><p>到此，整个操作就完成了，可以实�
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《chatgpt接入微信》
+                    《排序算法探究》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/ai-chatgpt-jie-ru-wei-xin.html" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/bian-cheng-python-jing-dian-pai-xu-suan-fa.html" property="cc:attributionName"
                rel="cc:attributionURL">
                 Bevis23
             </a> 采用
@@ -889,7 +1099,7 @@ kill -9 进程号</code></pre><p>到此，整个操作就完成了，可以实�
         repo: 'Bevis23.github.io',
         owner: 'Bevis23',
         admin: "Bevis23",
-        id: 'ai-chatgpt-jie-ru-wei-xin.html',
+        id: 'bian-cheng-python-jing-dian-pai-xu-suan-fa.html',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -1176,24 +1386,25 @@ kill -9 进程号</code></pre><p>到此，整个操作就完成了，可以实�
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/sui-bi-mei-ri-60s.html">
+                <a href="/sui-bi-yong-ying-yu-si-kao.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="每日60s读懂世界">
+                        <img src="/medias/featureimages/26.jpg" class="responsive-img" alt="随笔-用英语思考">
                         
-                        <span class="card-title">每日60s读懂世界</span>
+                        <span class="card-title">随笔-用英语思考</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            引言经常看到一系列问题，为什么要学好英语？如何学好英语？英语学习的辅助有哪些？如何达到母语者的水平？
+这是我个人在英语学习的过程中，通过社区，论坛等经常看到的问题，我也在学习中不断去思考这些问题，或多或少都有不少收益； 了解英语学习的方法论
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2023-06-11
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2023-09-14
                         </span>
                         <span class="publish-author">
                             
@@ -1210,8 +1421,12 @@ kill -9 进程号</code></pre><p>到此，整个操作就完成了，可以实�
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/分享/" target="_blank">
-                        <span class="chip bg-color">分享</span>
+                    <a href="/tags/思维/" target="_blank">
+                        <span class="chip bg-color">思维</span>
+                    </a>
+                    
+                    <a href="/tags/英语/" target="_blank">
+                        <span class="chip bg-color">英语</span>
                     </a>
                     
                 </div>
@@ -1225,32 +1440,31 @@ kill -9 进程号</code></pre><p>到此，整个操作就完成了，可以实�
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/zi-yuan-fen-xiang-gong-xiang-wu-jie-zi-yuan-fen-xiang-he-ji.html">
+                <a href="/bian-cheng-shu-ju-jie-gou-yu-suan-fa-python.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="共享无价：资源分享合集">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="数据结构与算法">
                         
-                        <span class="card-title">共享无价：资源分享合集</span>
+                        <span class="card-title">数据结构与算法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            共享无价：资源分享合集引言遇到某些问题，需要啥资源了，就来看此帖，主张一个   “你刚好需要，而我，刚好出现O(∩_∩)O”
-当我们需要某些资源时，通常会选择购买或寻找其他来源来满足我们的需求。购买资源可能是一种常见的方式，但有时我们可能会
+                            引言数据结构和算法是计算机科学领域中的两个核心概念，它们在计算机程序设计和问题解决中扮演着至关重要的角色。数据结构与算法之美体现在它们的智慧设计和精巧实现。通过合理选择数据结构，可以提高程序的性能，减少资源消耗。通过巧妙运用算法，可以解决复
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2023-06-08
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2023-08-01
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/资源分享/" class="post-category" target="_blank">
-                                    资源分享
+                            <a href="/categories/编程/" class="post-category" target="_blank">
+                                    编程
                                 </a>
                             
                             
@@ -1260,16 +1474,16 @@ kill -9 进程号</code></pre><p>到此，整个操作就完成了，可以实�
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/资源分享/" target="_blank">
-                        <span class="chip bg-color">资源分享</span>
+                    <a href="/tags/python/" target="_blank">
+                        <span class="chip bg-color">python</span>
                     </a>
                     
-                    <a href="/tags/geek/" target="_blank">
-                        <span class="chip bg-color">geek</span>
+                    <a href="/tags/算法/" target="_blank">
+                        <span class="chip bg-color">算法</span>
                     </a>
                     
-                    <a href="/tags/hugo/" target="_blank">
-                        <span class="chip bg-color">hugo</span>
+                    <a href="/tags/编程/" target="_blank">
+                        <span class="chip bg-color">编程</span>
                     </a>
                     
                 </div>
