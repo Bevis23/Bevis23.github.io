@@ -2,16 +2,65 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://bevis23.github.io/bian-cheng-shu-ju-jie-gou-yu-suan-fa-python.html</loc>
+    <loc>https://bevis23.github.io/bian-cheng-python-jing-dian-pai-xu-suan-fa.html</loc>
     
-    <lastmod>2023-10-14T01:21:12.285Z</lastmod>
+    <lastmod>2023-10-18T17:38:59.696Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://bevis23.github.io/bian-cheng-python-jing-dian-pai-xu-suan-fa.html</loc>
+    <loc>https://bevis23.github.io/shu-fen-rfm-fen-xi-yu-an-li.html</loc>
     
-    <lastmod>2023-10-14T01:19:14.762Z</lastmod>
+    <lastmod>2023-10-18T17:35:35.028Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://bevis23.github.io/shu-fen-plotly.html</loc>
+    
+    <lastmod>2023-10-18T17:21:41.772Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://bevis23.github.io/shu-fen-seaborn.html</loc>
+    
+    <lastmod>2023-10-18T17:21:32.563Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://bevis23.github.io/shu-fen-matplotlib.html</loc>
+    
+    <lastmod>2023-10-17T20:35:12.391Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://bevis23.github.io/shu-fen-pest-fen-xi-mo-xing.html</loc>
+    
+    <lastmod>2023-10-17T03:03:26.998Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://bevis23.github.io/shu-fen-an-quan-gong-ji-fen-xi.html</loc>
+    
+    <lastmod>2023-10-16T17:29:25.333Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://bevis23.github.io/yue-du-fen-xiang-dream.html</loc>
+    
+    <lastmod>2023-10-16T17:22:57.351Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://bevis23.github.io/bian-cheng-shu-ju-jie-gou-yu-suan-fa-python.html</loc>
+    
+    <lastmod>2023-10-14T01:21:12.285Z</lastmod>
     
   </url>
   
@@ -33,13 +82,6 @@
     <loc>https://bevis23.github.io/shu-fen-pandas.html</loc>
     
     <lastmod>2023-10-13T07:05:38.799Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://bevis23.github.io/shu-fen-matplotlib.html</loc>
-    
-    <lastmod>2023-10-13T07:04:36.219Z</lastmod>
     
   </url>
   
@@ -166,13 +208,6 @@
     <loc>https://bevis23.github.io/ai-chatgpt-prompt-gong-cheng.html</loc>
     
     <lastmod>2023-07-26T02:19:19.716Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://bevis23.github.io/yue-du-fen-xiang-dream.html</loc>
-    
-    <lastmod>2023-07-26T02:18:58.249Z</lastmod>
     
   </url>
   

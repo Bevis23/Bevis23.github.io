@@ -1,10 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://bevis23.github.io/bian-cheng-shu-ju-jie-gou-yu-suan-fa-python.html</loc>
-    <lastmod>2023-10-14</lastmod>
-  </url>  <url>
     <loc>https://bevis23.github.io/bian-cheng-python-jing-dian-pai-xu-suan-fa.html</loc>
+    <lastmod>2023-10-18</lastmod>
+  </url>  <url>
+    <loc>https://bevis23.github.io/shu-fen-rfm-fen-xi-yu-an-li.html</loc>
+    <lastmod>2023-10-18</lastmod>
+  </url>  <url>
+    <loc>https://bevis23.github.io/shu-fen-plotly.html</loc>
+    <lastmod>2023-10-18</lastmod>
+  </url>  <url>
+    <loc>https://bevis23.github.io/shu-fen-seaborn.html</loc>
+    <lastmod>2023-10-18</lastmod>
+  </url>  <url>
+    <loc>https://bevis23.github.io/shu-fen-matplotlib.html</loc>
+    <lastmod>2023-10-17</lastmod>
+  </url>  <url>
+    <loc>https://bevis23.github.io/shu-fen-pest-fen-xi-mo-xing.html</loc>
+    <lastmod>2023-10-17</lastmod>
+  </url>  <url>
+    <loc>https://bevis23.github.io/shu-fen-an-quan-gong-ji-fen-xi.html</loc>
+    <lastmod>2023-10-16</lastmod>
+  </url>  <url>
+    <loc>https://bevis23.github.io/yue-du-fen-xiang-dream.html</loc>
+    <lastmod>2023-10-16</lastmod>
+  </url>  <url>
+    <loc>https://bevis23.github.io/bian-cheng-shu-ju-jie-gou-yu-suan-fa-python.html</loc>
     <lastmod>2023-10-14</lastmod>
   </url>  <url>
     <loc>https://bevis23.github.io/bian-cheng-python-sheng-cheng-qi-yu-yield.html</loc>
@@ -14,9 +35,6 @@
     <lastmod>2023-10-13</lastmod>
   </url>  <url>
     <loc>https://bevis23.github.io/shu-fen-pandas.html</loc>
-    <lastmod>2023-10-13</lastmod>
-  </url>  <url>
-    <loc>https://bevis23.github.io/shu-fen-matplotlib.html</loc>
     <lastmod>2023-10-13</lastmod>
   </url>  <url>
     <loc>https://bevis23.github.io/bian-cheng-python-mian-xiang-dui-xiang.html</loc>
@@ -65,9 +83,6 @@
     <lastmod>2023-07-26</lastmod>
   </url>  <url>
     <loc>https://bevis23.github.io/ai-chatgpt-prompt-gong-cheng.html</loc>
-    <lastmod>2023-07-26</lastmod>
-  </url>  <url>
-    <loc>https://bevis23.github.io/yue-du-fen-xiang-dream.html</loc>
     <lastmod>2023-07-26</lastmod>
   </url>  <url>
     <loc>https://bevis23.github.io/shen-tou-she-hui-gong-cheng-xue.html</loc>
