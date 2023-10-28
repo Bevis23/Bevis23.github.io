@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://bevis23.github.io/"/>
-  <updated>2023-10-20T08:25:39.860Z</updated>
+  <updated>2023-10-28T04:19:07.556Z</updated>
   <id>https://bevis23.github.io/</id>
   
   <author>
@@ -15,6 +15,64 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>记录我的猫咪伙伴</title>
+    <link href="https://bevis23.github.io/sui-bi-mao-mi.html"/>
+    <id>https://bevis23.github.io/sui-bi-mao-mi.html</id>
+    <published>2023-10-28T11:11:21.000Z</published>
+    <updated>2023-10-28T04:19:07.556Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="随笔" scheme="https://bevis23.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="生活记录" scheme="https://bevis23.github.io/tags/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
+    
+      <category term="随笔" scheme="https://bevis23.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>AARRR模型解析</title>
+    <link href="https://bevis23.github.io/shu-fen-aarrr-mo-xing.html"/>
+    <id>https://bevis23.github.io/shu-fen-aarrr-mo-xing.html</id>
+    <published>2023-10-26T11:11:21.000Z</published>
+    <updated>2023-10-27T12:11:08.068Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="数据分析" scheme="https://bevis23.github.io/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"/>
+    
+    
+      <category term="AARRR" scheme="https://bevis23.github.io/tags/AARRR/"/>
+    
+      <category term="数据分析" scheme="https://bevis23.github.io/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"/>
+    
+      <category term="思维" scheme="https://bevis23.github.io/tags/%E6%80%9D%E7%BB%B4/"/>
+    
+  </entry>
   
   <entry>
     <title>喵喵:数据分析探索猫咪选择的智慧</title>
@@ -422,9 +480,9 @@
       <category term="工具" scheme="https://bevis23.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
     
     
-      <category term="RSS" scheme="https://bevis23.github.io/tags/RSS/"/>
-    
       <category term="工具" scheme="https://bevis23.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+      <category term="RSS" scheme="https://bevis23.github.io/tags/RSS/"/>
     
       <category term="信息聚合" scheme="https://bevis23.github.io/tags/%E4%BF%A1%E6%81%AF%E8%81%9A%E5%90%88/"/>
     
@@ -512,9 +570,9 @@
     
       <category term="思维工具" scheme="https://bevis23.github.io/tags/%E6%80%9D%E7%BB%B4%E5%B7%A5%E5%85%B7/"/>
     
-      <category term="PEST" scheme="https://bevis23.github.io/tags/PEST/"/>
-    
       <category term="数据分析" scheme="https://bevis23.github.io/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"/>
+    
+      <category term="PEST" scheme="https://bevis23.github.io/tags/PEST/"/>
     
   </entry>
   
@@ -545,66 +603,6 @@
       <category term="编程" scheme="https://bevis23.github.io/tags/%E7%BC%96%E7%A8%8B/"/>
     
       <category term="算法" scheme="https://bevis23.github.io/tags/%E7%AE%97%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>数据结构与算法</title>
-    <link href="https://bevis23.github.io/bian-cheng-shu-ju-jie-gou-yu-suan-fa-python.html"/>
-    <id>https://bevis23.github.io/bian-cheng-shu-ju-jie-gou-yu-suan-fa-python.html</id>
-    <published>2023-08-01T11:11:21.000Z</published>
-    <updated>2023-10-14T01:21:12.285Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="编程" scheme="https://bevis23.github.io/categories/%E7%BC%96%E7%A8%8B/"/>
-    
-    
-      <category term="python" scheme="https://bevis23.github.io/tags/python/"/>
-    
-      <category term="编程" scheme="https://bevis23.github.io/tags/%E7%BC%96%E7%A8%8B/"/>
-    
-      <category term="算法" scheme="https://bevis23.github.io/tags/%E7%AE%97%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>docker:容器技术应用与常用命令</title>
-    <link href="https://bevis23.github.io/ji-zhu-fen-xiang-docker-rong-qi-ji-zhu-ying-yong-yu-chang-yong-ming-ling.html"/>
-    <id>https://bevis23.github.io/ji-zhu-fen-xiang-docker-rong-qi-ji-zhu-ying-yong-yu-chang-yong-ming-ling.html</id>
-    <published>2023-07-27T19:15:58.000Z</published>
-    <updated>2023-07-27T11:22:51.635Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="技术分享" scheme="https://bevis23.github.io/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
-    
-    
-      <category term="docker" scheme="https://bevis23.github.io/tags/docker/"/>
-    
-      <category term="技术分享" scheme="https://bevis23.github.io/tags/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
-    
-      <category term="容器技术" scheme="https://bevis23.github.io/tags/%E5%AE%B9%E5%99%A8%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
