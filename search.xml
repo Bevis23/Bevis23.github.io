@@ -74,9 +74,9 @@
       
         <tags>
             
-            <tag> 随笔 </tag>
-            
             <tag> 生活记录 </tag>
+            
+            <tag> 随笔 </tag>
             
         </tags>
       
@@ -501,9 +501,9 @@
       
         <tags>
             
-            <tag> RSS </tag>
-            
             <tag> 工具 </tag>
+            
+            <tag> RSS </tag>
             
             <tag> 信息聚合 </tag>
             
@@ -702,9 +702,9 @@
       
         <tags>
             
-            <tag> 工具 </tag>
-            
             <tag> Git </tag>
+            
+            <tag> 工具 </tag>
             
             <tag> 分布式 </tag>
             
@@ -1029,13 +1029,13 @@
       
         <tags>
             
+            <tag> blog </tag>
+            
             <tag> 随笔 </tag>
             
             <tag> 分享 </tag>
             
             <tag> hexo </tag>
-            
-            <tag> blog </tag>
             
         </tags>
       
@@ -1236,9 +1236,9 @@
             
             <tag> AI </tag>
             
-            <tag> chatgpt </tag>
-            
             <tag> linux </tag>
+            
+            <tag> chatgpt </tag>
             
         </tags>
       
@@ -1292,11 +1292,11 @@
       
         <tags>
             
-            <tag> blog </tag>
-            
             <tag> 生活记录 </tag>
             
             <tag> 阅读 </tag>
+            
+            <tag> blog </tag>
             
         </tags>
       
@@ -1321,9 +1321,9 @@
       
         <tags>
             
-            <tag> 随笔 </tag>
-            
             <tag> blog </tag>
+            
+            <tag> 随笔 </tag>
             
         </tags>
       
