@@ -74,9 +74,9 @@
       
         <tags>
             
-            <tag> 数据分析 </tag>
-            
             <tag> github </tag>
+            
+            <tag> 数据分析 </tag>
             
         </tags>
       
@@ -101,9 +101,9 @@
       
         <tags>
             
-            <tag> 生活记录 </tag>
-            
             <tag> 随笔 </tag>
+            
+            <tag> 生活记录 </tag>
             
         </tags>
       
@@ -128,9 +128,9 @@
       
         <tags>
             
-            <tag> AARRR </tag>
-            
             <tag> 数据分析 </tag>
+            
+            <tag> AARRR </tag>
             
             <tag> 思维 </tag>
             
@@ -184,9 +184,9 @@
       
         <tags>
             
-            <tag> 网络安全 </tag>
-            
             <tag> 数据分析 </tag>
+            
+            <tag> 网络安全 </tag>
             
             <tag> python </tag>
             
@@ -528,9 +528,9 @@
       
         <tags>
             
-            <tag> 工具 </tag>
-            
             <tag> RSS </tag>
+            
+            <tag> 工具 </tag>
             
             <tag> 信息聚合 </tag>
             
@@ -644,9 +644,9 @@
             
             <tag> python </tag>
             
-            <tag> 编程 </tag>
-            
             <tag> 算法 </tag>
+            
+            <tag> 编程 </tag>
             
         </tags>
       
@@ -673,9 +673,9 @@
             
             <tag> python </tag>
             
-            <tag> 编程 </tag>
-            
             <tag> 算法 </tag>
+            
+            <tag> 编程 </tag>
             
         </tags>
       
@@ -700,9 +700,9 @@
       
         <tags>
             
-            <tag> docker </tag>
-            
             <tag> 技术分享 </tag>
+            
+            <tag> docker </tag>
             
             <tag> 容器技术 </tag>
             
@@ -729,9 +729,9 @@
       
         <tags>
             
-            <tag> Git </tag>
-            
             <tag> 工具 </tag>
+            
+            <tag> Git </tag>
             
             <tag> 分布式 </tag>
             
@@ -1056,11 +1056,11 @@
       
         <tags>
             
-            <tag> blog </tag>
+            <tag> 分享 </tag>
             
             <tag> 随笔 </tag>
             
-            <tag> 分享 </tag>
+            <tag> blog </tag>
             
             <tag> hexo </tag>
             
@@ -1319,11 +1319,11 @@
       
         <tags>
             
+            <tag> blog </tag>
+            
             <tag> 生活记录 </tag>
             
             <tag> 阅读 </tag>
-            
-            <tag> blog </tag>
             
         </tags>
       
@@ -1348,9 +1348,9 @@
       
         <tags>
             
-            <tag> blog </tag>
-            
             <tag> 随笔 </tag>
+            
+            <tag> blog </tag>
             
         </tags>
       
