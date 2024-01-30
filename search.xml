@@ -128,9 +128,9 @@
       
         <tags>
             
-            <tag> 数据分析 </tag>
-            
             <tag> AARRR </tag>
+            
+            <tag> 数据分析 </tag>
             
             <tag> 思维 </tag>
             
@@ -215,9 +215,9 @@
             
             <tag> 思维工具 </tag>
             
-            <tag> RFM </tag>
-            
             <tag> 数据分析 </tag>
+            
+            <tag> RFM </tag>
             
         </tags>
       
@@ -644,9 +644,9 @@
             
             <tag> python </tag>
             
-            <tag> 编程 </tag>
-            
             <tag> 算法 </tag>
+            
+            <tag> 编程 </tag>
             
         </tags>
       
@@ -673,9 +673,9 @@
             
             <tag> python </tag>
             
-            <tag> 编程 </tag>
-            
             <tag> 算法 </tag>
+            
+            <tag> 编程 </tag>
             
         </tags>
       
@@ -760,9 +760,9 @@
             
             <tag> 网络安全 </tag>
             
-            <tag> 渗透测试 </tag>
-            
             <tag> Metasploit </tag>
+            
+            <tag> 渗透测试 </tag>
             
         </tags>
       
@@ -789,9 +789,9 @@
             
             <tag> 网络安全 </tag>
             
-            <tag> 渗透测试 </tag>
-            
             <tag> Metasploit </tag>
+            
+            <tag> 渗透测试 </tag>
             
         </tags>
       
@@ -820,9 +820,9 @@
             
             <tag> 网络安全 </tag>
             
-            <tag> nessus </tag>
-            
             <tag> 渗透测试 </tag>
+            
+            <tag> nessus </tag>
             
         </tags>
       
@@ -1087,11 +1087,11 @@
       
         <tags>
             
+            <tag> 服务器 </tag>
+            
             <tag> linux </tag>
             
             <tag> 技术分享 </tag>
-            
-            <tag> 服务器 </tag>
             
             <tag> samba </tag>
             
@@ -1120,11 +1120,11 @@
             
             <tag> 工具 </tag>
             
-            <tag> linux </tag>
-            
             <tag> 可视化 </tag>
             
             <tag> 服务器 </tag>
+            
+            <tag> linux </tag>
             
         </tags>
       
