@@ -4,11 +4,13 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="WireShark 简介和抓包原理及过程, seek">
+    <meta name="keywords" content="你有多久没看天空了?, seek">
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
-    <meta name="description" content="引言：在我们日常的网络生活中，电子邮件、网页浏览、在线视频，每一个操作背后都是网络通信的默默工作。网络通信的基础是一系列复杂的协议，而理解这些协议的工作方式可以帮助我们更好地理解网络的运作。WireShark，一个强大的网络协议分析工具，使">
+    <meta name="description" content="知乎的一个问题：你有多久没抬头看头顶的天空了？
+现在二十多岁的年纪，在一个安静的午后，发呆的时候抬头看天空，盯着它，才发现云朵在慢慢移动，思绪一下子回到童年。
+就那个无忧无虑的年纪，坐着抬头望天，看云朵形状，然后为自己发现云朵在移动而欣喜万">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -16,7 +18,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>WireShark 简介和抓包原理及过程 | Bevis23&#39;s Blog</title>
+    <title>你有多久没看天空了? | Bevis23&#39;s Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -364,13 +366,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        WireShark 简介和抓包原理及过程
+                        你有多久没看天空了?
                     </div>
                 </div>
             </div>
@@ -509,16 +511,16 @@ overflow-y: scroll;
                     
                     <div class="article-tag">
                         
-                        <a href="/tags/工具/" target="_blank">
-                            <span class="chip bg-color">工具</span>
+                        <a href="/tags/生活记录/" target="_blank">
+                            <span class="chip bg-color">生活记录</span>
                         </a>
                         
-                        <a href="/tags/网络安全/" target="_blank">
-                            <span class="chip bg-color">网络安全</span>
+                        <a href="/tags/随笔/" target="_blank">
+                            <span class="chip bg-color">随笔</span>
                         </a>
                         
-                        <a href="/tags/wireshark/" target="_blank">
-                            <span class="chip bg-color">wireshark</span>
+                        <a href="/tags/分享/" target="_blank">
+                            <span class="chip bg-color">分享</span>
                         </a>
                         
                     </div>
@@ -529,8 +531,8 @@ overflow-y: scroll;
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                        <a href="/categories/工具/" class="post-category" target="_blank">
-                            工具
+                        <a href="/categories/随笔/" class="post-category" target="_blank">
+                            随笔
                         </a>
                         
                     </div>
@@ -541,7 +543,7 @@ overflow-y: scroll;
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-07-15
+                    2024-02-21
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -555,14 +557,14 @@ overflow-y: scroll;
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.6k
+                    280
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    5 分
+                    1 分
                 </div>
                 
                 
@@ -578,39 +580,13 @@ overflow-y: scroll;
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="引言："><a href="#引言：" class="headerlink" title="引言："></a>引言：</h1><p>在我们日常的网络生活中，电子邮件、网页浏览、在线视频，每一个操作背后都是网络通信的默默工作。网络通信的基础是一系列复杂的协议，而理解这些协议的工作方式可以帮助我们更好地理解网络的运作。WireShark，一个强大的网络协议分析工具，使我们能够深入了解这些协议的内部运作，从而帮助我们解决网络问题。</p>
-<h1 id="WireShark-简介和抓包原理及过程"><a href="#WireShark-简介和抓包原理及过程" class="headerlink" title="WireShark 简介和抓包原理及过程"></a>WireShark 简介和抓包原理及过程</h1><h2 id="WireShark-简介"><a href="#WireShark-简介" class="headerlink" title="WireShark 简介"></a>WireShark 简介</h2><p>Wireshark 是一个网络封包分析软件。网络封包分析软件的功能是损取网络封包，并尽可能显示出最为详细的网络封包资料。Wireshark 使用 WinPCAP 作为接口，直接与网卡进行数据报文交换。</p>
-<h2 id="WireShark的应用"><a href="#WireShark的应用" class="headerlink" title="WireShark的应用"></a>WireShark的应用</h2><p>WireShark是一款功能强大的网络协议分析工具，其应用场景广泛。在网络故障排查方面，WireShark能够帮助我们通过分析网络流量，查看数据包来定位问题的原因。同时，它也可以被用于网络性能优化，通过对网络中数据流的分析，我们可以找出网络瓶颈并进行针对性优化。在网络安全领域，WireShark可以助力发现和定位网络中的安全问题。此外，对于学习和研究网络协议以及开发和测试新的网络协议，WireShark都是一个非常有价值的工具，使我们能够深入理解协议的运行细节，或观察新协议的实际行为。</p>
-<p>开发者使用 Wireshark 来为新的通讯协议除错，普通使用者使用 Wireshark 来学习网络协议的相关知识。当然，有的人也会“居心叵测”的用它来寻找一些敏感信息……</p>
-<h2 id="WireShark-快速分析数据包技巧"><a href="#WireShark-快速分析数据包技巧" class="headerlink" title="WireShark 快速分析数据包技巧"></a>WireShark 快速分析数据包技巧</h2><p>(1)确定Wireshark 的物理位置。如果没有一个正确的位置，启动 Wireshark 后会花费很长的时间捕获一些与自己无关的数据。</p>
-<p>(2) 选择捕获接口。一般都是选择连接到lnternet 网络的接口，这样才可以捕获到与网络相关的数据。否则，捕获到的其它数据对自己也没有任何帮助。</p>
-<p>(3) 使用捕获过滤器。通过设置捕获过滤器，可以避免产生过大的捕获数据。这样用户在分析数据时，也不会受其它数据干扰。而且，还可以为用户节约大量的时间。</p>
-<p>(4) 使用显示过滤器。通常使用捕获过滤器过滤后的数据，往往还是很复杂。为了使过滤的数据包再更细致，此时使用显示过滤器进行过滤。</p>
-<p>(5) 使用着色规则。通常使用显示过滤器过滤后的数据，都是有用的数据包。如果想更加突出的显示某个会话，可以使用着色规则高亮显示。</p>
-<p>(6) 构建图表。如果用户想要更明显的看出一个网络中数据的变化情况，使用图表的形式可以很方便的展现数据分布情况。</p>
-<p>(7) 重组数据。当传输较大的图片或文件时，需要将信息分布在多个数据包中。这时候就需要使用重组数据的方法来抓取完整的数据。Wireshark 的重组功能，可以重组一个会话中不同数据包的信息，或者是重组一个完整的图片或文件。</p>
-<h2 id="WireShark界面"><a href="#WireShark界面" class="headerlink" title="WireShark界面"></a>WireShark界面</h2><img src="https://cdn.jsdelivr.net/gh/Bevis23/blog-pic/wireshark%E7%95%8C%E9%9D%A2.png" alt="wireshark界面" style="zoom:50%;">
+                <p>知乎的一个问题：你有多久没抬头看头顶的天空了？</p>
+<p>现在二十多岁的年纪，在一个安静的午后，发呆的时候抬头看天空，盯着它，才发现云朵在慢慢移动，思绪一下子回到童年。</p>
+<p>就那个无忧无虑的年纪，坐着抬头望天，看云朵形状，然后为自己发现云朵在移动而欣喜万分，在什么都不懂的年纪为自己的发现而自豪，这种自豪不需要鲜花掌声，也不屑于任何事物。因为这时候，这是一个人存在于世，有意识，有感于自我，且不受任何事物左右的时刻。此时此刻，当时当下，一切都很美好。</p>
+<p>要说多久，确实记不清了，唯一能作为回答标准的分界线就是“有忧虑的开始”。从那个时候开始，就没有认真感受大自然了。是不喜欢感受了嘛？兴许是“忘记”感受了吧，心走的太快,忘记了抬头就能看见的美好。<br>—–2024.2.21记</p>
+<img src="https://cdn.jsdelivr.net/gh/Bevis23/blog-pic/sky1.jpg" style="zoom: 25%;">
 
-<h2 id="WireShark过滤器语法"><a href="#WireShark过滤器语法" class="headerlink" title="WireShark过滤器语法"></a>WireShark过滤器语法</h2><ol>
-<li><p><strong>协议类型</strong>：你可以直接输入协议名称，如 “http”、”dns” 或 “tcp”，WireShark会过滤出所有该类型的数据包。</p>
-</li>
-<li><p><strong>源和目标IP地址</strong>：你可以使用 “ip.src == x.x.x.x” 和 “ip.dst == y.y.y.y” 来过滤出特定IP地址的数据包。这里的x.x.x.x和y.y.y.y需要替换为实际的IP地址。</p>
-</li>
-<li><p><strong>源和目标端口</strong>：你可以使用 “tcp.srcport == 80” 和 “tcp.dstport == 80” 来过滤出特定端口的TCP数据包。</p>
-</li>
-<li><p><strong>逻辑操作符</strong>：你可以使用逻辑操作符 “&amp;&amp;”（与）、”||”（或） 和 “!”（非）来组合过滤器。例如， “http &amp;&amp; ip.src == x.x.x.x” 会过滤出所有从特定IP地址发送的HTTP数据包。</p>
-</li>
-<li><p><strong>内容搜索</strong>：你可以使用 “contains” 和 “matches” 操作符来搜索数据包的内容。例如， “http contains ‘OpenAI’” 会过滤出所有HTTP数据包中包含’OpenAI’字符串的数据包。</p>
-</li>
-</ol>
-<blockquote>
-<p>注意，WireShark的过滤器语法区分大小写，你需要确保所有的协议名、字段名和操作符都是小写。这只是WireShark过滤器语法的基础，实际上，它的功能远不止这些。你可以参考WireShark的官方文档来了解更多的过滤器语法和使用方法。</p>
-</blockquote>
-<h2 id="常用协议分析"><a href="#常用协议分析" class="headerlink" title="常用协议分析"></a>常用协议分析</h2><p>A. HTTP协议分析：通过WireShark, 监控到每一个HTTP请求及其响应，包括请求方法、URL、状态码、请求和响应头部信息等。这对于理解如何优化网页加载速度，或识别可能的安全风险都非常有帮助。例如，我们可以查看服务器返回的HTTP头部中的缓存控制字段，来了解网页内容是如何被缓存的，以此来优化网页加载速度。</p>
-<p>B. DNS协议分析：WireShark能跟踪DNS查询以及其响应，了解域名解析的全过程。例如，如果一个网站加载缓慢，那可能是因为DNS查询时间过长。通过WireShark，我们可以找到问题并优化它。</p>
-<p>C. TCP/IP协议分析：TCP/IP协议是互联网的基石，理解和分析它们对于网络故障排查和性能优化至关重要。使用WireShark，可以看到每个TCP/IP数据包的详细信息，包括源/目标IP地址、端口号、序列号、确认号以及控制标志等。例如，我们可以通过分析TCP重传和丢包来识别网络问题，通过观察TCP窗口大小的变化来了解网络拥塞状况。</p>
-<h1 id="结论："><a href="#结论：" class="headerlink" title="结论："></a>结论：</h1><p>WireShark作为一款强大的网络分析工具，其在帮助我们理解网络协议，解决网络问题，以及进行网络性能优化方面发挥了巨大的作用。同时，随着网络技术的日益发展，我们相信WireShark在未来将有更多的应用场景和更深远的影响。</p>
-
+<img src="https://cdn.jsdelivr.net/gh/Bevis23/blog-pic/sky2.jpg" style="zoom:25%;">
             </div>
             <hr />
 
@@ -768,9 +744,9 @@ overflow-y: scroll;
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《WireShark 简介和抓包原理及过程》
+                    《你有多久没看天空了?》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/shen-tou-wireshark-zhua-bao-ji-chang-yong-xie-yi-fen-xi.html" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/sui-bi-ni-you-duo-jiu-mei-kan-tian-kong-liao.html" property="cc:attributionName"
                rel="cc:attributionURL">
                 Bevis23
             </a> 采用
@@ -811,7 +787,7 @@ overflow-y: scroll;
         repo: 'Bevis23.github.io',
         owner: 'Bevis23',
         admin: "Bevis23",
-        id: 'shen-tou-wireshark-zhua-bao-ji-chang-yong-xie-yi-fen-xi.html',
+        id: 'sui-bi-ni-you-duo-jiu-mei-kan-tian-kong-liao.html',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -1094,58 +1070,58 @@ overflow-y: scroll;
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/shen-tou-nmap.html">
+                <a href="/sui-bi-ni-you-duo-jiu-mei-kan-tian-kong-liao.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="NMAP：揭秘网络安全的终极工具">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="你有多久没看天空了?">
                         
-                        <span class="card-title">NMAP：揭秘网络安全的终极工具</span>
+                        <span class="card-title">你有多久没看天空了?</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            引言在网络安全领域，无论是进行系统保护还是进行安全测试，网络扫描工具都扮演着重要角色。其中，NMAP是一个功能强大且广泛使用的网络扫描和安全审计工具。在本文中，我们将进一步探索NMAP的高级使用技巧，并深入研究如何使用NMAP进行漏洞扫描和
+                            知乎的一个问题：你有多久没抬头看头顶的天空了？
+现在二十多岁的年纪，在一个安静的午后，发呆的时候抬头看天空，盯着它，才发现云朵在慢慢移动，思绪一下子回到童年。
+就那个无忧无虑的年纪，坐着抬头望天，看云朵形状，然后为自己发现云朵在移动而欣喜万
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2023-07-16
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2024-02-21
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/网络安全/" class="post-category" target="_blank">
-                                    网络安全
+                            <a href="/categories/随笔/" class="post-category" target="_blank">
+                                    随笔
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/工具/" target="_blank">
-                        <span class="chip bg-color">工具</span>
+                    <a href="/tags/生活记录/" target="_blank">
+                        <span class="chip bg-color">生活记录</span>
                     </a>
                     
-                    <a href="/tags/网络安全/" target="_blank">
-                        <span class="chip bg-color">网络安全</span>
+                    <a href="/tags/随笔/" target="_blank">
+                        <span class="chip bg-color">随笔</span>
                     </a>
                     
-                    <a href="/tags/渗透测试/" target="_blank">
-                        <span class="chip bg-color">渗透测试</span>
-                    </a>
-                    
-                    <a href="/tags/nmap/" target="_blank">
-                        <span class="chip bg-color">nmap</span>
+                    <a href="/tags/分享/" target="_blank">
+                        <span class="chip bg-color">分享</span>
                     </a>
                     
                 </div>
@@ -1159,24 +1135,24 @@ overflow-y: scroll;
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/bian-cheng-python-yuan-zu-yu-lie-biao.html">
+                <a href="/bian-cheng-shell-bian-cheng.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="Python编程：深入理解列表与元组的关键差异">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="shell编程基础">
                         
-                        <span class="card-title">Python编程：深入理解列表与元组的关键差异</span>
+                        <span class="card-title">shell编程基础</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            引言：在Python编程中，我们经常会使用到的两种基础数据结构就是列表（List）和元组（Tuple）。这两者都用于存储数据集合，但它们之间存在着一些关键的差异。理解这些差异以及何时使用哪种数据结构是成为一名高效的Python程序员的关键。
+                            引言在当今数字化的世界中，计算机操作和系统管理成为了日常工作中不可或缺的一部分。然而，随着科技的不断发展，我们有时会陷入图形用户界面的便利性中，而忽略了一个强大而高效的工具——Shell。本博客旨在介绍Shell的基础知识，深入探讨其作用以
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2023-07-15
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2023-12-15
                             </span>
                         <span class="publish-author">
                             
@@ -1193,12 +1169,12 @@ overflow-y: scroll;
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/python/" target="_blank">
-                        <span class="chip bg-color">python</span>
-                    </a>
-                    
                     <a href="/tags/编程/" target="_blank">
                         <span class="chip bg-color">编程</span>
+                    </a>
+                    
+                    <a href="/tags/shell/" target="_blank">
+                        <span class="chip bg-color">shell</span>
                     </a>
                     
                 </div>

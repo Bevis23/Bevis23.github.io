@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>你有多久没看天空了?</title>
+      <link href="/sui-bi-ni-you-duo-jiu-mei-kan-tian-kong-liao.html"/>
+      <url>/sui-bi-ni-you-duo-jiu-mei-kan-tian-kong-liao.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>知乎的一个问题：你有多久没抬头看头顶的天空了？</p><p>现在二十多岁的年纪，在一个安静的午后，发呆的时候抬头看天空，盯着它，才发现云朵在慢慢移动，思绪一下子回到童年。</p><p>就那个无忧无虑的年纪，坐着抬头望天，看云朵形状，然后为自己发现云朵在移动而欣喜万分，在什么都不懂的年纪为自己的发现而自豪，这种自豪不需要鲜花掌声，也不屑于任何事物。因为这时候，这是一个人存在于世，有意识，有感于自我，且不受任何事物左右的时刻。此时此刻，当时当下，一切都很美好。</p><p>要说多久，确实记不清了，唯一能作为回答标准的分界线就是“有忧虑的开始”。从那个时候开始，就没有认真感受大自然了。是不喜欢感受了嘛？兴许是“忘记”感受了吧，心走的太快,忘记了抬头就能看见的美好。<br>—–2024.2.21记</p><img src="https://cdn.jsdelivr.net/gh/Bevis23/blog-pic/sky1.jpg" style="zoom: 25%;"><img src="https://cdn.jsdelivr.net/gh/Bevis23/blog-pic/sky2.jpg" style="zoom:25%;">]]></content>
+      
+      
+      <categories>
+          
+          <category> 随笔 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 生活记录 </tag>
+            
+            <tag> 随笔 </tag>
+            
+            <tag> 分享 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>shell编程基础</title>
       <link href="/bian-cheng-shell-bian-cheng.html"/>
       <url>/bian-cheng-shell-bian-cheng.html</url>
@@ -128,9 +157,9 @@
       
         <tags>
             
-            <tag> AARRR </tag>
-            
             <tag> 数据分析 </tag>
+            
+            <tag> AARRR </tag>
             
             <tag> 思维 </tag>
             
@@ -184,11 +213,11 @@
       
         <tags>
             
-            <tag> 网络安全 </tag>
-            
             <tag> 数据分析 </tag>
             
             <tag> python </tag>
+            
+            <tag> 网络安全 </tag>
             
         </tags>
       
@@ -528,9 +557,9 @@
       
         <tags>
             
-            <tag> 工具 </tag>
-            
             <tag> RSS </tag>
+            
+            <tag> 工具 </tag>
             
             <tag> 信息聚合 </tag>
             
@@ -615,9 +644,9 @@
             
             <tag> 思维工具 </tag>
             
-            <tag> 数据分析 </tag>
-            
             <tag> PEST </tag>
+            
+            <tag> 数据分析 </tag>
             
         </tags>
       
@@ -644,9 +673,9 @@
             
             <tag> python </tag>
             
-            <tag> 算法 </tag>
-            
             <tag> 编程 </tag>
+            
+            <tag> 算法 </tag>
             
         </tags>
       
@@ -673,9 +702,9 @@
             
             <tag> python </tag>
             
-            <tag> 算法 </tag>
-            
             <tag> 编程 </tag>
+            
+            <tag> 算法 </tag>
             
         </tags>
       
@@ -700,9 +729,9 @@
       
         <tags>
             
-            <tag> 技术分享 </tag>
-            
             <tag> docker </tag>
+            
+            <tag> 技术分享 </tag>
             
             <tag> 容器技术 </tag>
             
@@ -729,9 +758,9 @@
       
         <tags>
             
-            <tag> Git </tag>
-            
             <tag> 工具 </tag>
+            
+            <tag> Git </tag>
             
             <tag> 分布式 </tag>
             
@@ -1058,9 +1087,9 @@
             
             <tag> blog </tag>
             
-            <tag> 分享 </tag>
-            
             <tag> 随笔 </tag>
+            
+            <tag> 分享 </tag>
             
             <tag> hexo </tag>
             
