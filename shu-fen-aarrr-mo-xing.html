@@ -1,0 +1,1803 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="AARRR模型解析, seek">
+    <meta name="baidu-site-verification" content="fmlEuI34ir">
+    <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
+    <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
+    <meta name="description" content="引言在当今竞争激烈的商业环境中，市场营销和用户增长变得至关重要。无论是一家初创公司还是一家成熟的企业，吸引、留住和发展客户或用户都是实现成功的关键因素。在这个数字化时代，我们需要适应不断变化的市场需求，以确保我们的产品或服务在众多竞争对手中">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>AARRR模型解析 | Bevis23&#39;s Blog</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+    <style type="text/css">
+        
+    </style>
+
+    <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
+    <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?ce84511d3df71640a9378a69f6293044";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+    
+        <script>
+            (function(){
+                var bp = document.createElement('script');
+                var curProtocol = window.location.protocol.split(':')[0];
+                if (curProtocol === 'https') {
+                    bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+                }
+                else {
+                    bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                }
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(bp, s);
+            })();
+        </script>
+    
+
+    <script>
+        (function(){
+        var src = "https://jspassport.ssl.qhimg.com/11.0.1.js?d182b3f28525f2db83acfaaf6e696dba";
+        document.write('<script src="' + src + '" id="sozz"><\/script>');
+        })();
+    </script>
+
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+<body>
+
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Bevis23's Blog</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fa fa-navicon"></i></a>
+<ul class="right">
+    
+    <li class="hide-on-med-and-down">
+        <a href="/" class="waves-effect waves-light">
+            
+            <i class="fa fa-home"></i>
+            
+            <span>首页</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/tags" class="waves-effect waves-light">
+            
+            <i class="fa fa-tags"></i>
+            
+            <span>标签</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/categories" class="waves-effect waves-light">
+            
+            <i class="fa fa-bookmark"></i>
+            
+            <span>分类</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/archives" class="waves-effect waves-light">
+            
+            <i class="fa fa-archive"></i>
+            
+            <span>归档</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/about" class="waves-effect waves-light">
+            
+            <i class="fa fa-user-circle-o"></i>
+            
+            <span>关于我</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/friends" class="waves-effect waves-light">
+            
+            <i class="fa fa-address-book"></i>
+            
+            <span>友链</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/contact" class="waves-effect waves-light">
+            
+            <i class="fa fa-comments"></i>
+            
+            <span>留言板</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/navigate" class="waves-effect waves-light">
+            
+            <i class="fa fa-location-arrow"></i>
+            
+            <span>极客导航</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/everyday" class="waves-effect waves-light">
+            
+            <i class="fa fas fa-list"></i>
+            
+            <span>每日60s</span>
+        </a>
+    </li>
+    
+    <li>
+        <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+            <i id="searchIcon" class="fa fa-search" title="搜索"></i>
+        </a>
+    </li>
+</ul>
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Bevis23's Blog</div>
+        <div class="logo-desc">
+            
+            永远保持好奇心，去探索，去直面自己的感受，面对万物渐变，宓而待之，追翊于廖廓，终有所感，终有所得......
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li>
+            <a href="/" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-home"></i>
+                
+                首页
+            </a>
+        </li>
+        
+        <li>
+            <a href="/tags" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-tags"></i>
+                
+                标签
+            </a>
+        </li>
+        
+        <li>
+            <a href="/categories" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-bookmark"></i>
+                
+                分类
+            </a>
+        </li>
+        
+        <li>
+            <a href="/archives" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-archive"></i>
+                
+                归档
+            </a>
+        </li>
+        
+        <li>
+            <a href="/about" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-user-circle-o"></i>
+                
+                关于我
+            </a>
+        </li>
+        
+        <li>
+            <a href="/friends" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-address-book"></i>
+                
+                友链
+            </a>
+        </li>
+        
+        <li>
+            <a href="/contact" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-comments"></i>
+                
+                留言板
+            </a>
+        </li>
+        
+        <li>
+            <a href="/navigate" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-location-arrow"></i>
+                
+                极客导航
+            </a>
+        </li>
+        
+        <li>
+            <a href="/everyday" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fas fa-list"></i>
+                
+                每日60s
+            </a>
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/Bevis23/Bevis23.github.io" class="waves-effect waves-light" target="_blank">
+                <i class="fa fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/Bevis23/Bevis23.github.io" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/26.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <div class="description center-align post-title">
+                        AARRR模型解析
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+
+    }
+
+    #toc-content {
+    height: calc(100vh - 200px);
+    overflow-y: scroll;
+
+    }
+    /* 添加滚动条样式 */
+::-webkit-scrollbar {
+  width: 8px; /* 滚动条宽度 */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* 滚动条背景颜色 */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* 滚动条拖动块颜色 */
+  border-radius: 4px; /* 滚动条拖动块圆角 */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* 鼠标悬停时的滚动条拖动块颜色 */
+}
+
+/* 开启滚动条显示 */
+overflow-y: scroll;
+
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #toc-content .is-active-link::before {
+        background-color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 20px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                        <a href="/tags/AARRR/" target="_blank">
+                            <span class="chip bg-color">AARRR</span>
+                        </a>
+                        
+                        <a href="/tags/数据分析/" target="_blank">
+                            <span class="chip bg-color">数据分析</span>
+                        </a>
+                        
+                        <a href="/tags/思维/" target="_blank">
+                            <span class="chip bg-color">思维</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fa fa-bookmark fa-fw icon-category"></i>
+                        
+                        <a href="/categories/数据分析/" class="post-category" target="_blank">
+                            数据分析
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                <div class="post-date info-break-policy">
+                    <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2023-10-26
+                </div>
+
+                <div class="post-author info-break-policy">
+                    <i class="fa fa-user-o fa-fw"></i>作者:&nbsp;&nbsp;
+                    
+                    Bevis23
+                    
+                </div>
+
+                
+                
+                <div class="info-break-policy">
+                    <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    5.8k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    19 分
+                </div>
+                
+                
+
+                
+                <div id="busuanzi_container_page_pv" class="info-break-policy">
+                    <i class="fa fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                    <span id="busuanzi_value_page_pv"></span>
+                </div>
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h1><p>在当今竞争激烈的商业环境中，市场营销和用户增长变得至关重要。无论是一家初创公司还是一家成熟的企业，吸引、留住和发展客户或用户都是实现成功的关键因素。在这个数字化时代，我们需要适应不断变化的市场需求，以确保我们的产品或服务在众多竞争对手中脱颖而出。但要做到这一点，我们需要一个有效的战略，以理解用户在他们的旅程中经历的不同阶段，并采取措施来优化这些阶段。</p>
+<p>正是在这里，”最终路径法”（AARRR）成为一种有力的工具。AARRR模型由不同阶段的目标组成，有助于组织了解如何吸引、留住和发展他们的用户或客户。这个模型不仅仅是一种理论框架，它已经被无数成功的企业用来实现用户增长和市场营销的目标。在本篇博客中，我们将深入探讨AARRR模型，探讨每个阶段的关键指标和实际应用。</p>
+<h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><p>最终路径法，通常简写为AARRR，是一种关键的市场营销和用户增长模型，旨在帮助组织了解并优化用户或客户的全程体验。该模型的名称是根据其五个关键阶段的首字母命名的，这五个阶段是：<strong>获取（Acquisition）、激活（Activation）、保留（Retention）、推广（Referral）和收入（Revenue）</strong>。AARRR模型不仅帮助组织识别每个阶段的关键指标，还提供了战略方法来改善这些指标以实现更好的用户增长和市场表现。</p>
+<p>AARRR模型的起源可以追溯到Dave McClure，他是一位著名的初创企业家和风险投资家，也是用户增长领域的权威之一。这个模型最初被用于评估初创公司的成功和潜力，但后来被广泛应用于各种类型的企业和组织，包括成熟企业、电子商务、应用开发等。</p>
+<h2 id="五个关键步骤："><a href="#五个关键步骤：" class="headerlink" title="五个关键步骤："></a>五个关键步骤：</h2><ol>
+<li><p><strong>获取（Acquisition）</strong>：在这个阶段，组织的主要目标是吸引新用户或客户。这可以通过不同的营销渠道和策略来实现，例如广告、社交媒体、搜索引擎优化等。关键指标包括流量、点击率和转化率，以衡量吸引新用户的效果。</p>
+</li>
+<li><p><strong>激活（Activation）</strong>：一旦吸引了用户，接下来的目标是确保他们获得积极的第一次体验。这有助于提高用户留存率。在激活阶段，关键指标包括首次登录、特定功能的使用、完成注册等。</p>
+</li>
+<li><p><strong>保留（Retention）</strong>：用户留存是用户增长的关键因素。在这个阶段，组织致力于提供出色的用户体验，以鼓励用户继续使用产品或服务。关键指标包括留存率、用户活跃度和回访频率。</p>
+</li>
+<li><p><strong>推广（Referral）</strong>：现有用户或客户可以成为的最佳传播者。在这个阶段，组织鼓励用户向其他人介绍的产品或服务，从而扩大受众。关键指标包括口碑传播、推荐成功率和新用户来源。</p>
+</li>
+<li><p><strong>收入（Revenue）</strong>：最终目标是将这些用户或客户转化为付费客户或以其他方式带来收入。在这个阶段，组织需要制定营收模型，并确保用户愿意付费以获得更多价值。关键指标包括转化率、平均交易价值和客户生命周期价值。</p>
+</li>
+</ol>
+<h1 id="获得"><a href="#获得" class="headerlink" title="获得"></a>获得</h1><p><strong>获得（Acquisition）</strong>：获得阶段是AARRR模型中的首要步骤，旨在吸引新用户或客户，将他们引入的产品或服务。这一阶段的成功对于后续步骤至关重要，如果不能获得足够的用户，后续的激活、保留、推广和收入就会受到限制。</p>
+<h2 id="重要性："><a href="#重要性：" class="headerlink" title="重要性："></a><strong>重要性</strong>：</h2><ul>
+<li><strong><em>扩展受众</em></strong>：获得阶段是拓展的用户基础的关键，它允许引入新的潜在用户，增加的市场份额。</li>
+<li><strong><em>增加机会</em></strong>：每个新用户都代表着一个潜在的机会，他们可能成为未来的忠实用户或付费客户。</li>
+<li><strong><em>数据积累</em></strong>：获得新用户也意味着积累更多的数据，这有助于更好地了解的受众，优化策略并做出更明智的决策。</li>
+</ul>
+<h2 id="关键因素："><a href="#关键因素：" class="headerlink" title="关键因素："></a><strong>关键因素</strong>：</h2><ul>
+<li><em>目标受众</em>：首先，确定的目标受众是谁，以便精确定位的营销活动。</li>
+<li><em>渠道选择</em>：选择适合目标受众的获得渠道，这可以包括搜索引擎、社交媒体、广告、合作伙伴关系等。</li>
+<li><em>内容和消息</em>：创建有吸引力的内容和消息，能够引起目标受众的兴趣并激发他们采取行动。</li>
+</ul>
+<h2 id="策略和方法："><a href="#策略和方法：" class="headerlink" title="策略和方法："></a><strong>策略和方法</strong>：</h2><ol>
+<li><p><strong>搜索引擎优化（SEO）</strong>：通过优化的网站内容，以便在搜索引擎中获得更高的排名，从而吸引有机流量。关键因素包括关键词研究、内容优化和技术SEO。</p>
+</li>
+<li><p><strong>社交媒体广告</strong>：广泛使用社交媒体平台如Facebook、Instagram、LinkedIn等进行有针对性的广告投放，以吸引潜在用户。可以根据受众特征和兴趣来定位广告。</p>
+</li>
+<li><p><strong>内容营销</strong>：创建有吸引力的内容，如博客文章、视频、白皮书等，以吸引潜在用户并提供价值。通过内容分享和搜索引擎排名，吸引用户访问的网站。</p>
+</li>
+<li><p><strong>电子邮件营销</strong>：建立和维护邮件列表，向潜在客户发送有价值的信息和特别优惠，以吸引他们访问的产品或服务。</p>
+</li>
+<li><p><strong>合作伙伴关系和联合营销</strong>：与其他企业或网站建立合作伙伴关系，以共同推广的产品或服务，以扩大受众。</p>
+</li>
+<li><p><strong>广告网络</strong>：使用在线广告网络如Google Ads、Bing Ads等，以投放广告并吸引潜在用户。可以根据关键词、兴趣和受众特征来精确定位广告。</p>
+</li>
+<li><p><strong>口碑传播</strong>：鼓励现有用户分享他们的积极体验，帮助吸引新用户。口碑传播是一种强大的获得方法，可以在社交媒体上或口碑推荐中实现。</p>
+</li>
+</ol>
+<h1 id="激活"><a href="#激活" class="headerlink" title="激活"></a>激活</h1><p><strong>激活（Activation）</strong>：激活阶段是AARRR模型中的第二步，旨在确保新用户或客户在他们的首次互动中获得积极的体验，从而激发他们继续使用的产品或服务。这个阶段的成功直接影响到用户留存和转化率，因此具有至关重要的意义。</p>
+<h2 id="重要性：-1"><a href="#重要性：-1" class="headerlink" title="重要性："></a>重要性：</h2><ul>
+<li><p><strong>留存率提高</strong>：通过确保用户在初次互动中获得积极的体验，增加了他们继续使用的可能性，从而提高了用户留存率。</p>
+</li>
+<li><p><strong>用户价值</strong>：激活阶段有助于用户理解产品或服务的价值，使他们更有可能成为付费客户或长期用户。</p>
+</li>
+<li><p><strong>口碑传播</strong>：积极的初次体验可以激发用户分享他们的体验，从而吸引更多用户。</p>
+</li>
+</ul>
+<h2 id="关键因素：-1"><a href="#关键因素：-1" class="headerlink" title="关键因素："></a>关键因素：</h2><ul>
+<li><strong>用户导向</strong>：了解用户的需求和期望是至关重要的。设计产品或服务以满足用户需求，确保用户能够迅速找到所需信息或功能。</li>
+<li><strong>简化体验</strong>：使用户的第一次互动尽可能简单和直观，以降低学习曲线。避免复杂性和繁琐的步骤。<br>个性化：根据用户的兴趣和行为提供个性化的内容和建议，以增加他们的参与度。</li>
+<li><strong>清晰的价值主张</strong>：明确传达产品或服务的价值，告诉用户它们将如何受益。</li>
+<li><strong>引导用户</strong>：提供引导和教育，以帮助用户了解如何使用产品或服务。</li>
+</ul>
+<h2 id="策略和方法：-1"><a href="#策略和方法：-1" class="headerlink" title="策略和方法："></a>策略和方法：</h2><p>用户导向设计：采用用户体验设计（UX）原则，确保产品界面和功能符合用户的需求，让用户可以快速找到所需的信息或功能。</p>
+<p>简化注册流程：如果用户需要注册，确保注册流程简化，并最小化必填信息。可以提供社交媒体登录选项，以减少用户的摩擦。</p>
+<p>提供教育和引导：通过教程、引导步骤或提示，帮助用户了解如何使用产品或服务，并充分利用其功能。</p>
+<p>个性化推荐：根据用户的兴趣和行为，提供个性化的建议和内容，使用户能够发现更多有价值的功能。</p>
+<p>欢迎信息：发送欢迎电子邮件或消息，感谢用户的加入，并提供一些有用的信息，以鼓励他们继续互动。</p>
+<p>试用期和优惠：提供有吸引力的试用期或优惠，让用户能够在没有风险的情况下体验产品或服务。</p>
+<p>反馈机制：收集用户反馈并积极回应，以改进产品或服务，满足用户的需求。</p>
+<h1 id="保留"><a href="#保留" class="headerlink" title="保留"></a>保留</h1><p><strong>保留（Retention）</strong>：保留阶段是AARRR模型中的第三步，旨在确保用户继续使用的产品或服务，并提高他们的用户留存率。这个阶段的成功对于长期用户关系和持续收入至关重要。</p>
+<h2 id="重要性：-2"><a href="#重要性：-2" class="headerlink" title="重要性："></a><strong>重要性</strong>：</h2><ul>
+<li><em>用户价值最大化</em>：保留现有用户意味着能够最大化他们的价值，因为他们将继续使用产品或服务，并可能进行多次交易。</li>
+<li><em>减少流失</em>：降低用户流失率对于降低用户获得成本和提高收入至关重要。留存用户通常比新用户更经济。</li>
+<li><em>口碑传播</em>：满意的用户更有可能向他人推荐的产品或服务，从而帮助扩大受众。</li>
+</ul>
+<h2 id="关键因素：-2"><a href="#关键因素：-2" class="headerlink" title="关键因素："></a><strong>关键因素</strong>：</h2><ul>
+<li><em>用户满意度</em>：了解用户需求，并确保提供高质量的产品或服务，以满足他们的期望。</li>
+<li><em>持续沟通</em>：与用户保持联系，提供支持和有用的信息，以保持他们的兴趣。</li>
+<li><em>个性化体验</em>：根据用户的兴趣和行为，提供个性化的建议和内容，以增加用户参与度。</li>
+<li><em>问题解决</em>：及时处理用户的问题和投诉，以增强他们的满意度和忠诚度。</li>
+</ul>
+<h2 id="策略和方法：-2"><a href="#策略和方法：-2" class="headerlink" title="策略和方法："></a><strong>策略和方法</strong>：</h2><ol>
+<li><p><strong>提供卓越的客户服务</strong>：确保用户能够轻松获取支持，解决问题，并获得满意的答复。积极回应用户的问题和反馈。</p>
+</li>
+<li><p><strong>个性化推荐</strong>：根据用户的历史行为和兴趣，提供个性化的产品或服务建议。这有助于用户发现新的价值和功能。</p>
+</li>
+<li><p><strong>保持联系</strong>：发送定期的电子邮件、通知或消息，以提供有用的信息、更新和特别优惠。保持用户的兴趣和参与度。</p>
+</li>
+<li><p><strong>奖励忠诚</strong>：设立忠诚计划，奖励长期用户。这可以包括折扣、积分或独家特权。</p>
+</li>
+<li><p><strong>改进产品或服务</strong>：持续优化产品或服务，以满足用户的需求和期望。收集反馈并积极回应。</p>
+</li>
+<li><p><strong>社交互动</strong>：建立社交媒体社区或用户论坛，让用户之间互相交流和分享经验。这有助于建立社交联系和用户黏性。</p>
+</li>
+<li><p><strong>自动续订和订阅模型</strong>：如果适用，提供自动续订选项，以便用户可以方便地继续使用产品或服务。</p>
+</li>
+</ol>
+<h1 id="推广"><a href="#推广" class="headerlink" title="推广"></a>推广</h1><p><strong>推广（Referral）</strong>：推广阶段是AARRR模型中的第四步，旨在利用现有用户或客户的积极体验，鼓励他们向其他人介绍的产品或服务。这个阶段的成功可以极大地增加的用户基础，并降低获取新用户的成本。</p>
+<h2 id="重要性：-3"><a href="#重要性：-3" class="headerlink" title="重要性："></a><strong>重要性</strong>：</h2><ul>
+<li><em>口碑传播</em>：通过现有用户的口碑传播，可以建立信任和吸引更多潜在用户，因为人们更倾向于相信朋友和家人的建议。</li>
+<li><em>成本效益</em>：推广用户通常具有较低的获取成本，因为他们是由现有用户介绍而来的，无需大规模广告支出。</li>
+<li><em>社交验证</em>：被他人推荐的产品或服务更有吸引力，因为它们经受住了其他人的验证。</li>
+</ul>
+<h2 id="关键因素：-3"><a href="#关键因素：-3" class="headerlink" title="关键因素："></a><strong>关键因素</strong>：</h2><ul>
+<li><em>用户满意度</em>：只有满意的用户才会愿意向他人推荐产品或服务。因此，提供卓越的用户体验是关键。</li>
+<li><em>简化分享</em>：确保分享过程简单和便捷，以鼓励用户分享。提供易于使用的分享按钮和工具。</li>
+</ul>
+<h2 id="策略和方法：-3"><a href="#策略和方法：-3" class="headerlink" title="策略和方法："></a><strong>策略和方法</strong>：</h2><ol>
+<li><strong>奖励计划</strong>：建立奖励计划，以激励现有用户介绍新用户。奖励可以包括折扣、积分、礼品卡或独家特权。</li>
+<li><strong>社交分享按钮</strong>：在产品或服务界面中添加社交分享按钮，以便用户可以方便地分享内容或邀请朋友。</li>
+<li><strong>引导分享</strong>：向用户提供提示和提示，鼓励他们分享产品或邀请朋友。这可以包括推送消息、电子邮件或内部通知。</li>
+<li><strong>用户生成内容</strong>：鼓励用户创建用户生成内容，如评论、评级和照片，以分享他们的体验，并吸引其他人。</li>
+<li><strong>社交媒体活动</strong>：运行社交媒体活动，如比赛、挑战或主题日，鼓励用户分享与的品牌相关的内容。</li>
+<li><strong>朋友邀请朋友</strong>：允许用户直接邀请他们的朋友加入。这可以通过电子邮件、短信或社交媒体进行。</li>
+<li><strong>推荐链接和代码</strong>：为用户提供唯一的推荐链接或代码，以便他们可以轻松地跟踪推荐。</li>
+<li><strong>关注和监测</strong>：定期关注和监测用户的推荐活动，以便奖励忠诚用户并改进策略。</li>
+</ol>
+<h1 id="收入"><a href="#收入" class="headerlink" title="收入"></a>收入</h1><p><strong>收入（Revenue）</strong>：收入阶段是AARRR模型中的最终步骤，旨在将用户或客户转化为付费客户或以其他方式实现收入。这个阶段的成功对于企业的盈利和可持续增长至关重要。</p>
+<h2 id="重要性：-4"><a href="#重要性：-4" class="headerlink" title="重要性："></a><strong>重要性</strong>：</h2><ul>
+<li><em>盈利</em>：最终的目标是实现盈利，将用户的价值转化为可观的收入。</li>
+<li><em>可持续增长</em>：收入为企业提供了资金，用于投资、扩展和改进产品或服务，实现可持续增长。</li>
+<li><em>客户忠诚度</em>：付费客户通常更有可能成为长期用户，因此提高用户转化率是至关重要的。</li>
+</ul>
+<h2 id="关键因素：-4"><a href="#关键因素：-4" class="headerlink" title="关键因素："></a><strong>关键因素</strong>：</h2><ul>
+<li><em>清晰的付费模型</em>：明确定义产品或服务的付费模型，包括价格、计费周期和付款选项。</li>
+<li><em>卓越的价值</em>：确保产品或服务提供足够的价值，使用户愿意为之付费。</li>
+<li><em>简化支付流程</em>：简化支付流程，以减少购买时的摩擦和放弃率。</li>
+<li><em>客户支持</em>：提供客户支持，以解决问题、提供帮助和增强客户满意度。</li>
+</ul>
+<h2 id="策略和方法：-4"><a href="#策略和方法：-4" class="headerlink" title="策略和方法："></a><strong>策略和方法</strong>：</h2><ol>
+<li><p><strong>付费订阅</strong>：提供不同类型的付费订阅，包括月度、季度或年度选项，以满足用户的需求。</p>
+</li>
+<li><p><strong>广告收入</strong>：在产品或服务中显示广告，以从广告商那里获得收入。广告收入可以来自广告点击、印象或合作伙伴关系。</p>
+</li>
+<li><p><strong>附加销售</strong>：提供额外的附加产品或服务，以增加用户的购买意愿。这可以包括高级功能、增值服务或虚拟商品。</p>
+</li>
+<li><p><strong>试用期后的转化</strong>：在免费试用期结束后，提供付费选项，以将用户转化为付费客户。</p>
+</li>
+<li><p><strong>折扣和促销</strong>：定期提供折扣和促销活动，以吸引新客户或鼓励现有客户升级到高级版本。</p>
+</li>
+<li><p><strong>许可证和授权</strong>：提供软件许可证或授权，以为企业客户提供更大的灵活性和支持。</p>
+</li>
+<li><p><strong>定价实验</strong>：进行定价实验，以确定最适合市场的价格点，以最大程度地提高转化率。</p>
+</li>
+<li><p><strong>包装和定制</strong>：提供不同的产品包装和定制选项，以满足不同类型用户的需求。</p>
+</li>
+<li><p><strong>电子商务和在线销售</strong>：提供电子商务渠道，以便用户可以在线购买产品或服务。</p>
+</li>
+</ol>
+<h1 id="优缺点"><a href="#优缺点" class="headerlink" title="优缺点"></a>优缺点</h1><h2 id="最终路径法-AARRR-优点"><a href="#最终路径法-AARRR-优点" class="headerlink" title="最终路径法 (AARRR) 优点:"></a><strong>最终路径法 (AARRR) 优点</strong>:</h2><ol>
+<li><p><strong>清晰的用户旅程</strong>：AARRR模型提供了一个清晰的用户旅程框架，帮助组织了解用户在不同阶段的行为，从而更好地优化用户体验。</p>
+</li>
+<li><p><strong>可量化的关键指标</strong>：AARRR模型明确定义了每个阶段的关键指标，如留存率、转化率等，这使得组织可以量化和跟踪其用户增长和市场绩效。</p>
+</li>
+<li><p><strong>指导战略制定</strong>：AARRR模型为组织提供了一个战略框架，以改进各个阶段的指标，从而实现用户增长和市场营销的目标。</p>
+</li>
+<li><p><strong>成本效益</strong>：通过优化用户旅程，AARRR模型有助于减少获取新用户的成本，因为更多的用户可能来自现有用户的推荐。</p>
+</li>
+</ol>
+<h2 id="最终路径法-AARRR-局限性"><a href="#最终路径法-AARRR-局限性" class="headerlink" title="最终路径法 (AARRR) 局限性:"></a><strong>最终路径法 (AARRR) 局限性</strong>:</h2><ol>
+<li><p><strong>过于简化</strong>：AARRR模型虽然清晰简单，但它也过于简化了用户旅程，没有考虑到一些复杂的情况和多渠道体验。</p>
+</li>
+<li><p><strong>忽略了产品质量</strong>：AARRR模型在用户增长中强调了量化指标，但它没有强调产品或服务的质量和价值。即使成功地引入了用户，如果产品不令人满意，用户仍然会流失。</p>
+</li>
+<li><p><strong>单一的转化焦点</strong>：AARRR模型的重点是在用户旅程的不同阶段实现转化，但它没有强调用户的长期价值或忠诚度，这可能导致短期收益优先于长期关系。</p>
+</li>
+</ol>
+<h2 id="AARRR在用户增长和营销中的价值"><a href="#AARRR在用户增长和营销中的价值" class="headerlink" title="AARRR在用户增长和营销中的价值:"></a><strong>AARRR在用户增长和营销中的价值</strong>:</h2><p>AARRR模型在用户增长和营销中的价值在于它提供了一个简单但强大的框架，帮助组织识别并优化用户的旅程。它可以帮助组织量化和跟踪绩效，优化用户体验，降低获得新用户的成本，并提高用户忠诚度。通过明确定义用户旅程中的关键指标，组织能够制定更明智的决策，以实现可持续的用户增长和市场成功。</p>
+<h2 id="AARRR对于特定业务场景的适用性"><a href="#AARRR对于特定业务场景的适用性" class="headerlink" title="AARRR对于特定业务场景的适用性:"></a><strong>AARRR对于特定业务场景的适用性</strong>:</h2><p>AARRR模型在各种业务场景中都可以有用，特别是对于在线产品、应用和服务，以及初创企业。它在以下情况下特别适用：</p>
+<ol>
+<li><p><strong>初创企业</strong>：初创企业可以使用AARRR模型来构建他们的用户基础，从而吸引投资和增加市场份额。</p>
+</li>
+<li><p><strong>电子商务</strong>：在线零售业务可以使用AARRR来提高用户转化率、降低购物车放弃率，并提高用户忠诚度。</p>
+</li>
+<li><p><strong>应用开发</strong>：应用开发者可以使用AARRR来吸引新用户、提高应用的活跃度，并推广应用，以增加用户数量。</p>
+</li>
+<li><p><strong>在线教育</strong>：在线教育平台可以使用AARRR来吸引学生、提高课程完成率，并鼓励学生推荐其他人注册。</p>
+</li>
+</ol>
+<h1 id="实际案例"><a href="#实际案例" class="headerlink" title="实际案例"></a>实际案例</h1><p>以Uber为例，使用AARRR模型对其进行实际分析。</p>
+<h2 id="获得（Acquisition）："><a href="#获得（Acquisition）：" class="headerlink" title="获得（Acquisition）："></a><strong>获得（Acquisition）</strong>：</h2><p>策略和方法：</p>
+<ul>
+<li><strong>社交媒体广告</strong>：Uber使用社交媒体广告来吸引新用户，通过广告平台（如Facebook、Instagram）以及合作伙伴关系来推广其服务。</li>
+<li><strong>优惠码</strong>：Uber提供首次乘车的折扣优惠码，鼓励新用户注册并尝试服务。</li>
+</ul>
+<p>效果和影响：这些策略帮助Uber获得了大量新用户，加速了其用户基础的增长，使更多人了解和试用其服务。</p>
+<h2 id="激活（Activation）："><a href="#激活（Activation）：" class="headerlink" title="激活（Activation）："></a><strong>激活（Activation）</strong>：</h2><p>策略和方法：</p>
+<ul>
+<li><strong>简化注册流程</strong>：Uber确保注册过程尽可能简单，允许用户使用他们的手机号码或社交媒体账户进行注册。</li>
+<li><strong>个性化体验</strong>：Uber根据用户的位置和偏好提供个性化的接车建议。</li>
+</ul>
+<p>效果和影响：这些策略有助于确保新用户在第一次使用Uber时有良好的体验，降低了流失率。</p>
+<h2 id="保留（Retention）："><a href="#保留（Retention）：" class="headerlink" title="保留（Retention）："></a><strong>保留（Retention）</strong>：</h2><p>策略和方法：</p>
+<ul>
+<li><strong>奖励计划</strong>：Uber推出了Uber Rewards计划，为忠诚用户提供折扣和特殊待遇。</li>
+<li><strong>定期通信</strong>：Uber通过电子邮件和应用内通知与用户保持联系，提供特别优惠和活动信息。</li>
+</ul>
+<p>效果和影响：这些策略有助于提高用户的忠诚度，鼓励他们继续使用Uber，而不是转向竞争对手。</p>
+<h2 id="推广（Referral）："><a href="#推广（Referral）：" class="headerlink" title="推广（Referral）："></a><strong>推广（Referral）</strong>：</h2><p>策略和方法：</p>
+<ul>
+<li><strong>朋友邀请朋友</strong>：Uber允许现有用户通过分享个性化的推荐链接或代码邀请朋友加入Uber，并提供折扣或奖励。</li>
+<li><strong>社交媒体分享</strong>：Uber鼓励用户在社交媒体上分享他们的乘车经历。</li>
+</ul>
+<p>效果和影响：这些策略有助于推广Uber的服务，通过用户口碑传播吸引新用户，同时奖励现有用户。</p>
+<h2 id="收入（Revenue）："><a href="#收入（Revenue）：" class="headerlink" title="收入（Revenue）："></a><strong>收入（Revenue）</strong>：</h2><p>策略和方法：</p>
+<ul>
+<li><strong>不同的计费模式</strong>：Uber提供多种计费模式，包括按里程计费、按时间计费和固定价格，以满足不同用户的需求。</li>
+<li><strong>高峰时段定价</strong>：Uber采用了高峰时段定价策略，以在高需求时提高价格，增加收入。</li>
+</ul>
+<p>效果和影响：这些策略有助于提高Uber的收入，使其能够更灵活地适应市场需求。</p>
+<p>总体来说，Uber成功地使用AARRR模型的各个步骤来增加用户数量、提高用户体验、维护用户忠诚度并实现收入增长。通过定期分析和优化每个步骤，Uber已经建立了全球范围内的强大用户基础，成为共享经济领域的领导者。这个案例突出了AARRR模型在实际业务中的应用和效果。</p>
+<h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p>在用户增长和市场营销领域，最终路径法（AARRR）是一个强大而有用的框架，它帮助企业理解和优化用户旅程的各个阶段。从获得新用户到提高用户忠诚度和实现收入增长，AARRR模型为组织提供了一个明确的计划，以实现可持续的用户增长和市场成功。</p>
+<p>最终路径法（AARRR）的核心思想是为用户增长和市场营销提供了一个明确的方向，同时注重用户满意度和价值。它是一个有助于企业建立和维护强大用户基础的框架，同时也为用户提供了有价值的产品和服务。在追求用户增长和市场成功的道路上，AARRR模型是一项有力的工具，值得深入研究和应用。</p>
+
+            </div>
+            <hr />
+
+            
+            <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.88rem;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-large waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fa fa-close"></i></a>
+            <h4 class="reward-title">您小小的支持，是我不断前进的动力❤</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+            
+
+            <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+
+<div id="article-share">
+    
+    <div class="social-share" data-disabled="qzone" data-wechat-qrcode-helper="<p>微信里点“发现”->“扫一扫”二维码便可查看分享。</p>"></div>
+    
+</div>
+
+<script src="/libs/share/js/social-share.min.js"></script>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        <p class="reprint-tip">
+            <i class="fa fa-exclamation-triangle"></i>&nbsp;&nbsp;
+            <span>转载规则</span>
+        </p>
+        
+            <div class="center-align">
+                <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.zh">
+                    <img alt=""
+                         style="border-width:0"
+                         src="https://i.creativecommons.org/l/by/4.0/88x31.png"/>
+                </a>
+            </div>
+            <br/>
+            <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
+                  property="dct:title" rel="dct:type">
+                    《AARRR模型解析》
+                </span> 由
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/shu-fen-aarrr-mo-xing.html" property="cc:attributionName"
+               rel="cc:attributionURL">
+                Bevis23
+            </a> 采用
+            <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.zh">
+                知识共享署名 4.0 国际许可协议
+            </a>进行许可。
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+        </div>
+    </div>
+
+    
+    <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
+<link rel="stylesheet" href="/css/my-gitalk.css">
+
+<div class="card gitalk-card" data-aos="fade-up">
+    <div id="gitalk-container" class="card-content"></div>
+</div>
+
+<script src="/libs/gitalk/gitalk.min.js"></script>
+<script>
+    let gitalk = new Gitalk({
+        clientID: 'test',
+        clientSecret: 'test',
+        repo: 'Bevis23.github.io',
+        owner: 'Bevis23',
+        admin: "Bevis23",
+        id: 'shu-fen-aarrr-mo-xing.html',
+        distractionFreeMode: false  // Facebook-like distraction free mode
+    });
+
+    gitalk.render('gitalk-container');
+</script>
+    
+
+    
+
+    
+
+    
+
+    
+    <style>
+    .valine-card {
+        margin: 1.5rem auto;
+    }
+
+    .valine-card .card-content {
+        padding: 20px 20px 5px 20px;
+    }
+
+    #vcomments input[type=text],
+    #vcomments input[type=email],
+    #vcomments input[type=url],
+    #vcomments textarea {
+        box-sizing: border-box;
+    }
+
+    #vcomments p {
+        margin: 2px 2px 10px;
+        font-size: 1.05rem;
+        line-height: 1.78rem;
+    }
+
+    #vcomments blockquote p {
+        text-indent: 0.2rem;
+    }
+
+    #vcomments a {
+        padding: 0 2px;
+        color: #42b983;
+        font-weight: 500;
+        text-decoration: underline;
+    }
+
+    #vcomments img {
+        max-width: 100%;
+        height: auto;
+        cursor: pointer;
+    }
+
+    #vcomments ol li {
+        list-style-type: decimal;
+    }
+
+    #vcomments ol,
+    ul {
+        display: block;
+        padding-left: 2em;
+        word-spacing: 0.05rem;
+    }
+
+    #vcomments ul li,
+    ol li {
+        display: list-item;
+        line-height: 1.8rem;
+        font-size: 1rem;
+    }
+
+    #vcomments ul li {
+        list-style-type: disc;
+    }
+
+    #vcomments ul ul li {
+        list-style-type: circle;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    #vcomments table, th, td {
+        border: 0;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments h1 {
+        font-size: 1.85rem;
+        font-weight: bold;
+        line-height: 2.2rem;
+    }
+
+    #vcomments h2 {
+        font-size: 1.65rem;
+        font-weight: bold;
+        line-height: 1.9rem;
+    }
+
+    #vcomments h3 {
+        font-size: 1.45rem;
+        font-weight: bold;
+        line-height: 1.7rem;
+    }
+
+    #vcomments h4 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    #vcomments h5 {
+        font-size: 1.1rem;
+        font-weight: bold;
+        line-height: 1.4rem;
+    }
+
+    #vcomments h6 {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+
+    #vcomments p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    #vcomments hr {
+        margin: 12px 0;
+        border: 0;
+        border-top: 1px solid #ccc;
+    }
+
+    #vcomments blockquote {
+        margin: 15px 0;
+        border-left: 5px solid #42b983;
+        padding: 1rem 0.8rem 0.3rem 0.8rem;
+        color: #666;
+        background-color: rgba(66, 185, 131, .1);
+    }
+
+    #vcomments pre {
+        font-family: monospace, monospace;
+        padding: 1.2em;
+        margin: .5em 0;
+        background: #272822;
+        overflow: auto;
+        border-radius: 0.3em;
+        tab-size: 4;
+    }
+
+    #vcomments code {
+        font-family: monospace, monospace;
+        padding: 1px 3px;
+        font-size: 0.92rem;
+        color: #e96900;
+        background-color: #f8f8f8;
+        border-radius: 2px;
+    }
+
+    #vcomments pre code {
+        font-family: monospace, monospace;
+        padding: 0;
+        color: #e8eaf6;
+        background-color: #272822;
+    }
+
+    #vcomments pre[class*="language-"] {
+        padding: 1.2em;
+        margin: .5em 0;
+    }
+
+    #vcomments code[class*="language-"],
+    pre[class*="language-"] {
+        color: #e8eaf6;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+
+    #vcomments b,
+    strong {
+        font-weight: bold;
+    }
+
+    #vcomments dfn {
+        font-style: italic;
+    }
+
+    #vcomments small {
+        font-size: 85%;
+    }
+
+    #vcomments cite {
+        font-style: normal;
+    }
+
+    #vcomments mark {
+        background-color: #fcf8e3;
+        padding: .2em;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+</style>
+
+<div class="card valine-card" data-aos="fade-up">
+    <div id="vcomments" class="card-content"></div>
+</div>
+
+<script src="/libs/valine/av-min.js"></script>
+<script src="/libs/valine/Valine.min.js"></script>
+<!-- <script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script> -->
+
+<script>
+    new Valine({
+        el: '#vcomments',
+        appId: '查教程获取',
+        appKey: '查教程获取',
+        notify: 'false' === 'true',
+        verify: 'false' === 'true',
+        visitor: 'false' === 'true',
+        avatar: 'wavatar',
+        pageSize: '10',
+        lang: 'zh-cn',
+        placeholder: '如果你没有GitHub账号，还可以在这里评论啦！'
+    });
+</script>
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/sui-bi-mao-mi.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="记录我的猫咪伙伴">
+                        
+                        <span class="card-title">记录我的猫咪伙伴</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            引言当我与毛茸茸的小伙伴相遇时，一段美妙的旅程开始了。它们是我生活中的陪伴者、朋友和家庭成员，为我带来无尽的欢乐和温馨。在这个快节奏的世界里，与猫咪共度时光成为了我放松、享受生活的一种方式。
+每一天，猫咪用它独特的个性和迷人的行为给我带来笑
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2023-10-28
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/随笔/" class="post-category" target="_blank">
+                                    随笔
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/随笔/" target="_blank">
+                        <span class="chip bg-color">随笔</span>
+                    </a>
+                    
+                    <a href="/tags/生活记录/" target="_blank">
+                        <span class="chip bg-color">生活记录</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/shu-fen-mao-mi-shu-ju-fen-xi.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="喵喵:数据分析探索猫咪选择的智慧">
+                        
+                        <span class="card-title">喵喵:数据分析探索猫咪选择的智慧</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            引言作为两只猫咪的铲屎官，有朋友觉得我对猫咪有一定的了解，于是该朋友向我咨询关于如何选择猫咪的问题，包括猫咪品种、体型、价格等一系列问题。对于他咨询的这些问题，我突然发现按平常的了解，并不能很好地回答他所提到的所有问题。于是， 作为一个有分
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2023-10-20
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/数据分析/" class="post-category" target="_blank">
+                                    数据分析
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/数据分析/" target="_blank">
+                        <span class="chip bg-color">数据分析</span>
+                    </a>
+                    
+                    <a href="/tags/python/" target="_blank">
+                        <span class="chip bg-color">python</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: Bevis23's Blog<br />'
+            + '作者: Bevis23<br />'
+            + '链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () { bodyElement.removeChild(newdiv); }, 200);
+    });
+</script>
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget">
+            <div class="toc-title"><i class="fa fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fa fa-list"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            // headingsOffset: -205,
+            headingSelector: 'h1, h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h1, h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).slideUp(500);
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).slideDown(500);
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+    
+
+</main>
+
+
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
+    });
+</script>
+
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+<!-- 代码语言 -->
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+<!-- 代码块复制 -->
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/clipboard.min.js"></script>
+<!-- 代码块收缩 -->
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script> 
+<!-- 代码块折行 -->
+<style type="text/css">code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }</style>
+
+
+    <!-- 不蒜子与看板娘冲突问题在于其中span -->
+<footer class="page-footer bg-color">
+    <div class="container row center-align">
+        <div class="col s12 m8 l8 copy-right">
+            &copy; Bevis23. 版权所有
+
+            
+            &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
+            <span class="white-color">189.3k</span>
+            
+
+            <br>
+            <span id="sitetime"></span>
+
+            
+            
+            <br>
+            
+            
+                <i class="fa fa-heart-o"></i>
+                本站总访问量 <span id="busuanzi_value_site_pv" class="white-color"></span>
+            
+            
+            
+            
+                人次,&nbsp;访客数 <span id="busuanzi_value_site_uv" class="white-color"></span> 人.
+            
+            
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/Bevis23" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fa fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:miyi23seek@outlook.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fa fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+    <a href="http://wpa.qq.com/msgrd?v=3&uin=2217934615&site=qq&menu=yes" class="tooltipped" target="_blank" data-tooltip="访问我的知乎" data-position="top" data-delay="50">
+        <i class="fa fa-qq"></i>
+    </a>
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fa fa-rss"></i>
+    </a>
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+<!-- 不蒜子计数初始值纠正 -->
+<script>
+    $(document).ready(function () {
+
+        var int = setInterval(fixCount, 50);
+        var pvcountOffset = 0;
+        var uvcountOffset = 0;
+
+        function fixCount() {
+            if (document.getElementById("busuanzi_container_site_pv").style.display != "none") {
+                $("#busuanzi_value_site_pv").html(parseInt($("#busuanzi_value_site_pv").html()) + pvcountOffset);
+                clearInterval(int);
+            }
+            if ($("#busuanzi_container_site_pv").css("display") != "none") {
+                $("#busuanzi_value_site_uv").html(parseInt($("#busuanzi_value_site_uv").html()) + uvcountOffset); // 加上初始数据 
+                clearInterval(int);
+            }
+        }
+    });
+</script>
+
+<script language=javascript>
+    function siteTime() {
+        window.setTimeout("siteTime()", 1000);
+        var seconds = 1000;
+        var minutes = seconds * 60;
+        var hours = minutes * 60;
+        var days = hours * 24;
+        var years = days * 365;
+        var today = new Date();
+        var todayYear = today.getFullYear();
+        var todayMonth = today.getMonth() + 1;
+        var todayDate = today.getDate();
+        var todayHour = today.getHours();
+        var todayMinute = today.getMinutes();
+        var todaySecond = today.getSeconds();
+        /* Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
+        year - 作为date对象的年份，为4位年份值
+        month - 0-11之间的整数，做为date对象的月份
+        day - 1-31之间的整数，做为date对象的天数
+        hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
+        minutes - 0-59之间的整数，做为date对象的分钟数
+        seconds - 0-59之间的整数，做为date对象的秒数
+        microseconds - 0-999之间的整数，做为date对象的毫秒数 */
+        var t1 = Date.UTC(2023, 05, 24, 00, 00, 00); //北京时间2023-5-24 00:00:00
+        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+        var diff = t2 - t1;
+        var diffYears = Math.floor(diff / years);
+        var diffDays = Math.floor((diff / days) - diffYears * 365);
+        var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+        var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) / minutes);
+        var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours - diffMinutes * minutes) / seconds);
+        document.getElementById("sitetime").innerHTML = "本站已运行 " + diffYears + " 年 " + diffDays + " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+    }/*因为建站时间还没有一年，就将之注释掉了。需要的可以取消*/
+    siteTime();
+</script>
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fa fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script src="/js/search.js"></script>
+<script type="text/javascript">
+$(function () {
+    searchFunc("/" + "search.xml", 'searchInput', 'searchResult');
+});
+</script>
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fa fa-angle-up"></i>
+    </a>
+</div>
+
+    <!-- 白天和黑夜主题 -->
+<div class="sum-moon-box">
+  <a class="btn-floating btn-large waves-effect waves-light" onclick="switchNightMode()" title="切换主题" >
+    <i id="sum-moon-icon" class="material-icons" style="width:48px; height:48px; font-size: 28px;">切换</i>
+  </a>
+</div>
+
+
+<script>
+  function switchNightMode() {
+    $('<div class="Cuteen_DarkSky"><div class="Cuteen_DarkPlanet"></div></div>').appendTo($('body')),
+      setTimeout(function () {
+        $('body').hasClass('DarkMode') 
+        ? ($('body').removeClass('DarkMode'), localStorage.setItem('isDark', '0'), $('#sum-moon-icon').removeClass("fa-sun").addClass('fa-moon')) 
+        : ($('body').addClass('DarkMode'), localStorage.setItem('isDark', '1'), $('#sum-moon-icon').addClass("fa-sun").removeClass('fa-moon')),
+          
+        setTimeout(function () {
+          $('.Cuteen_DarkSky').fadeOut(1e3, function () {
+            $(this).remove()
+          })
+        }, 2e3)
+      })
+  }
+</script>
+
+<div class="stars-con">
+  <div id="stars"></div>
+  <div id="stars2"></div>
+  <div id="stars3"></div>  
+</div>
+    
+<script>
+    
+    if (localStorage.getItem('isDark') === '1') {
+        document.body.classList.add('DarkMode');
+        $('#sum-moon-icon').addClass("fa-sun").removeClass('fa-moon')
+    } else {
+        document.body.classList.remove('DarkMode');
+        $('#sum-moon-icon').removeleClass("fa-sun").addClass('fa-moon')
+    }
+</script>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <script type="text/javascript"> var OriginTitile = document.title, st; document.addEventListener("visibilitychange", function () { document.hidden ? (document.title = "你别走呀 (。•́︿•̀。)", clearTimeout(st)) : (document.title = "你来啦!（＾ω＾）", st = setTimeout(function () { document.title = OriginTitile }, 3e3)) })  
+    </script>
+
+<!-- 天气插件 -->
+<div id="he-plugin-simple"></div>
+<script>
+WIDGET = {
+  "CONFIG": {
+    "modules": "01234",
+    "background": "5",
+    "tmpColor": "FFFFFF",
+    "tmpSize": "16",
+    "cityColor": "FFFFFF",
+    "citySize": "16",
+    "aqiColor": "FFFFFF",
+    "aqiSize": "16",
+    "weatherIconSize": "24",
+    "alertIconSize": "18",
+    "padding": "50px 10px 10px 10px",
+    "shadow": "1",
+    "language": "zh",
+    "borderRadius": "15",
+    "fixed": "true",
+    "vertical": "left",
+    "horizontal": "right",
+    "left": "0",
+    "top": "40",
+    "key": "648bb6c32e814644963b9fe24983e27e"
+  }
+}
+</script>
+<script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script>
+
+
+<!--动态线条背景-->
+<script type="text/javascript"
+color="220,220,220" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js">
+</script>
+
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=查教程获取"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', '查教程获取');
+</script>
+
+
+
+    
+    <script src="/libs/others/clicklove.js"></script>
+    
+
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    <!-- 雪花特效 -->
+    
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/haruto.model.json"},"display":{"position":"right","width":230,"height":280,"hOffset":50,"vOffset":-5},"mobile":{"show":true,"scale":0.5},"react":{"opacityDefault":0.7,"opacityOnHover":0.8},"log":false});</script></body>
+
+</html>
