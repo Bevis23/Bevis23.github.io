@@ -415,11 +415,11 @@
                 
                 
                 
-                <a href="/categories/AI/" title="AI: 2">
+                <a href="/categories/AI/" title="AI: 3">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
                             style="background-color: #F9EBEA;">AI
-                        <span class="tag-length">2</span>
+                        <span class="tag-length">3</span>
                     </span>
                 </a>
                 
@@ -505,6 +505,24 @@
                 </a>
                 
                 
+                <a href="/categories/心情随笔/" title="心情随笔: 2">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            style="background-color: #F8C471;">心情随笔
+                        <span class="tag-length">2</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/categories/知行合一/" title="知行合一: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            style="background-color: #F9E79F;">知行合一
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
             </div>
         </div>
     </div>
@@ -521,7 +539,7 @@
                         <div class="card-image tag-image">
                             
                             
-                            <img src="/medias/featureimages/24.jpg" class="responsive-img" alt="RSS：简化信息获取的利器">
+                            <img src="/medias/featureimages/26.jpg" class="responsive-img" alt="RSS：简化信息获取的利器">
                             
                             <span class="card-title">RSS：简化信息获取的利器</span>
                         </div>
@@ -576,7 +594,7 @@
                         <div class="card-image tag-image">
                             
                             
-                            <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="Git:分布式版本控制系统的入门指南">
+                            <img src="/medias/featureimages/27.jpg" class="responsive-img" alt="Git:分布式版本控制系统的入门指南">
                             
                             <span class="card-title">Git:分布式版本控制系统的入门指南</span>
                         </div>
@@ -630,7 +648,7 @@
                         <div class="card-image tag-image">
                             
                             
-                            <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="WireShark 简介和抓包原理及过程">
+                            <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="WireShark 简介和抓包原理及过程">
                             
                             <span class="card-title">WireShark 简介和抓包原理及过程</span>
                         </div>
@@ -684,7 +702,7 @@
                         <div class="card-image tag-image">
                             
                             
-                            <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="宝塔面板-简化服务器管理与部署的利器">
+                            <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="宝塔面板-简化服务器管理与部署的利器">
                             
                             <span class="card-title">宝塔面板-简化服务器管理与部署的利器</span>
                         </div>
@@ -749,7 +767,7 @@
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">189.3k</span>
+            <span class="white-color">200.3k</span>
             
 
             <br>
@@ -809,17 +827,44 @@
 <script>
     $(document).ready(function () {
 
+        /* ============================================================
+           历史访问量基数
+           不蒜子官方服务失效后改用 Vercount，计数从 0 重新开始，
+           这里把不蒜子时期的累计数据补回来。
+           显示值 = 统计服务实时值 + 基数，因此计数会在基数上继续累加。
+           若将来更换统计服务，只改脚本地址即可，本段无需变动。
+           ============================================================ */
+        var pvcountOffset = 38888;  // 历史总访问量
+        var uvcountOffset = 19000;  // 历史访客数
+
         var int = setInterval(fixCount, 50);
-        var pvcountOffset = 0;
-        var uvcountOffset = 0;
+        var tried = 0;
+        var maxTry = 200;          // 最多轮询约 10 秒，统计服务异常时兜底退出
+        var pvApplied = false;     // 标记，防止 offset 被重复累加
+        var uvApplied = false;
 
         function fixCount() {
-            if (document.getElementById("busuanzi_container_site_pv").style.display != "none") {
-                $("#busuanzi_value_site_pv").html(parseInt($("#busuanzi_value_site_pv").html()) + pvcountOffset);
-                clearInterval(int);
+            tried++;
+            // 注意：本 footer 中没有 busuanzi_container_site_* 元素，需做 null 保护，否则会抛 TypeError
+            var pvEl = document.getElementById("busuanzi_value_site_pv");
+            var uvEl = document.getElementById("busuanzi_value_site_uv");
+
+            if (!pvApplied && pvEl && pvEl.innerHTML !== "") {
+                var pv = parseInt(pvEl.innerHTML, 10);
+                if (!isNaN(pv)) {
+                    pvEl.innerHTML = pv + pvcountOffset;
+                    pvApplied = true;
+                }
             }
-            if ($("#busuanzi_container_site_pv").css("display") != "none") {
-                $("#busuanzi_value_site_uv").html(parseInt($("#busuanzi_value_site_uv").html()) + uvcountOffset); // 加上初始数据 
+            if (!uvApplied && uvEl && uvEl.innerHTML !== "") {
+                var uv = parseInt(uvEl.innerHTML, 10);
+                if (!isNaN(uv)) {
+                    uvEl.innerHTML = uv + uvcountOffset;
+                    uvApplied = true;
+                }
+            }
+
+            if ((pvApplied && uvApplied) || tried >= maxTry) {
                 clearInterval(int);
             }
         }
@@ -998,7 +1043,7 @@ color="220,220,220" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com
     
 
     
-    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    <script async src="https://cn.vercount.one/js"></script>
     
 
     <!-- 雪花特效 -->
