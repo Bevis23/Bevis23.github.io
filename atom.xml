@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://miyi23.top/"/>
-  <updated>2026-10-06T04:06:34.715Z</updated>
+  <updated>2026-10-08T11:57:41.419Z</updated>
   <id>https://miyi23.top/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>让 AI Skill 在多个 Agent 之间共享</title>
+    <link href="https://miyi23.top/ai-skill-share-across-agents.html"/>
+    <id>https://miyi23.top/ai-skill-share-across-agents.html</id>
+    <published>2026-10-08T09:11:20.000Z</published>
+    <updated>2026-10-08T11:57:41.419Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;&#92;assets&#92;css&#92;APlayer.min.css&quot;&gt;&lt;script src=&quot;&#92;assets&#92;js&#92;APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="AI" scheme="https://miyi23.top/categories/AI/"/>
+    
+    
+      <category term="AI" scheme="https://miyi23.top/tags/AI/"/>
+    
+      <category term="Skill" scheme="https://miyi23.top/tags/Skill/"/>
+    
+  </entry>
   
   <entry>
     <title>怎样设计一个真正好用的 AI Skill</title>
@@ -152,9 +180,9 @@
       <category term="随笔" scheme="https://miyi23.top/categories/%E9%9A%8F%E7%AC%94/"/>
     
     
-      <category term="生活记录" scheme="https://miyi23.top/tags/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
-    
       <category term="资源分享" scheme="https://miyi23.top/tags/%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB/"/>
+    
+      <category term="生活记录" scheme="https://miyi23.top/tags/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
     
   </entry>
   
@@ -352,9 +380,9 @@
       <category term="数据分析" scheme="https://miyi23.top/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"/>
     
     
-      <category term="AARRR" scheme="https://miyi23.top/tags/AARRR/"/>
-    
       <category term="数据分析" scheme="https://miyi23.top/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"/>
+    
+      <category term="AARRR" scheme="https://miyi23.top/tags/AARRR/"/>
     
       <category term="思维" scheme="https://miyi23.top/tags/%E6%80%9D%E7%BB%B4/"/>
     
@@ -565,36 +593,6 @@
       <category term="python" scheme="https://miyi23.top/tags/python/"/>
     
       <category term="pandas" scheme="https://miyi23.top/tags/pandas/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>python数据分析-numpy</title>
-    <link href="https://miyi23.top/shu-fen-numpy.html"/>
-    <id>https://miyi23.top/shu-fen-numpy.html</id>
-    <published>2023-10-13T11:11:21.000Z</published>
-    <updated>2023-10-13T07:06:16.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;&#92;assets&#92;css&#92;APlayer.min.css&quot;&gt;&lt;script src=&quot;&#92;assets&#92;js&#92;APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="数据分析" scheme="https://miyi23.top/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"/>
-    
-    
-      <category term="数据分析" scheme="https://miyi23.top/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"/>
-    
-      <category term="python" scheme="https://miyi23.top/tags/python/"/>
-    
-      <category term="numpy" scheme="https://miyi23.top/tags/numpy/"/>
     
   </entry>
   
