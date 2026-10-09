@@ -13,7 +13,7 @@
       
       <categories>
           
-          <category> AI </category>
+          <category> AI应用 </category>
           
       </categories>
       
@@ -23,6 +23,12 @@
             <tag> AI </tag>
             
             <tag> Skill </tag>
+            
+            <tag> Agent </tag>
+            
+            <tag> MCP </tag>
+            
+            <tag> 工作流 </tag>
             
         </tags>
       
@@ -40,7 +46,7 @@
       
       <categories>
           
-          <category> AI </category>
+          <category> AI应用 </category>
           
       </categories>
       
@@ -49,7 +55,13 @@
             
             <tag> AI </tag>
             
+            <tag> 实战教程 </tag>
+            
+            <tag> Prompt </tag>
+            
             <tag> Skill </tag>
+            
+            <tag> 工作流 </tag>
             
         </tags>
       
@@ -67,16 +79,16 @@
       
       <categories>
           
-          <category> 心情随笔 </category>
+          <category> 生活随笔 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 生活记录 </tag>
-            
             <tag> 随笔 </tag>
+            
+            <tag> 生活记录 </tag>
             
             <tag> 认知 </tag>
             
@@ -96,7 +108,7 @@
       
       <categories>
           
-          <category> 心情随笔 </category>
+          <category> 生活随笔 </category>
           
       </categories>
       
@@ -104,6 +116,8 @@
         <tags>
             
             <tag> 随笔 </tag>
+            
+            <tag> 人生感悟 </tag>
             
             <tag> 认知 </tag>
             
@@ -123,7 +137,7 @@
       
       <categories>
           
-          <category> 知行合一 </category>
+          <category> 生活随笔 </category>
           
       </categories>
       
@@ -133,6 +147,8 @@
             <tag> 随笔 </tag>
             
             <tag> 认知 </tag>
+            
+            <tag> 观点分析 </tag>
             
         </tags>
       
@@ -150,16 +166,16 @@
       
       <categories>
           
-          <category> 随笔 </category>
+          <category> 生活随笔 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 资源分享 </tag>
+            <tag> 随笔 </tag>
             
-            <tag> 生活记录 </tag>
+            <tag> Geek </tag>
             
         </tags>
       
@@ -177,18 +193,16 @@
       
       <categories>
           
-          <category> 随笔 </category>
+          <category> 生活随笔 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 生活记录 </tag>
-            
             <tag> 随笔 </tag>
             
-            <tag> 分享 </tag>
+            <tag> 生活记录 </tag>
             
         </tags>
       
@@ -206,7 +220,7 @@
       
       <categories>
           
-          <category> 数据分析 </category>
+          <category> 技术开发 </category>
           
       </categories>
       
@@ -215,9 +229,9 @@
             
             <tag> 数据分析 </tag>
             
-            <tag> 思维 </tag>
-            
             <tag> 贝叶斯定理 </tag>
+            
+            <tag> 概率 </tag>
             
         </tags>
       
@@ -235,16 +249,18 @@
       
       <categories>
           
-          <category> 编程 </category>
+          <category> 技术开发 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 编程 </tag>
+            <tag> 教程 </tag>
             
-            <tag> shell </tag>
+            <tag> Shell </tag>
+            
+            <tag> 脚本 </tag>
             
         </tags>
       
@@ -262,16 +278,18 @@
       
       <categories>
           
-          <category> 数据分析 </category>
+          <category> 技术开发 </category>
           
       </categories>
       
       
         <tags>
             
+            <tag> 实战教程 </tag>
+            
             <tag> 数据分析 </tag>
             
-            <tag> python </tag>
+            <tag> Python </tag>
             
         </tags>
       
@@ -289,16 +307,18 @@
       
       <categories>
           
-          <category> 数据分析 </category>
+          <category> 技术开发 </category>
           
       </categories>
       
       
         <tags>
             
+            <tag> 实战教程 </tag>
+            
             <tag> 数据分析 </tag>
             
-            <tag> github </tag>
+            <tag> GitHub </tag>
             
         </tags>
       
@@ -316,16 +336,16 @@
       
       <categories>
           
-          <category> 随笔 </category>
+          <category> 生活随笔 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 生活记录 </tag>
-            
             <tag> 随笔 </tag>
+            
+            <tag> 生活记录 </tag>
             
         </tags>
       
@@ -343,18 +363,18 @@
       
       <categories>
           
-          <category> 数据分析 </category>
+          <category> 技术开发 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 数据分析 </tag>
+            <tag> 思维模型 </tag>
             
             <tag> AARRR </tag>
             
-            <tag> 思维 </tag>
+            <tag> 数据分析 </tag>
             
         </tags>
       
@@ -372,16 +392,18 @@
       
       <categories>
           
-          <category> 数据分析 </category>
+          <category> 技术开发 </category>
           
       </categories>
       
       
         <tags>
             
+            <tag> 实战教程 </tag>
+            
             <tag> 数据分析 </tag>
             
-            <tag> python </tag>
+            <tag> Python </tag>
             
         </tags>
       
@@ -399,18 +421,20 @@
       
       <categories>
           
-          <category> 数据分析 </category>
+          <category> 技术开发 </category>
           
       </categories>
       
       
         <tags>
             
+            <tag> 实战教程 </tag>
+            
             <tag> 网络安全 </tag>
             
             <tag> 数据分析 </tag>
             
-            <tag> python </tag>
+            <tag> Python </tag>
             
         </tags>
       
@@ -428,14 +452,16 @@
       
       <categories>
           
-          <category> 数据分析 </category>
+          <category> 技术开发 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 思维工具 </tag>
+            <tag> 实战教程 </tag>
+            
+            <tag> 思维模型 </tag>
             
             <tag> 数据分析 </tag>
             
@@ -457,18 +483,20 @@
       
       <categories>
           
-          <category> 数据分析 </category>
+          <category> 技术开发 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 数据分析 </tag>
+            <tag> 教程 </tag>
             
-            <tag> python </tag>
+            <tag> Python </tag>
             
-            <tag> plotly </tag>
+            <tag> 数据可视化 </tag>
+            
+            <tag> Plotly </tag>
             
         </tags>
       
@@ -486,18 +514,20 @@
       
       <categories>
           
-          <category> 数据分析 </category>
+          <category> 技术开发 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 数据分析 </tag>
+            <tag> 教程 </tag>
             
-            <tag> python </tag>
+            <tag> Python </tag>
             
-            <tag> seaborn </tag>
+            <tag> 数据可视化 </tag>
+            
+            <tag> Seaborn </tag>
             
         </tags>
       
@@ -515,18 +545,20 @@
       
       <categories>
           
-          <category> 数据分析 </category>
+          <category> 技术开发 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 数据分析 </tag>
+            <tag> 教程 </tag>
             
-            <tag> python </tag>
+            <tag> Python </tag>
             
-            <tag> matplotlib </tag>
+            <tag> Matplotlib </tag>
+            
+            <tag> 数据可视化 </tag>
             
         </tags>
       
@@ -544,18 +576,20 @@
       
       <categories>
           
-          <category> 数据分析 </category>
+          <category> 技术开发 </category>
           
       </categories>
       
       
         <tags>
             
+            <tag> 教程 </tag>
+            
             <tag> 数据分析 </tag>
             
-            <tag> python </tag>
+            <tag> Python </tag>
             
-            <tag> pandas </tag>
+            <tag> Pandas </tag>
             
         </tags>
       
@@ -573,18 +607,18 @@
       
       <categories>
           
-          <category> 数据分析 </category>
+          <category> 技术开发 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 数据分析 </tag>
+            <tag> 教程 </tag>
             
-            <tag> python </tag>
+            <tag> Python </tag>
             
-            <tag> numpy </tag>
+            <tag> NumPy </tag>
             
         </tags>
       
@@ -602,18 +636,20 @@
       
       <categories>
           
-          <category> 编程 </category>
+          <category> 技术开发 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> python </tag>
+            <tag> 教程 </tag>
             
-            <tag> yield </tag>
+            <tag> Python </tag>
             
-            <tag> Generator </tag>
+            <tag> 生成器 </tag>
+            
+            <tag> 编程 </tag>
             
         </tags>
       
@@ -631,16 +667,20 @@
       
       <categories>
           
-          <category> 编程 </category>
+          <category> 技术开发 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> python </tag>
+            <tag> 教程 </tag>
+            
+            <tag> Python </tag>
             
             <tag> OOP </tag>
+            
+            <tag> 面向对象 </tag>
             
         </tags>
       
@@ -658,18 +698,16 @@
       
       <categories>
           
-          <category> 数据分析 </category>
+          <category> 技术开发 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 思维工具 </tag>
+            <tag> 思维模型 </tag>
             
             <tag> 数据分析 </tag>
-            
-            <tag> 思维 </tag>
             
         </tags>
       
@@ -687,18 +725,20 @@
       
       <categories>
           
-          <category> 网络安全 </category>
+          <category> 技术开发 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 技术分享 </tag>
-            
             <tag> 网络安全 </tag>
             
-            <tag> IP探针 </tag>
+            <tag> IP </tag>
+            
+            <tag> 探针 </tag>
+            
+            <tag> 原理解析 </tag>
             
         </tags>
       
@@ -716,16 +756,18 @@
       
       <categories>
           
-          <category> 人文社科 </category>
+          <category> 认知成长 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 人文社科 </tag>
+            <tag> 思维模型 </tag>
             
-            <tag> 思维工具 </tag>
+            <tag> 逻辑 </tag>
+            
+            <tag> 经验总结 </tag>
             
         </tags>
       
@@ -743,18 +785,18 @@
       
       <categories>
           
-          <category> 工具 </category>
+          <category> 资源创造 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 工具 </tag>
-            
             <tag> RSS </tag>
             
             <tag> 信息聚合 </tag>
+            
+            <tag> 工具推荐 </tag>
             
         </tags>
       
@@ -772,18 +814,18 @@
       
       <categories>
           
-          <category> 人文社科 </category>
+          <category> 认知成长 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 人文社科 </tag>
-            
-            <tag> 心理技巧 </tag>
+            <tag> 思维模型 </tag>
             
             <tag> 自我管理 </tag>
+            
+            <tag> 心理学 </tag>
             
         </tags>
       
@@ -801,16 +843,18 @@
       
       <categories>
           
-          <category> 数据分析 </category>
+          <category> 技术开发 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 工具 </tag>
+            <tag> 思维模型 </tag>
             
             <tag> 数据分析 </tag>
+            
+            <tag> 指标体系 </tag>
             
         </tags>
       
@@ -828,14 +872,16 @@
       
       <categories>
           
-          <category> 随笔 </category>
+          <category> 认知成长 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 思维 </tag>
+            <tag> 思维模型 </tag>
+            
+            <tag> 学习方法 </tag>
             
             <tag> 英语 </tag>
             
@@ -855,18 +901,18 @@
       
       <categories>
           
-          <category> 阅读分享 </category>
+          <category> 认知成长 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 阅读 </tag>
+            <tag> 思维模型 </tag>
             
-            <tag> 随笔 </tag>
+            <tag> 阅读笔记 </tag>
             
-            <tag> 导图 </tag>
+            <tag> 表达 </tag>
             
         </tags>
       
@@ -884,18 +930,18 @@
       
       <categories>
           
-          <category> 数据分析 </category>
+          <category> 技术开发 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 思维工具 </tag>
-            
-            <tag> PEST </tag>
+            <tag> 思维模型 </tag>
             
             <tag> 数据分析 </tag>
+            
+            <tag> PEST </tag>
             
         </tags>
       
@@ -913,16 +959,16 @@
       
       <categories>
           
-          <category> 编程 </category>
+          <category> 技术开发 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> python </tag>
+            <tag> 教程 </tag>
             
-            <tag> 编程 </tag>
+            <tag> Python </tag>
             
             <tag> 算法 </tag>
             
@@ -942,16 +988,18 @@
       
       <categories>
           
-          <category> 编程 </category>
+          <category> 技术开发 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> python </tag>
+            <tag> 教程 </tag>
             
-            <tag> 编程 </tag>
+            <tag> Python </tag>
+            
+            <tag> 数据结构 </tag>
             
             <tag> 算法 </tag>
             
@@ -971,16 +1019,16 @@
       
       <categories>
           
-          <category> 技术分享 </category>
+          <category> 技术开发 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 技术分享 </tag>
+            <tag> 教程 </tag>
             
-            <tag> docker </tag>
+            <tag> Docker </tag>
             
             <tag> 容器技术 </tag>
             
@@ -1000,18 +1048,18 @@
       
       <categories>
           
-          <category> 工具 </category>
+          <category> 技术开发 </category>
           
       </categories>
       
       
         <tags>
             
+            <tag> 教程 </tag>
+            
             <tag> Git </tag>
             
-            <tag> 工具 </tag>
-            
-            <tag> 分布式 </tag>
+            <tag> 版本控制 </tag>
             
         </tags>
       
@@ -1029,7 +1077,7 @@
       
       <categories>
           
-          <category> 网络安全 </category>
+          <category> 技术开发 </category>
           
       </categories>
       
@@ -1041,6 +1089,8 @@
             <tag> Metasploit </tag>
             
             <tag> 渗透测试 </tag>
+            
+            <tag> 信息收集 </tag>
             
         </tags>
       
@@ -1058,12 +1108,14 @@
       
       <categories>
           
-          <category> 网络安全 </category>
+          <category> 技术开发 </category>
           
       </categories>
       
       
         <tags>
+            
+            <tag> 教程 </tag>
             
             <tag> 网络安全 </tag>
             
@@ -1087,20 +1139,18 @@
       
       <categories>
           
-          <category> 网络安全 </category>
+          <category> 技术开发 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 工具 </tag>
-            
             <tag> 网络安全 </tag>
             
             <tag> 渗透测试 </tag>
             
-            <tag> nessus </tag>
+            <tag> Nessus </tag>
             
         </tags>
       
@@ -1118,20 +1168,20 @@
       
       <categories>
           
-          <category> 网络安全 </category>
+          <category> 技术开发 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 工具 </tag>
-            
             <tag> 网络安全 </tag>
             
             <tag> 渗透测试 </tag>
             
-            <tag> nmap </tag>
+            <tag> Nmap </tag>
+            
+            <tag> 扫描 </tag>
             
         </tags>
       
@@ -1149,18 +1199,20 @@
       
       <categories>
           
-          <category> 工具 </category>
+          <category> 技术开发 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 工具 </tag>
+            <tag> 教程 </tag>
             
             <tag> 网络安全 </tag>
             
-            <tag> wireshark </tag>
+            <tag> Wireshark </tag>
+            
+            <tag> 抓包 </tag>
             
         </tags>
       
@@ -1178,16 +1230,18 @@
       
       <categories>
           
-          <category> 编程 </category>
+          <category> 技术开发 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> python </tag>
+            <tag> 教程 </tag>
             
-            <tag> 编程 </tag>
+            <tag> Python </tag>
+            
+            <tag> 数据结构 </tag>
             
         </tags>
       
@@ -1205,20 +1259,20 @@
       
       <categories>
           
-          <category> 网络安全 </category>
+          <category> 技术开发 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 技术分享 </tag>
-            
             <tag> 网络安全 </tag>
             
             <tag> 渗透测试 </tag>
             
-            <tag> shodan </tag>
+            <tag> 信息收集 </tag>
+            
+            <tag> Shodan </tag>
             
         </tags>
       
@@ -1236,20 +1290,18 @@
       
       <categories>
           
-          <category> 网络安全 </category>
+          <category> 技术开发 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 技术分享 </tag>
-            
             <tag> 网络安全 </tag>
             
             <tag> 渗透测试 </tag>
             
-            <tag> OSI </tag>
+            <tag> 信息收集 </tag>
             
         </tags>
       
@@ -1267,18 +1319,18 @@
       
       <categories>
           
-          <category> 数据分析 </category>
+          <category> 技术开发 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 技术分享 </tag>
+            <tag> 教程 </tag>
             
-            <tag> 数据分析 </tag>
+            <tag> MySQL </tag>
             
-            <tag> mysql </tag>
+            <tag> 数据库 </tag>
             
         </tags>
       
@@ -1296,20 +1348,20 @@
       
       <categories>
           
-          <category> 技术分享 </category>
+          <category> 技术开发 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 工具 </tag>
-            
-            <tag> 技术分享 </tag>
-            
-            <tag> 网络安全 </tag>
+            <tag> 实战教程 </tag>
             
             <tag> frp </tag>
+            
+            <tag> 内网穿透 </tag>
+            
+            <tag> 网络 </tag>
             
         </tags>
       
@@ -1327,20 +1379,18 @@
       
       <categories>
           
-          <category> 随笔 </category>
+          <category> 资源创造 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> blog </tag>
+            <tag> 经验总结 </tag>
             
-            <tag> 随笔 </tag>
+            <tag> 个人网站 </tag>
             
-            <tag> 分享 </tag>
-            
-            <tag> hexo </tag>
+            <tag> Hexo </tag>
             
         </tags>
       
@@ -1358,20 +1408,20 @@
       
       <categories>
           
-          <category> 技术分享 </category>
+          <category> 技术开发 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> linux </tag>
-            
             <tag> 服务器 </tag>
             
-            <tag> 技术分享 </tag>
+            <tag> Linux </tag>
             
-            <tag> samba </tag>
+            <tag> 教程 </tag>
+            
+            <tag> Samba </tag>
             
         </tags>
       
@@ -1389,20 +1439,20 @@
       
       <categories>
           
-          <category> 工具 </category>
+          <category> 技术开发 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> linux </tag>
-            
-            <tag> 工具 </tag>
-            
-            <tag> 可视化 </tag>
+            <tag> 宝塔 </tag>
             
             <tag> 服务器 </tag>
+            
+            <tag> Linux </tag>
+            
+            <tag> 教程 </tag>
             
         </tags>
       
@@ -1420,7 +1470,7 @@
       
       <categories>
           
-          <category> AI </category>
+          <category> AI应用 </category>
           
       </categories>
       
@@ -1429,11 +1479,11 @@
             
             <tag> AI </tag>
             
-            <tag> chatgpt </tag>
+            <tag> ChatGPT </tag>
             
-            <tag> 人工智能 </tag>
+            <tag> 实战教程 </tag>
             
-            <tag> prompt </tag>
+            <tag> Prompt </tag>
             
         </tags>
       
@@ -1451,7 +1501,7 @@
       
       <categories>
           
-          <category> 网络安全 </category>
+          <category> 技术开发 </category>
           
       </categories>
       
@@ -1460,7 +1510,9 @@
             
             <tag> 网络安全 </tag>
             
-            <tag> 社工 </tag>
+            <tag> 渗透测试 </tag>
+            
+            <tag> 社会工程学 </tag>
             
             <tag> Maltego </tag>
             
@@ -1480,16 +1532,18 @@
       
       <categories>
           
-          <category> 网络安全 </category>
+          <category> 技术开发 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 技术分享 </tag>
-            
             <tag> 网络安全 </tag>
+            
+            <tag> 渗透测试 </tag>
+            
+            <tag> Google Hacking </tag>
             
         </tags>
       
@@ -1507,14 +1561,16 @@
       
       <categories>
           
-          <category> 随笔 </category>
+          <category> 生活随笔 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 分享 </tag>
+            <tag> 随笔 </tag>
+            
+            <tag> 阅读感想 </tag>
             
         </tags>
       
@@ -1532,7 +1588,7 @@
       
       <categories>
           
-          <category> AI </category>
+          <category> AI应用 </category>
           
       </categories>
       
@@ -1541,9 +1597,13 @@
             
             <tag> AI </tag>
             
-            <tag> linux </tag>
+            <tag> ChatGPT </tag>
             
-            <tag> chatgpt </tag>
+            <tag> 微信 </tag>
+            
+            <tag> 自动化 </tag>
+            
+            <tag> 实战教程 </tag>
             
         </tags>
       
@@ -1561,18 +1621,18 @@
       
       <categories>
           
-          <category> 资源分享 </category>
+          <category> 资源创造 </category>
           
       </categories>
       
       
         <tags>
             
+            <tag> 信息聚合 </tag>
+            
+            <tag> 工具推荐 </tag>
+            
             <tag> 资源分享 </tag>
-            
-            <tag> geek </tag>
-            
-            <tag> hugo </tag>
             
         </tags>
       
@@ -1590,18 +1650,18 @@
       
       <categories>
           
-          <category> 阅读分享 </category>
+          <category> 生活随笔 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 生活记录 </tag>
+            <tag> 随笔 </tag>
             
-            <tag> 阅读 </tag>
+            <tag> 阅读感想 </tag>
             
-            <tag> blog </tag>
+            <tag> 梦想 </tag>
             
         </tags>
       
@@ -1619,16 +1679,16 @@
       
       <categories>
           
-          <category> 随笔 </category>
+          <category> 资源创造 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> blog </tag>
-            
             <tag> 随笔 </tag>
+            
+            <tag> 个人网站 </tag>
             
         </tags>
       
